@@ -1,49 +1,59 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset=UTF-8 />
+		
+			<!-- feuille de style statique -->
 		<link rel="stylesheet" href="style.css" />
+		
+			<!-- feuille de style dynamique --> 
+		<link rel="stylesheet" href="fondsEcran.php" type="text/css" />
+		
 		<!-- pour un affichage correct sur les téléphonnes -->
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+
+		
 		<title>fernandez artwork</title>
 	</head>
 	
 	<body>
-		<header>			
-			<ul id=menu>
-				<li><a href="index.html">Iban FERNANDEZ</a>
-				<li><a href="paintings.html">Peintures</a>
-				<li><a href="robotic.html">Tutoriels robotique</a>
-				<li><a href="#FAQ">Section 3</a>
-			</ul>
+		<header>
+			<div id="logo"><a href="index.php?page=acceuil/acceuil"><img class="logo" src="logo.png"/></a></div>
+
+			<div class="elementDuMenu"><a class="menuPrincipalApparenceLiens"href="index.php?cathegorie=peintures">peintures</a></div>
+			
+			<!--<div class="elementDuMenu"><a class="menuPrincipalApparenceLiens"href="index.php?cathegorie=videos">videos</a></div>-->
+			
+			<div class="elementDuMenu"><a class="menuPrincipalApparenceLiens"href="index.php?cathegorie=robotique">tutoriels robotique</a></div>
+			
+			<!--<div class="elementDuMenu"><a class="menuPrincipalApparenceLiens"href="index.php?cathegorie=tout">tout</a></div>-->
+			
+			<div class="elementDuMenu"><a class="menuPrincipalApparenceLiens"href="index.php?page=aboutMe/aboutMe">about me</a></div>
+
 		</header>
-		</br>
-		</br>
-		<section>
-			<div id="homepage">	
-				<section id="acceuil">
-				
-					<div id="MyNameTitlte">
-						<h1>Iban Fernandez</h1>
-						</br>
-						<p class ="indicationsSousMonNom01">
-							art et robotique
-						</p>
-					</div>
-				
-				</section>
-			</div>
-		</section>
+
+		<div id="contenuDeLaPageWeb">	
+			<section id="acceuil">
+	
+		<a class="monNom" href="index.php?page=aboutMe/aboutMe">
+			<h1>Iban Fernandez</h1></br>
+		</a>
 		
-		<footer>
+		<p class ="indicationsSousMonNom01">
+			overview of my work
+		</p>
+		
+		<div>
 			<hr size="1" color="grey">
-			<div id ="indicationsSousMonNom02">
-				<br/>
+			<p class ="indicationsSousMonNom02">
 				© copyright Iban Fernandez - tous droits réservés
-				<br/>
-				<br/>
-				<br/>
-			</div>
-		</footer>
+			</p>
+		</div>
+		
+	</section>
+
+	<a class="acceuil_connexion" href="index.php?page=administrateur/connexion">Connexion</a>		</div>
 	</body>
+	
 </html>
