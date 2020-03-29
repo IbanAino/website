@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=UTF-8 />
+		<link rel="stylesheet" href="../../style.css" />
+		<!-- pour un affichage correct sur les t�l�phonnes -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+		<title>fernandez artwork</title>
+	</head>
+	
+	<body>
+		<header>
+			<ul id=menu>
+				<li><a href="../../index.html">Iban FERNANDEZ</a>
+				<li><a href="../../paintings.html">Peintures</a>
+				<li><a href="../../robotic.html">Tutoriels robotique</a>
+				<li><a href="#FAQ">Sons</a>
+			</ul>
+		</header>
+		<section>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<div id="TutoRobot">
+
+
+
+
+
+
+
+				<h2>Lidar et mapping : créer une carte du monde autour du robot en scannant l'espace</h2>
+				<br />
+				<br />
+
+				Un Lidar est un capteur de distance laser qui tourne sur lui-même pour détecter les obstacles tout autour de lui. Il sert aux robots à repérer les murs, les portes 
+				et autres éléments des alentours.<br /><br />
+				<img src="rplidar01.gif" alt="lidar" />
+				<img src="rplidar02.gif" alt="lidar" /><br />
+				<img src="rplidar03.jpg" alt="lidar" /><br />
+				<br />
+				Tout d’abord, nous allons voir comment le robot interprète les données du Lidar pour situer les obstacles autour de lui.<br />
+				Une fois que nous aurons compris le fonctionnement du Lidar, nous allons passer à la construction de la carte de l’environnement du robot.<br />
+
+				<br />
+				<br />
+				<h2>1 - Le fonctionnement du Lidar</h2><br />
+				<br />
+				Le capteur de distance laser tourne sur lui-même à 360°. À chaque degré, il prend une mesure de la distance de lui à l’obstacle en face, et renseigne l’ordinateur de son angle de 
+				rotation ainsi que de la distance mesurée. Cela crée un point ayant pour coordonnées un angle et une distance. On apelle ce type de coordonnées des coordonnées polaires.<br />
+				<img src="polaire.jpg" alt="schematic" /><br /><br />
+				Nous créons un repère avec le Lidar au centre. Ce sera notre carte. L’objectif est de placer chacun des points repérés par le Lidar sur ce repère. Ils représenterons les obstacles sur la carte.
+				 Nous devons donc convertir les coordonnées des points du lidar de la forme polaire (un angle et une distance) à la forme cartésienne (un X et un Y).<br />
+				<img src="cartesien.jpg" alt="schematic" /><br /><br />
+				Pour convertir des coordonnées polaires en coordonnées cartésiennes, nous utilisons la formule mathématique suivante :<br />
+				<img src="polCart.jpg" alt="schematic" />
+				<br />
+				<img src="formulePolCart.jpg" alt="math formula" /><br /><br />
+
+				<p class="pointTechno">
+				<b>Exemple</b><br />
+				<br />
+				Le lidar détecte un obstacle à <b>5</b> mètres lorsqu'il a tourné de <b>53°</b>.<br />
+				Nous avons donc un point <b>P</b> de coordonnées polaires <b>P(5, 53°)</b>.<br />
+				<br />
+				La position du point P sur l'axe X est :<br />
+					<b>X(p) = 5 * cos(53°) = 3</b><br />
+				<br />
+				La position du point P sur l'axe Y est :<br />
+					<b>Y(p) = 5 * sin(53°) = 4</b><br />
+				<br />
+				Les coordonnées cartésiennes du point <b>P</b> sont donc <b>P(3, 4)</b>
+				 </p>
+
+
+
+				<br />
+				<br />
+				<h2>2-	La construction de la carte : le mapping</h2>
+				<br />
+				Si le robot connait sa position sur la carte et qu’il détecte un obstacle par rapport à lui, il doit pouvoir situer cet obstacle sur la carte. Inversement, si on ordonne au robot 
+				de se rendre en un lieu précis de la carte, il doit pourvoir situer ce lieu par rapport à lui.<br />
+				Voici un exemple qui traduit de façon mathématique la situation :
+				<p class="pointTechno">
+				<b>Exemple</b><br />
+				<br />
+				Le robot sait que ses coordonnées dans le repère Monde sont <b>robot(5, 5, -45°)</b>, et il a repéré un point <b>P</b> dans son propre repère ayant pour coordonnées <b>Probot(2, 5)</b>.<br />
+				Il en déduit, après avoir calculé, que les coordonnées du point <b>P</b> dans le repère du monde sont <b>Pmonde(10, 7)</b>.<br />
+
+				<img src="schemasTransformation.jpg" alt="schematic" />
+				</p>
+				<br />
+
+				Nous avons les coordonnées du point P par rapport au robot, et les coordonnées du robot par rapport au monde. Pour avoir les coordonées du point P par rapport au monde, l'idéal
+				 serait d'avoir une formule du type :<br />
+				<br />
+				<img src="formuleMagique.jpg" alt="math formula" /><br />
+				<br />
+				Ce truc magique existe, c'est une matrice de passage.<br />
+				<br />
+				<img src="formulePasMagique.jpg" alt="math formula" /><br />
+				<br />
+				Voici la formule de la matrice de passage :<br />
+				<br />
+				<img src="TRobotWorld.jpg" alt="math formula" /><br />
+				<img src="schemasTransformation.jpg" alt="schematic" /><br />
+				<br />
+				<p class="pointTechno">
+				<b>Exemple</b><br /><br />
+				<a href="roverSpirit.png">
+				<img src="roverSpiritMiniature.png" alt="schematic" /><br />
+				</a>
+				<br />
+				Le robot martien Spirit sait qu’il se trouve à l’emplacement <img src="spirit01.jpg" alt="math formula" /> dans le monde (ici le monde est Mars). La notation 
+				mathématique des coordonnées du robot est de la forme <img src="spirit02.jpg" alt="math formula" />.<br />
+				Le robot détecte un obstacle (peut-être un martien) nommé <b>P</b>, ayant pour coordonnées <img src="spirit03.jpg" alt="math formula" /> dans son <b>repère robot</b>.<br />
+				<br />
+				Pour replacer le martien par rapport à Mars, c’est-à-dire exprimer le point <b>P</b> du <b>repère robot</b> au <b>repère monde</b>, on utilise la matrice de 
+				passage <img src="spirit04.jpg" alt="math formula" />  .<br />
+				On met le point <img src="spirit05.jpg" alt="math formula" /> sous forme de matrice pour pouvoir le multiplier par la matrice de passage :<br />
+				<img src="spirit06.jpg" alt="math formula" /><br />
+				On applique la matrice de passage sur le point <img src="spirit07.jpg" alt="math formula" /> pour 
+				trouver <img src="spirit08.jpg" alt="math formula" /> :<br/>
+				<br />
+				<img src="spirit09.jpg" alt="math formula" /><br />
+				Nous avons donc les coordonnées du point <b>P</b> par rapport au monde <img src="spirit10.jpg" alt="math formula" />.
+
+
+				</p>
+				<br />
+				Maintenant, le robot sera capable de se déplacer dans une carte, de capter les obstacles autour de lui et de mettre à jours la carte en y intégrant les obstacles captés.
+				<br />
+				<img src="animationMapping.gif" alt="schematic" /><br />
+
+				<h2>Implémentation dans le robot</h2>
+				<br />
+				<br />
+				En cours.<br />
+				<h2>Le code informatique</h2>
+				<br />
+				<br />
+				En cours.<br />
+				<h2>Références</h2>
+				<br />
+				<br />
+				En cours.<br />
+				<br />
+				<br />
+				
+		
+		
+		
+		
+		
+		
+		
+			</div>
+		</section>
+		<footer>
+			<hr size="1" color="grey">
+			<p class ="indicationsSousMonNom02">
+				� copyright Iban Fernandez - tous droits r�serv�s
+			</p>
+		</footer>
+	</body>
+</html>
