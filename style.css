@@ -44,6 +44,12 @@ hr{
 	width : 30rem;
 }
 
+@media screen and (max-width: 625px)
+{
+	hr{
+		width : 20rem;
+	}
+}
 
 /* ---Header menu--- */
 
