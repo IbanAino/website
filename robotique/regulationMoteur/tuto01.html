@@ -89,26 +89,26 @@
 				Au commencement, nous avons un système de cette forme pour contrôler le moteur :<br />
 
 				<a href="boucle de regulation ouverte grande.jpg">
-				<img src="boucle de regulation ouverte.jpg" alt="boucle regulation automatique" /><br />
+				<img src="boucle de regulation ouverte.JPG" alt="boucle regulation automatique" /><br />
 				<a/>
 
 				Nous allons ajouter à ce schéma le <b>codeur</b>, pour avoir la vitesse du moteur :<br />
 				<a href="boucle de regulation ouverte codeur grande.jpg">
-				<img src="boucle de regulation ouverte codeur.jpg" alt="boucle regulation automatique" /><br />
+				<img src="boucle de regulation ouverte codeur.JPG" alt="boucle regulation automatique" /><br />
 				<a/>
 				<br />
 
 				Maintenant, nous pouvons comparer la vitesse désirée et la vitesse mesurée, pour connaitre l’erreur à corriger. Nous ajoutons donc un <b>comparateur</b>.<br />
 				Exemple: si la vitesse désirée vaut 20 tours/secondes et la vitesse mesurée vaut 15 tours/secondes, l'erreur est de 5.<br />
 				<a href="boucle de regulation ouverte codeur comparateur grande.jpg">
-				<img src="boucle de regulation ouverte codeur comparateur.jpg" alt="boucle regulation automatique" /><br />
+				<img src="boucle de regulation ouverte codeur comparateur.JPG" alt="boucle regulation automatique" /><br />
 				<a/>
 				<br />
 
 				Enfin, nous ajoutons le bloc qui traite l’erreur et qui en déduit la commande pour le driver moteur. C'est ce bloc qui contient les équations mathématiques.<br />
 				Nous obtenons le schéma final:<br />
 				<a href="boucle de regulation complete grande.jpg">
-				<img src="boucle de regulation complete.jpg" alt="boucle regulation automatique" /><br />
+				<img src="boucle de regulation complete.JPG" alt="boucle regulation automatique" /><br />
 				<a/>
 
 				<br />
@@ -124,29 +124,29 @@
 				proche de la vitesse désirée), on fait très peu varier la puissance délivrée. Cette opération est réalisée en boucle tout au long du fonctionnement du moteur.<br />
 				<br />
 				<b>Formule 1</b><br />
-				<img src="formule01.jpg" alt="formule mathématique" /><br />
+				<img src="formule01.JPG" alt="formule mathématique" /><br />
 				(dans le cas du moteur qui tourne plus vite que désiré, l’erreur est négative, donc la puissance à délivrer est plus petite que la puissance délivrée au moment de la mesure)<br />
 
 				Cette formule marche. Cependant, pour avoir un contrôle plus fin sur la correction, on ajoute un coefficient Kp qui va ajuster la correction. C'est le correcteur proportionnel.<br />
 				<br />
 				<b>Formule 2</b><br />
-				<img src="formule02.jpg" alt="formule mathématique" /><br />
+				<img src="formule02.JPG" alt="formule mathématique" /><br />
 
 				<h2>Mise en pratique</h2>
 				<br />
 				Appliquons la formule 1, sans le coefficient correcteur Kp pour corriger de façon optimale:<br />
-				<img src="formule01bis.jpg" alt="formule mathématique" /><br /><br />
+				<img src="formule01bis.JPG" alt="formule mathématique" /><br /><br />
 
 				<img src="graph01.jpg" alt="graph" /><br />
 
 				Essayons avec la formule 2<br />
-				<img src="formule02bis.jpg" alt="formule mathématique" /><br />
+				<img src="formule02bis.JPG" alt="formule mathématique" /><br />
 				avec différentes valeurs pour le correcteur proportionnel Kp:<br /><br />
 
 				<b>Kp = 20</b><br />
-				<img src="graph02.jpg" alt="graph" /><br /><br />
+				<img src="graph02.JPG" alt="graph" /><br /><br />
 				<b>Kp = 5</b><br />
-				<img src="graph03.jpg" alt="graph" /><br />
+				<img src="graph03.JPG" alt="graph" /><br />
 
 				Après plusieurs essais, nous obtenons une valeur optimale de Kp, pour Kp = 5.<br />
 
