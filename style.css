@@ -12,12 +12,27 @@
     src				: url('polices/Lobster-two/LobsterTwo-Regular.otf');
 }
 
-/*GITHUB site*/
-body{
-	margin			: 0;
+
+/* ---GITHUB site--- */
+
+
+@media screen and (max-width: 625px)
+{
+	body{
+		margin			: 0;
+		background : blue;
+	}
+}
+@media screen and (max-width: 976px)
+{
+	body{
+		margin			: 0;
+		background : red;
+	}
 }
 
-/*Footer*/
+/* ---Footer--- */
+
 #footer {
   position: absolute;
   bottom: 0;
@@ -31,7 +46,9 @@ body{
     align-items: center;
 }
 
-/*Header menu*/
+
+/* ---Header menu--- */
+
 #menu{
 	position: fixed;
 	width : 100%;
@@ -64,7 +81,10 @@ li a:hover {
   background-color: #111;
 }
 
-/*Main Content*/
+
+
+/* ---Main Content--- */
+
 #BilletsWindows{
 	display		: flex;
     flex-wrap	: wrap;
@@ -79,7 +99,9 @@ li a:hover {
 	box-shadow		: 0px 4px 100px;
 }
 
-/*Home*/
+
+/* ---Home--- */
+
 #homepage{
 	display		: flex;
 	justify-content: center;
@@ -90,7 +112,9 @@ li a:hover {
 	text-align: center
 }
 
-/*Tutos robots*/
+
+/* ---Tutos robots--- */
+
 #TutoRobot{
 	border-radius	: 7px;
 	margin : 6rem;
