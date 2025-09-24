@@ -1,4 +1,5 @@
 /*GENERAL*/
+/*
 @font-face {
     font-family		: 'Viga-Regular';
     src				: url('polices//Viga-Regular.otf');
@@ -11,7 +12,11 @@
     font-family		: 'LobsterTwo-Regular';
     src				: url('polices/Lobster-two/LobsterTwo-Regular.otf');
 }
-
+*/
+@font-face {
+    font-family		: 'Roboto';
+    src				: url('polices/Roboto/Roboto-VariableFont_wdth,wght.ttf');
+}
 
 /* ---GITHUB site--- */
 
