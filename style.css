@@ -64,25 +64,28 @@ hr{
 	justify-content	: space-around;
 }
 
-ul {
+#menu {
 	list-style-type		: none;
 	margin				: 0;
-	padding				: 0;
+	//padding				: 0;
 	overflow			: hidden;
 	background-color	: #333;
+	padding			: 14px 16px;
 }
-
+/*
 li {
   float	: left;
 }
+*/
 
-li a {
-	display			: block;
+a {
+	//display			: block;
 	color			: white;
-	text-align		: center;
-	padding			: 14px 16px;
+	//text-align		: center;
+	//padding			: 14px 16px;
 	text-decoration	: none;
 	}
+	
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {

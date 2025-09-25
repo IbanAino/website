@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=UTF-8 />
+		<link rel="stylesheet" href="../../style.css" />
+		<!-- pour un affichage correct sur les téléphonnes -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+		<title>fernandez artwork</title>
+	</head>
+	<body>
+		<header>
+			<ul id="menu">
+				<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+				<li><a href="../../paintings.html">Peintures</a></li>
+				<li><a href="../../robotic.html">Tutoriels robotique</a></li>
+				<li><a href="../../CV.html">CV</a></li>
+			</ul>
+		</header>
+		<main>
+			<div id="TutoRobot">
+				<button onclick="history.back()">Retour</button>
+				<h3>Conception de boutons tactiles analogiques</h3>
+				Electronique analogique - impression 3D</br>
+				Electronicien Science à l'Institut Polaire Français</br>
+				2022<br></br>
+				Traditionellement, chaque mission polaire sur la station de Dumont d'Urville crée un "tableau de mission" qu'elle lègue à la station pour y laisser sa marque. Avec l'ensemble des métiers de l'équipe nous avons créé une carte des étoiles, chaque étoile étant assignée à l'une des vingt et un hivernant et s'allumant à l'appui d'un bouton.</br>
+				<a href= "3 big.jpg">
+					<img src="3 mini.jpg">
+				</a>
+				<br>
+				En tant qu'électronicien j'ai conçu et fabriqué les boutons tactiles et le système d'éclairage.</br>
+				</br>
+				Il fallait trouver un moyen de fabriquer des boutons tactiles avec des composant analogiques de base, tout en minimisant au maximum la consommation électrique du système afin que les piles durent plusieurs années.</br>
+				Les LEDs se devaient également d'avoir un comportement plus poétique de simplement on/off, afin de mieux se figurer des étoiles dans le ciel.</br>
+				</br>
+				Pour les boutons tactiles j'ai utilisé deux électrodes que l'utilisateur fait entrer en contact avec ses doigts (un condensateur de 10 nF filtre le bruit de la mise en contact). Le signal en sortie, très faible à cause de la résistance électrique du corps humain et de la faible tension utilisée, est ensuite amplifié par deux transistors montés en Darlington .</br> 
+				</br>
+				Afin de temporiser l'extinction de la LED une fois celle-ci allumée, j'ai ajouté un circuit RC à la base du transistor connecté à la LED. À l'allumage le condensateur se charge (adoucissant l'allumage par là même). À la coupure du circtuit le condensateur se décharge dans la base du transistor, décharge ralentie par la résistance du circuit RC. La LED reste ainsi éclairée jusqu'à la décharge complète du condensateur, sa luminosité diminuant doucement.</br>
+				</br>
+				</br>
+				<a href= "1 big.jpg">
+					<img src="1 mini.jpg">
+				</a>
+				</br>
+				</br>
+				</br>
+				J'ai répliqué ce montage vingt et une fois sur une carte électronique. J'ai dessiné et imprimé des pièces en 3D pour maintenir les LED, la carte électronique et protéger les câbles.</br>
+				<a href= "2 big.jpg">
+					<img src="2 mini.jpg">
+				</a>
+				</br>
+				</br>
+				Grâce à toutes les compétences de l'équipe nous avons pu mener à bien ce projet collectif, qui comprend de l'électronique, de l'impression 3D, de la menuiserie, de l'usinage de précision, de la photographie argentique, de la découpe à la CNC et du coulage de résine.</br>
+				</br>
+				<a href= "4 big.jpg">
+					<img src="4 mini.jpg">
+				</a>
+			</div>
+		</main>
+	</body>
+</html>
