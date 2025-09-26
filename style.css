@@ -67,10 +67,10 @@ hr{
 #menu {
 	list-style-type		: none;
 	margin				: 0;
-	//padding				: 0;
+	padding				: 0;
 	overflow			: hidden;
 	background-color	: #333;
-	padding			: 14px 16px;
+	//padding			: 14px 16px;
 }
 /*
 li {
@@ -78,14 +78,22 @@ li {
 }
 */
 
+#menu_a {
+	display			: block;
+	color			: white;
+	text-align		: center;
+	padding			: 14px 16px;
+	text-decoration	: none;
+	}
+/*	
 a {
 	//display			: block;
 	color			: white;
-	//text-align		: center;
+	text-align		: center;
 	//padding			: 14px 16px;
 	text-decoration	: none;
 	}
-	
+*/	
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
@@ -190,3 +198,12 @@ li a:hover {
 	}
 }
 
+/* ---CV--- */
+
+#bandeau_CV{
+	background		: #F0E68C;
+	border-radius	: 10px;
+	box-shadow		: 6px 6px 20px grey;
+	padding			: 12px;
+    margin			: 40px;
+}
