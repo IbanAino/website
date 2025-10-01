@@ -57,48 +57,44 @@ hr{
 
 /* ---Header menu--- */
 
-#menu{
-	position		: fixed;
-	width 			: 100%;
-	display			: flex;
-	justify-content	: space-around;
-}
-
 #menu {
-	list-style-type		: none;
-	margin				: 0;
-	padding				: 0;
-	overflow			: hidden;
-	background-color	: #333;
-	//padding			: 14px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    z-index: 1000; /* Pour qu'il reste au-dessus du contenu */
 }
-/*
-li {
-  float	: left;
-}
-*/
 
-#menu_a {
-	display			: block;
-	color			: white;
-	text-align		: center;
-	padding			: 14px 16px;
-	text-decoration	: none;
-	}
-/*	
-a {
-	//display			: block;
-	color			: white;
-	text-align		: center;
-	//padding			: 14px 16px;
-	text-decoration	: none;
-	}
-*/	
+#menu li {
+    flex: 1 1 0; /* Les éléments ne s'étirent pas */
+}
+
+#menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#menu a:hover {
+    background-color: #555;
+}
 
 /* Change the link color to #111 (black) on hover */
+/*
 li a:hover {
   background-color: #111;
 }
+*/
 
 @media screen and (max-width: 625px)
 {
@@ -200,10 +196,87 @@ li a:hover {
 
 /* ---CV--- */
 
-#bandeau_CV{
+.bandeau_CV{
 	background		: #F0E68C;
 	border-radius	: 10px;
 	box-shadow		: 6px 6px 20px grey;
 	padding			: 12px;
     margin			: 40px;
+}
+/*
+.project {
+	margin-bottom: 40px;
+	border-left: 4px solid #007bff;
+	padding-left: 20px;
+}
+*/
+.project-title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #2c3e50;
+	margin-bottom: 10px;
+}
+
+.project-meta {
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.project-tech {
+	color: #007bff;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.project-description {
+	margin-top: 15px;
+	text-align: justify;
+}
+
+.project-description p {
+	margin-bottom: 10px;
+}
+
+/* Buttons */
+
+/* Pousser le sélecteur de langue à droite */
+.language-switcher {
+    /*margin-left: auto;*/
+	flex: 0 0 auto; /* Ne grandit pas, taille automatique */
+    display: flex;
+    gap: 5px;
+    padding: 8px 16px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.lang-btn.active {
+    background: white;
+    color: #333;
+}
+
+/* Classe pour cacher les éléments */
+.hidden {
+	display: none;
+}
+
+.lang-content {
+    display: inline;
+}
+
+.lang-content.hidden {
+    display: none !important;
 }

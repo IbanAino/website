@@ -10,139 +10,355 @@
 	
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 
 		<main>
 			<div id="BilletsWindows">
 			
-				<div id="bandeau_CV">
-					<b>Iban FERNANDEZ</b></br>
-					</br>
-					<b>Ingénieur en Robotique et systèmes embarqués</b></br></br>
-						<ul>
-							<li>Mécanique : CAO, CATIA, SOLIDWORKS, impression 3D</li>
-							<li>Développement logiciel : C#, C++, Ada, C, langages du Web, moteurs de jeu Unity 3D, Unreal Engine, Godot</li>		
-							<li>Electronique : analogique, numérique, conception de cartes</li>
-							<li>Gestion de projets</li>
-							<li>Prototypage</li>
-							<li>Interventions terrain</li>
-						</ul>
-						<br>
-						Je suis ingénieur en robotique et systèmes embarqués, avec une forte expérience en instrumentation scientifique, tant sur le plan technique que sur l'aspect applicatif terrain.</br>
-						<br>
-						Après avoir travaillé au Laboratoire des Sciences du Climat et de l’Environnement j’ai passé une année en Antarctique en tant qu’électronicien science. À la suite de cette expérience j’ai occupé le poste de Responsable technique à l’Observatoire volcanologique et sismologique de Martinique.</br>
-						</br>
-						Toutes ces expériences m’ont donné de solides fondements techniques et une très bonne expérience terrain.
-					
-						<br>	
-							
+			<!-- Version française -->
+			<div class="bandeau_CV lang-content" data-lang="fr">
+				<b>Iban FERNANDEZ</b><br/>
+				<br/>
+				<b>Ingénieur en Robotique et systèmes embarqués</b><br/><br/>
+				<ul>
+					<li>Mécanique : CAO, CATIA, SOLIDWORKS, impression 3D</li>
+					<li>Développement logiciel : C#, C++, Ada, C, langages du Web, moteurs de jeu Unity 3D, Unreal Engine, Godot</li>
+					<li>Électronique : analogique, numérique, conception de cartes</li>
+					<li>Gestion de projets</li>
+					<li>Prototypage</li>
+					<li>Interventions terrain</li>
+				</ul>
+				<br/>
+				Je suis ingénieur en robotique et systèmes embarqués, avec une forte expérience en instrumentation scientifique, tant sur le plan technique que sur l'aspect applicatif terrain.<br/>
+				<br/>
+				Après avoir travaillé au Laboratoire des Sciences du Climat et de l'Environnement j'ai passé une année en Antarctique en tant qu'électronicien science. À la suite de cette expérience j'ai occupé le poste de Responsable technique à l'Observatoire volcanologique et sismologique de Martinique.<br/>
+				<br/>
+				Toutes ces expériences m'ont donné de solides fondements techniques et une très bonne expérience terrain.
+				<br/>
+			</div>
+
+			<!-- Version anglaise -->
+			<div class="bandeau_CV lang-content hidden" data-lang="en">
+				<b>Iban FERNANDEZ</b><br/>
+				<br/>
+				<b>Robotics and Embedded Systems Engineer</b><br/><br/>
+				<ul>
+					<li>Mechanics: CAD, CATIA, SOLIDWORKS, 3D printing</li>
+					<li>Software development: C#, C++, Ada, C, Web languages, game engines Unity 3D, Unreal Engine, Godot</li>
+					<li>Electronics: analog, digital, circuit board design</li>
+					<li>Project management</li>
+					<li>Prototyping</li>
+					<li>Field operations</li>
+				</ul>
+				<br/>
+				I am a robotics and embedded systems engineer with extensive experience in scientific instrumentation, both technically and in field applications.<br/>
+				<br/>
+				After working at the Laboratory of Climate and Environmental Sciences, I spent a year in Antarctica as a science electronics technician. Following this experience, I held the position of Technical Manager at the Volcanological and Seismological Observatory of Martinique.<br/>
+				<br/>
+				All these experiences have given me solid technical foundations and excellent field experience.
+				<br/>
+			</div>
+
+			<!-- Version espagnole -->
+			<div class="bandeau_CV lang-content hidden" data-lang="es">
+				<b>Iban FERNANDEZ</b><br/>
+				<br/>
+				<b>Ingeniero en Robótica y sistemas embebidos</b><br/><br/>
+				<ul>
+					<li>Mecánica: CAD, CATIA, SOLIDWORKS, impresión 3D</li>
+					<li>Desarrollo de software: C#, C++, Ada, C, lenguajes Web, motores de juego Unity 3D, Unreal Engine, Godot</li>
+					<li>Electrónica: analógica, digital, diseño de placas</li>
+					<li>Gestión de proyectos</li>
+					<li>Prototipado</li>
+					<li>Intervenciones en campo</li>
+				</ul>
+				<br/>
+				Soy ingeniero en robótica y sistemas embebidos, con amplia experiencia en instrumentación científica, tanto a nivel técnico como en aplicaciones de campo.<br/>
+				<br/>
+				Después de trabajar en el Laboratorio de Ciencias del Clima y del Medio Ambiente, pasé un año en la Antártida como técnico electrónico científico. Tras esta experiencia, ocupé el puesto de Responsable técnico en el Observatorio vulcanológico y sismológico de Martinica.<br/>
+				<br/>
+				Todas estas experiencias me han dado sólidos fundamentos técnicos y una excelente experiencia de campo.
+				<br/>
+			</div>
+
+			<!-- Version allemande -->
+			<div class="bandeau_CV lang-content hidden" data-lang="de">
+				<b>Iban FERNANDEZ</b><br/>
+				<br/>
+				<b>Ingenieur für Robotik und eingebettete Systeme</b><br/><br/>
+				<ul>
+					<li>Mechanik: CAD, CATIA, SOLIDWORKS, 3D-Druck</li>
+					<li>Softwareentwicklung: C#, C++, Ada, C, Websprachen, Spiel-Engines Unity 3D, Unreal Engine, Godot</li>
+					<li>Elektronik: analog, digital, Leiterplattendesign</li>
+					<li>Projektmanagement</li>
+					<li>Prototyping</li>
+					<li>Feldeinsätze</li>
+				</ul>
+				<br/>
+				Ich bin Ingenieur für Robotik und eingebettete Systeme mit umfangreicher Erfahrung in wissenschaftlicher Instrumentierung, sowohl technisch als auch in Feldanwendungen.<br/>
+				<br/>
+				Nach meiner Tätigkeit am Labor für Klima- und Umweltwissenschaften verbrachte ich ein Jahr in der Antarktis als Elektroniktechniker für die Wissenschaft. Im Anschluss an diese Erfahrung übernahm ich die Position des technischen Leiters am vulkanologischen und seismologischen Observatorium von Martinique.<br/>
+				<br/>
+				All diese Erfahrungen haben mir solide technische Grundlagen und ausgezeichnete Felderfahrung vermittelt.
+				<br/>
 				</div>
-				
-				<div id="bandeau_CV">
+
+				<!-- Version française -->
+				<div class="bandeau_CV lang-content" data-lang="fr">
 					<b>Entreprises et postes occupés</b>
 					<ul>
 						<li>Développeur de jeu vidéo en indépendant, 10/2024 - 10/2025
 						</li>
-						<li><img src="CV/logo-ovsm.jpg"><br>Observatoire Volcanologique et Sismologique de Martinique
+						<li><img src="CV/logo-ovsm.jpg" alt="Logo OVSM"><br>Observatoire Volcanologique et Sismologique de Martinique
 							<ul>
 								<li>Ingénieur de recherche, 03/2024 - 07/2024</li>
-								<li>Reponsable technique, 03/2023 - 03/2024</li>
+								<li>Responsable technique, 03/2023 - 03/2024</li>
 							</ul>
 						</li>
-						<li><img src="CV/logo-ipev.jpg"><br>Institut Polaire Français
+						<li><img src="CV/logo-ipev.jpg" alt="Logo IPEV"><br>Institut Polaire Français
 							<ul>
-								<li>Electronicien science, 08/2021 - 01/2023</li>
+								<li>Électronicien science, 08/2021 - 01/2023</li>
 							</ul>
-						</li>		
-						<li><img src="CV/logo-lsce.jpg"><br>Laboratoire des Sciences du Climat et de l'Environnement
+						</li>
+						<li><img src="CV/logo-lsce.jpg" alt="Logo LSCE"><br>Laboratoire des Sciences du Climat et de l'Environnement
 							<ul>
 								<li>Ingénieur de recherche, 01/2020 - 07/2021</li>
 							</ul>
 						</li>
-						<li><img src="CV/logo-arianegroup.jpg"><br>Consultant pour Arianegroup</li>
+						<li><img src="CV/logo-arianegroup.jpg" alt="Logo ArianeGroup"><br>Consultant pour Arianegroup
 							<ul>
 								<li>Développeur informatique, 04/2019 - 12/2019</li>
 							</ul>
 						</li>
-						<li><br>SNCF - Transilien</li>
+						<li><br>SNCF - Transilien
 							<ul>
 								<li>Apprentissage - développeur informatique, 07/2017 - 07/2018</li>
 							</ul>
 						</li>
-						<li><br>Ainolabs (start-up de réalité virtuelle)</li>
+						<li>Ainolabs (start-up de réalité virtuelle)
 							<ul>
 								<li>Apprentissage - développeur informatique, 07/2015 - 07/2017</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
-			</div>
-			<div id="BilletsWindows">	
-				<!-- Hermione Lafayette -->
-				
-				<!--
-				<div class="billet"">
-					<a href= "CV/porte-coffre/porte-coffre.html">
-						<img src="CV/porte-coffre/porte-coffre_square.jpg">
-						<img src="CV/logo-hermione.jpg">
-					</a>
-					<div class="titreDeLaPeinture02">Réalisation d'une porte de coffre</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Menuiserie - pliage et collage</br>
-						bénévole pour l'association Hermione Lafayette</br>
-						2025
-					</div>
-				</div>
-				
-				<div class="billet"">
-					<a href= "CV/romaillet/romaillet.html">
-						<img src="CV/romaillet/romaillet_square.jpg">
-						<img src="CV/logo-hermione.jpg">
-					</a>
-					<div class="titreDeLaPeinture02">Réparation du pont du bateau avec des romaillets</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Menuiserie - ciseau à bois, défonceuse, rabot à main, collage</br>
-						bénévole pour l'association Hermione Lafayette</br>
-						2025
-					</div>
-				</div>
-				-->
-				
 
-				
+				<!-- Version anglaise -->
+				<div class="bandeau_CV lang-content hidden" data-lang="en">
+					<b>Companies and Positions Held</b>
+					<ul>
+						<li>Independent video game developer, 10/2024 - 10/2025
+						</li>
+						<li><img src="CV/logo-ovsm.jpg" alt="Logo OVSM"><br>Volcanological and Seismological Observatory of Martinique
+							<ul>
+								<li>Research engineer, 03/2024 - 07/2024</li>
+								<li>Technical manager, 03/2023 - 03/2024</li>
+							</ul>
+						</li>
+						<li><img src="CV/logo-ipev.jpg" alt="Logo IPEV"><br>French Polar Institute
+							<ul>
+								<li>Science electronics technician, 08/2021 - 01/2023</li>
+							</ul>
+						</li>
+						<li><img src="CV/logo-lsce.jpg" alt="Logo LSCE"><br>Laboratory of Climate and Environmental Sciences
+							<ul>
+								<li>Research engineer, 01/2020 - 07/2021</li>
+							</ul>
+						</li>
+						<li><img src="CV/logo-arianegroup.jpg" alt="Logo ArianeGroup"><br>Consultant for Arianegroup
+							<ul>
+								<li>Software developer, 04/2019 - 12/2019</li>
+							</ul>
+						</li>
+						<li><br>SNCF - Transilien
+							<ul>
+								<li>Apprenticeship - software developer, 07/2017 - 07/2018</li>
+							</ul>
+						</li>
+						<li>Ainolabs (virtual reality start-up)
+							<ul>
+								<li>Apprenticeship - software developer, 07/2015 - 07/2017</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Version espagnole -->
+				<div class="bandeau_CV lang-content hidden" data-lang="es">
+					<b>Empresas y puestos ocupados</b>
+					<ul>
+						<li>Desarrollador de videojuegos independiente, 10/2024 - 10/2025
+						</li>
+						<li><img src="CV/logo-ovsm.jpg" alt="Logo OVSM"><br>Observatorio Vulcanológico y Sismológico de Martinica
+							<ul>
+								<li>Ingeniero de investigación, 03/2024 - 07/2024</li>
+								<li>Responsable técnico, 03/2023 - 03/2024</li>
+							</ul>
+						</li>
+						<li><img src="CV/logo-ipev.jpg" alt="Logo IPEV"><br>Instituto Polar Francés
+							<ul>
+								<li>Técnico electrónico científico, 08/2021 - 01/2023</li>
+							</ul>
+						</li>
+						<li><img src="CV/logo-lsce.jpg" alt="Logo LSCE"><br>Laboratorio de Ciencias del Clima y del Medio Ambiente
+							<ul>
+								<li>Ingeniero de investigación, 01/2020 - 07/2021</li>
+							</ul>
+						</li>
+						<li><img src="CV/logo-arianegroup.jpg" alt="Logo ArianeGroup"><br>Consultor para Arianegroup
+							<ul>
+								<li>Desarrollador de software, 04/2019 - 12/2019</li>
+							</ul>
+						</li>
+						<li><br>SNCF - Transilien
+							<ul>
+								<li>Aprendizaje - desarrollador de software, 07/2017 - 07/2018</li>
+							</ul>
+						</li>
+						<li>Ainolabs (start-up de realidad virtual)
+							<ul>
+								<li>Aprendizaje - desarrollador de software, 07/2015 - 07/2017</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Version allemande -->
+				<div class="bandeau_CV lang-content hidden" data-lang="de">
+					<b>Unternehmen und besetzte Positionen</b>
+					<ul>
+						<li>Unabhängiger Videospielentwickler, 10/2024 - 10/2025
+						</li>
+						<li><img src="CV/logo-ovsm.jpg" alt="Logo OVSM"><br>Vulkanologisches und Seismologisches Observatorium von Martinique
+							<ul>
+								<li>Forschungsingenieur, 03/2024 - 07/2024</li>
+								<li>Technischer Leiter, 03/2023 - 03/2024</li>
+							</ul>
+						</li>
+						<li><img src="CV/logo-ipev.jpg" alt="Logo IPEV"><br>Französisches Polarinstitut
+							<ul>
+								<li>Wissenschaftlicher Elektroniktechniker, 08/2021 - 01/2023</li>
+							</ul>
+						</li>
+						<li><img src="CV/logo-lsce.jpg" alt="Logo LSCE"><br>Labor für Klima- und Umweltwissenschaften
+							<ul>
+								<li>Forschungsingenieur, 01/2020 - 07/2021</li>
+							</ul>
+						</li>
+						<li><img src="CV/logo-arianegroup.jpg" alt="Logo ArianeGroup"><br>Berater für Arianegroup
+							<ul>
+								<li>Softwareentwickler, 04/2019 - 12/2019</li>
+							</ul>
+						</li>
+						<li><br>SNCF - Transilien
+							<ul>
+								<li>Ausbildung - Softwareentwickler, 07/2017 - 07/2018</li>
+							</ul>
+						</li>
+						<li>Ainolabs (Virtual-Reality-Start-up)
+							<ul>
+								<li>Ausbildung - Softwareentwickler, 07/2015 - 07/2017</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<div id="BilletsWindows">	
+
+		
 				<!-- Perso -->
+				
+				<div class="billet"">
+					<a href= "CV/Videogame-sailing/Videogame_sailing.html">
+						<img src="CV/Videogame-sailing/videogame_square.jpg">
+					</a>
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Jeu vidéo de course de voile</h2>
+						<div class="project-tech">C#, C++, simulation de fluide, Godot, Unity 3D</div>
+						<div class="project-meta">Projet en indépendant • 2025</div>
+					</div>
 
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Sailing Racing Video Game</h2>
+						<div class="project-tech">C#, C++, fluid simulation, Godot, Unity 3D</div>
+						<div class="project-meta">Independent project • 2025</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Videojuego de regatas de vela</h2>
+						<div class="project-tech">C#, C++, simulación de fluidos, Godot, Unity 3D</div>
+						<div class="project-meta">Proyecto independiente • 2025</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Segelrennen-Videospiel</h2>
+						<div class="project-tech">C#, C++, Fluidsimulation, Godot, Unity 3D</div>
+						<div class="project-meta">Unabhängiges Projekt • 2025</div>
+					</div>
+				</div>
 				
 				
 				<!-- OVSM -->
-				
-				<div class="billet"">
-					<a href= "CV/Videogame/Videogame.html">
-						<img src="CV/Videogame/videogame_square.jpg">
-					</a>
-					<div class="titreDeLaPeinture02">Jeu vidéo de course de voile</div></br>
-					<div class ="descriptifDeLaPeinture">
-						C#, C++, simulaton de fluide, Godot, Unity 3D<br>
-						Projet en indépendant</br>
-						2025
-					</div>
-				</div>
 				
 				<div class="billet"">
 					<a href= "CV/OVSM-doc_technique/OVSM-doc_technique.html">
 						<img src="CV/OVSM-doc_technique/centaurs_square.jpg">
 						<img src="CV/logo-ovsm.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Responsable Technique d'un observatoire</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Responsable Technique d'un observatoire</h2>
+						<div class="project-meta">Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique • 2024</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Technical Manager of an Observatory</h2>
+						<div class="project-meta">Technical Manager at the Volcanological and Seismological Observatory of Martinique • 2024</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Responsable Técnico de un observatorio</h2>
+						<div class="project-meta">Responsable Técnico en el Observatorio Vulcanológico y Sismológico de Martinica • 2024</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Technischer Leiter eines Observatoriums</h2>
+						<div class="project-meta">Technischer Leiter am Vulkanologischen und Seismologischen Observatorium von Martinique • 2024</div>
 					</div>
 				</div>
 				
@@ -151,11 +367,32 @@
 						<img src="CV/OVSM-field_interventions/field_square.jpg">
 						<img src="CV/logo-ovsm.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Soutien aux équipes terrain pour des manips scientifiques et techniques</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - interventions terrain<br>
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Soutien aux équipes terrain pour des manips scientifiques et techniques</h2>
+						<div class="project-tech">Électronique - interventions terrain</div>
+						<div class="project-meta">Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique • 2024</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Field Team Support for Scientific and Technical Operations</h2>
+						<div class="project-tech">Electronics - field operations</div>
+						<div class="project-meta">Technical Manager at the Volcanological and Seismological Observatory of Martinique • 2024</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Apoyo a los equipos de campo para operaciones científicas y técnicas</h2>
+						<div class="project-tech">Electrónica - intervenciones en campo</div>
+						<div class="project-meta">Responsable Técnico en el Observatorio Vulcanológico y Sismológico de Martinica • 2024</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Unterstützung der Feldteams bei wissenschaftlichen und technischen Einsätzen</h2>
+						<div class="project-tech">Elektronik - Feldeinsätze</div>
+						<div class="project-meta">Technischer Leiter am Vulkanologischen und Seismologischen Observatorium von Martinique • 2024</div>
 					</div>
 				</div>
 				
@@ -164,11 +401,32 @@
 						<img src="CV/OVSM-fix_stations/fix_stations_square.jpg">
 						<img src="CV/logo-ovsm.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Entretien, réparation et installation de stations</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Interventions terrain - electronique</br>
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Entretien, réparation et installation de stations</h2>
+						<div class="project-tech">Interventions terrain - électronique</div>
+						<div class="project-meta">Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique • 2024</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Maintenance, Repair and Installation of Stations</h2>
+						<div class="project-tech">Field operations - electronics</div>
+						<div class="project-meta">Technical Manager at the Volcanological and Seismological Observatory of Martinique • 2024</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Mantenimiento, reparación e instalación de estaciones</h2>
+						<div class="project-tech">Intervenciones en campo - electrónica</div>
+						<div class="project-meta">Responsable Técnico en el Observatorio Vulcanológico y Sismológico de Martinica • 2024</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Wartung, Reparatur und Installation von Stationen</h2>
+						<div class="project-tech">Feldeinsätze - Elektronik</div>
+						<div class="project-meta">Technischer Leiter am Vulkanologischen und Seismologischen Observatorium von Martinique • 2024</div>
 					</div>
 				</div>
 				
@@ -177,11 +435,32 @@
 						<img src="CV/OVSM-concrete/concrete square.jpg">
 						<img src="CV/logo-ovsm.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Installation d'un mât pour antenne parabolique</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Béton, fixation de mât acier</br>
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Installation d'un mât pour antenne parabolique</h2>
+						<div class="project-tech">Béton, fixation de mât acier</div>
+						<div class="project-meta">Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique • 2024</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Installation of a Mast for Parabolic Antenna</h2>
+						<div class="project-tech">Concrete, steel mast mounting</div>
+						<div class="project-meta">Technical Manager at the Volcanological and Seismological Observatory of Martinique • 2024</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Instalación de un mástil para antena parabólica</h2>
+						<div class="project-tech">Hormigón, fijación de mástil de acero</div>
+						<div class="project-meta">Responsable Técnico en el Observatorio Vulcanológico y Sismológico de Martinica • 2024</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Installation eines Mastes für Parabolantenne</h2>
+						<div class="project-tech">Beton, Stahlmastbefestigung</div>
+						<div class="project-meta">Technischer Leiter am Vulkanologischen und Seismologischen Observatorium von Martinique • 2024</div>
 					</div>
 				</div>
 				
@@ -190,83 +469,100 @@
 						<img src="CV/OVSM-morne_bigot/morne bigot square.jpg">
 						<img src="CV/logo-ovsm.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Modernisation d'un noeud de communication du réseau d'instruments</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique, électrécité, instrumentation</br>
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Modernisation d'un nœud de communication du réseau d'instruments</h2>
+						<div class="project-tech">Électronique, électricité, instrumentation</div>
+						<div class="project-meta">Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique • 2024</div>
 					</div>
-				</div>
-				
-				<!--
-				<div class="billet"">
-					<a href= "CV/OVSM-elagage/OVSM-elagage.html">
-						<img src="CV/OVSM-elagage/elagage square.jpg">
-						<img src="CV/logo-ovsm.jpg">
-					</a>
-					<div class="titreDeLaPeinture02">élagage de stations</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Intervention terrain</br>
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Modernization of a Communication Node in the Instrument Network</h2>
+						<div class="project-tech">Electronics, electricity, instrumentation</div>
+						<div class="project-meta">Technical Manager at the Volcanological and Seismological Observatory of Martinique • 2024</div>
 					</div>
-				</div>
-				-->
-				
-				<!--
-				<div class="billet"">
-					<a href= "CV/OVSM-electrical_grounding/OVSM-electrical_grounding.html">
-						<img src="CV/OVSM-electrical_grounding/electrical grounding square.jpg">
-						<img src="CV/logo-ovsm.jpg">
-					</a>
-					<div class="titreDeLaPeinture02">Mise à la terre de la baie informatique</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electrécité courants faibles</br>
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Modernización de un nodo de comunicación de la red de instrumentos</h2>
+						<div class="project-tech">Electrónica, electricidad, instrumentación</div>
+						<div class="project-meta">Responsable Técnico en el Observatorio Vulcanológico y Sismológico de Martinica • 2024</div>
 					</div>
-				</div>
-				-->
-			
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Modernisierung eines Kommunikationsknotens im Instrumentennetzwerk</h2>
+						<div class="project-tech">Elektronik, Elektrizität, Instrumentierung</div>
+						<div class="project-meta">Technischer Leiter am Vulkanologischen und Seismologischen Observatorium von Martinique • 2024</div>
+					</div>
+				</div>			
 				
 				<div class="billet"">
 					<a href= "CV/OVSM-manzo/OVSM-manzo.html">
 						<img src="CV/OVSM-manzo/manzo_square.jpg">
 						<img src="CV/logo-ovsm.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Modernisation de l'instrumentation du barrage de La Manzo</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Interventions terrain - communication via modem ethernet</br>
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Modernisation de l'instrumentation du barrage de La Manzo</h2>
+						<div class="project-tech">Interventions terrain - communication via modem ethernet</div>
+						<div class="project-meta">Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique • 2024</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Modernization of La Manzo Dam Instrumentation</h2>
+						<div class="project-tech">Field operations - ethernet modem communication</div>
+						<div class="project-meta">Technical Manager at the Volcanological and Seismological Observatory of Martinique • 2024</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Modernización de la instrumentación de la presa de La Manzo</h2>
+						<div class="project-tech">Intervenciones en campo - comunicación vía módem ethernet</div>
+						<div class="project-meta">Responsable Técnico en el Observatorio Vulcanológico y Sismológico de Martinica • 2024</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Modernisierung der Instrumentierung des La Manzo-Staudamms</h2>
+						<div class="project-tech">Feldeinsätze - Kommunikation über Ethernet-Modem</div>
+						<div class="project-meta">Technischer Leiter am Vulkanologischen und Seismologischen Observatorium von Martinique • 2024</div>
 					</div>
 				</div>
-				
-				<!--
-				<div class="billet"">
-					<a href= "CV/OVSM-maps/OVSM-maps.html">
-						<img src="CV/OVSM-maps/maps_square.jpg">
-						<img src="CV/logo-ovsm.jpg">
-					</a>
-					<div class="titreDeLaPeinture02">Réalisation des cartes du réseau d'instruments</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Documentation</br>
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
-					</div>
-				</div>
-				-->
 				
 				<div class="billet"">
 					<a href= "CV/OVSM-RAP/OVSM-RAP.html">
 						<img src="CV/OVSM-RAP/rap_square.jpg">
 						<img src="CV/logo-ovsm.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Conception, fabrication et installation de stations sismiques RAP</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - informatique - instrumentation - tranfert de données - conception de pièces acier - fabrication - achats - administratif</br>
-						Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-						2024
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Conception, fabrication et installation de stations sismiques RAP</h2>
+						<div class="project-tech">Électronique - informatique - instrumentation - transfert de données - conception de pièces acier - fabrication - achats - administratif</div>
+						<div class="project-meta">Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique • 2024</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Design, Manufacturing and Installation of RAP Seismic Stations</h2>
+						<div class="project-tech">Electronics - IT - instrumentation - data transfer - steel parts design - manufacturing - procurement - administration</div>
+						<div class="project-meta">Technical Manager at the Volcanological and Seismological Observatory of Martinique • 2024</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Diseño, fabricación e instalación de estaciones sísmicas RAP</h2>
+						<div class="project-tech">Electrónica - informática - instrumentación - transferencia de datos - diseño de piezas de acero - fabricación - compras - administración</div>
+						<div class="project-meta">Responsable Técnico en el Observatorio Vulcanológico y Sismológico de Martinica • 2024</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Entwurf, Herstellung und Installation von seismischen RAP-Stationen</h2>
+						<div class="project-tech">Elektronik - IT - Instrumentierung - Datenübertragung - Stahlteileentwurf - Fertigung - Beschaffung - Verwaltung</div>
+						<div class="project-meta">Technischer Leiter am Vulkanologischen und Seismologischen Observatorium von Martinique • 2024</div>
 					</div>
 				</div>
 				
@@ -278,11 +574,32 @@
 						<img src="CV/IPEV-field_interventions/field_square.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Interventions terrain pour des manips scientifiques et techniques</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - terrain</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Interventions terrain pour des manips scientifiques et techniques</h2>
+						<div class="project-tech">Électronique - terrain</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Field Operations for Scientific and Technical Procedures</h2>
+						<div class="project-tech">Electronics - field work</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Intervenciones en campo para operaciones científicas y técnicas</h2>
+						<div class="project-tech">Electrónica - campo</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Feldeinsätze für wissenschaftliche und technische Arbeiten</h2>
+						<div class="project-tech">Elektronik - Feldeinsatz</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>
 				
@@ -291,11 +608,32 @@
 						<img src="CV/IPEV-pluvio/pluvio square.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Analyse pannes pluviomètre</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - analyse de pannes</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Analyse pannes pluviomètre</h2>
+						<div class="project-tech">Électronique - analyse de pannes</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Rain Gauge Failure Analysis</h2>
+						<div class="project-tech">Electronics - failure analysis</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Análisis de fallos de pluviómetro</h2>
+						<div class="project-tech">Electrónica - análisis de fallos</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Fehleranalyse Regenmesser</h2>
+						<div class="project-tech">Elektronik - Fehleranalyse</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>
 				
@@ -304,11 +642,32 @@
 						<img src="CV/IPEV-tableau_mission/tableau mission square.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Conception de boutons tactiles analogiques</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique analogique - impression 3D</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Conception de boutons tactiles analogiques</h2>
+						<div class="project-tech">Électronique analogique - impression 3D</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Design of Analog Touch Buttons</h2>
+						<div class="project-tech">Analog electronics - 3D printing</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Diseño de botones táctiles analógicos</h2>
+						<div class="project-tech">Electrónica analógica - impresión 3D</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Entwurf analoger Berührungstasten</h2>
+						<div class="project-tech">Analogelektronik - 3D-Druck</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>
 				
@@ -317,11 +676,32 @@
 						<img src="CV/IPEV-buzzers/IPEV-buzzers.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Conception et fabrication de buzzers</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - programmation - impression 3D - menuiserie</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Conception et fabrication de buzzers</h2>
+						<div class="project-tech">Électronique - programmation - impression 3D - menuiserie</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Design and Manufacturing of Buzzers</h2>
+						<div class="project-tech">Electronics - programming - 3D printing - carpentry</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Diseño y fabricación de zumbadores</h2>
+						<div class="project-tech">Electrónica - programación - impresión 3D - carpintería</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Entwurf und Herstellung von Buzzern</h2>
+						<div class="project-tech">Elektronik - Programmierung - 3D-Druck - Tischlerei</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>
 				
@@ -330,11 +710,32 @@
 						<img src="CV/IPEV-rotor/rotor_square.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Conception et fabrication d'un rotor d'hélicoptère radiocommandé</div></br>
-					<div class ="descriptifDeLaPeinture">
-						CAO (CATIA)- impression 3D</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Conception et fabrication d'un rotor d'hélicoptère radiocommandé</h2>
+						<div class="project-tech">CAO (CATIA) - impression 3D</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Design and Manufacturing of a Radio-Controlled Helicopter Rotor</h2>
+						<div class="project-tech">CAD (CATIA) - 3D printing</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Diseño y fabricación de un rotor de helicóptero radiocontrolado</h2>
+						<div class="project-tech">CAD (CATIA) - impresión 3D</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Entwurf und Herstellung eines ferngesteuerten Hubschrauberrotors</h2>
+						<div class="project-tech">CAD (CATIA) - 3D-Druck</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>	
 				
@@ -343,11 +744,32 @@
 						<img src="CV/IPEV-chantal/chantal_square_2.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Réorganisation d'un schelter d'intruments de mesures</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - Organisation - menuiserie - impression 3D</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Réorganisation d'un shelter d'instruments de mesures</h2>
+						<div class="project-tech">Électronique - Organisation - menuiserie - impression 3D</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Reorganization of a Measurement Instrument Shelter</h2>
+						<div class="project-tech">Electronics - organization - carpentry - 3D printing</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Reorganización de un refugio de instrumentos de medición</h2>
+						<div class="project-tech">Electrónica - organización - carpintería - impresión 3D</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Reorganisation eines Messgeräteschutzes</h2>
+						<div class="project-tech">Elektronik - Organisation - Tischlerei - 3D-Druck</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>	
 				
@@ -356,11 +778,32 @@
 						<img src="CV/IPEV-rayco/rayco_square.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Diagnostique des capteur météo du détecteur de rayons cosmiques</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - analyse de pannes</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Diagnostic des capteurs météo du détecteur de rayons cosmiques</h2>
+						<div class="project-tech">Électronique - analyse de pannes</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Diagnosis of Weather Sensors on the Cosmic Ray Detector</h2>
+						<div class="project-tech">Electronics - failure analysis</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Diagnóstico de sensores meteorológicos del detector de rayos cósmicos</h2>
+						<div class="project-tech">Electrónica - análisis de fallos</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Diagnose der Wettersensoren des kosmischen Strahlendetektors</h2>
+						<div class="project-tech">Elektronik - Fehleranalyse</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>		
 				
@@ -369,39 +812,66 @@
 						<img src="CV/IPEV-get_sismic_data/get_seisms_square.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Développement d'un outil de récupération de données sismiques</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Développement logiciel - Python - requêtes web</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Développement d'un outil de récupération de données sismiques</h2>
+						<div class="project-tech">Développement logiciel - Python - requêtes web</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Development of a Seismic Data Recovery Tool</h2>
+						<div class="project-tech">Software development - Python - web requests</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Desarrollo de una herramienta de recuperación de datos sísmicos</h2>
+						<div class="project-tech">Desarrollo de software - Python - solicitudes web</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Entwicklung eines Werkzeugs zur Wiederherstellung seismischer Daten</h2>
+						<div class="project-tech">Softwareentwicklung - Python - Webanfragen</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>
-				
-				<!--
-				<div class="billet"">
-					<a href= "CV/IPEV-pingouins_rfid/IPEV-pingouins_rfid.html">
-						<img src="picture.jpg">
-						<img src="CV/logo-ipev.jpg">
-					</a>
-					<div class="titreDeLaPeinture02">Pose des antennes RFID de manchots</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Intervention terrain</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
-					</div>
-				</div>
-				-->
 				
 				<div class="billet"">
 					<a href= "CV/IPEV-saisir_mesbs/IPEV-saisir_mesbs.html">
 						<img src="CV/IPEV-saisir_mesbs/mesabs_square.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Développement d'un outil de saisie de données</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Développement logiciel</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Développement d'un outil de saisie de données</h2>
+						<div class="project-tech">Développement logiciel - Python</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Development of a Data Entry Tool</h2>
+						<div class="project-tech">Software development - Python</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Desarrollo de una herramienta de entrada de datos</h2>
+						<div class="project-tech">Desarrollo de software - Python</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Entwicklung eines Dateneingabewerkzeugs</h2>
+						<div class="project-tech">Softwareentwicklung - Python</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>
 				
@@ -410,11 +880,32 @@
 						<img src="CV/IPEV-antavia/antavia_square.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Installation des instruments de suivi d'une colonie de manchots</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - intervention terrain</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Installation des instruments de suivi d'une colonie de manchots</h2>
+						<div class="project-tech">Électronique - intervention terrain</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Installation of Monitoring Instruments for a Penguin Colony</h2>
+						<div class="project-tech">Electronics - field operations</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Instalación de instrumentos de seguimiento de una colonia de pingüinos</h2>
+						<div class="project-tech">Electrónica - intervención en campo</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Installation von Überwachungsinstrumenten für eine Pinguinkolonie</h2>
+						<div class="project-tech">Elektronik - Feldeinsatz</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>
 				
@@ -423,11 +914,32 @@
 						<img src="CV/IPEV-case_bayonne/bayonne_square.jpg">
 						<img src="CV/logo-ipev.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Refonte ergonomique d'un acquisition d'antenne</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - impression 3D - CAO - fabrication</br>
-						Electronicien Science à l'Institut Polaire Français</br>
-						2022
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Refonte ergonomique d'un système d'acquisition d'antenne</h2>
+						<div class="project-tech">Électronique - impression 3D - CAO - fabrication</div>
+						<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Ergonomic Redesign of an Antenna Acquisition System</h2>
+						<div class="project-tech">Electronics - 3D printing - CAD - manufacturing</div>
+						<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Rediseño ergonómico de un sistema de adquisición de antena</h2>
+						<div class="project-tech">Electrónica - impresión 3D - CAD - fabricación</div>
+						<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Ergonomische Neugestaltung eines Antennenerfassungssystems</h2>
+						<div class="project-tech">Elektronik - 3D-Druck - CAD - Fertigung</div>
+						<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
 					</div>
 				</div>
 
@@ -439,11 +951,32 @@
 						<img src="CV/LSCE-baloons/baloons_square.jpg">
 						<img src="CV/logo-lsce.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Participation aux mission d'échantillonage de l'air par ballon</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Intervention terrain</br>
-						Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement</br>
-						2021
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Participation aux missions d'échantillonnage de l'air par ballon</h2>
+						<div class="project-tech">Intervention terrain</div>
+						<div class="project-meta">Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement • 2021</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Participation in Balloon-Based Air Sampling Missions</h2>
+						<div class="project-tech">Field operations</div>
+						<div class="project-meta">Research Engineer at the Laboratory of Climate and Environmental Sciences • 2021</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Participación en misiones de muestreo de aire con globo</h2>
+						<div class="project-tech">Intervención en campo</div>
+						<div class="project-meta">Ingeniero de investigación en el Laboratorio de Ciencias del Clima y del Medio Ambiente • 2021</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Teilnahme an ballongestützten Luftprobenmissionen</h2>
+						<div class="project-tech">Feldeinsatz</div>
+						<div class="project-meta">Forschungsingenieur am Labor für Klima- und Umweltwissenschaften • 2021</div>
 					</div>
 				</div>
 				
@@ -452,11 +985,32 @@
 						<img src="CV/LSCE-casing_lidar/lidar_square.jpg">
 						<img src="CV/logo-lsce.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Automatisation du boîtier d'un instrument de mesure</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - informatique - instrumentation - tranfert de données - conception de pièce acier - fabrication - achats - documentation</br>
-						Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement</br>
-						2021
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Automatisation du boîtier d'un instrument de mesure</h2>
+						<div class="project-tech">Électronique - informatique - instrumentation - transfert de données - conception de pièce acier - fabrication - achats - documentation</div>
+						<div class="project-meta">Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement • 2021</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Automation of a Measurement Instrument Enclosure</h2>
+						<div class="project-tech">Electronics - IT - instrumentation - data transfer - steel part design - manufacturing - procurement - documentation</div>
+						<div class="project-meta">Research Engineer at the Laboratory of Climate and Environmental Sciences • 2021</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Automatización de la carcasa de un instrumento de medición</h2>
+						<div class="project-tech">Electrónica - informática - instrumentación - transferencia de datos - diseño de pieza de acero - fabricación - compras - documentación</div>
+						<div class="project-meta">Ingeniero de investigación en el Laboratorio de Ciencias del Clima y del Medio Ambiente • 2021</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Automatisierung des Gehäuses eines Messgeräts</h2>
+						<div class="project-tech">Elektronik - IT - Instrumentierung - Datenübertragung - Stahlteilentwurf - Fertigung - Beschaffung - Dokumentation</div>
+						<div class="project-meta">Forschungsingenieur am Labor für Klima- und Umweltwissenschaften • 2021</div>
 					</div>
 				</div>
 				
@@ -465,11 +1019,32 @@
 						<img src="CV/LSCE-scheduler/scheduler square.jpg">
 						<img src="CV/logo-lsce.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Développement d'un logiciel de commande d'électrovannes</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Raspberry Pi, serveur Apache, HMTL, CSS, PHP, JavaScript, communication Socket, Arduino, GitHub, gestion de projet</br>
-						Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement</br>
-						2021
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Développement d'un logiciel de commande d'électrovannes</h2>
+						<div class="project-tech">Raspberry Pi, serveur Apache, HTML, CSS, PHP, JavaScript, communication Socket, Arduino, GitHub, gestion de projet</div>
+						<div class="project-meta">Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement • 2021</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Development of a Solenoid Valve Control Software</h2>
+						<div class="project-tech">Raspberry Pi, Apache server, HTML, CSS, PHP, JavaScript, Socket communication, Arduino, GitHub, project management</div>
+						<div class="project-meta">Research Engineer at the Laboratory of Climate and Environmental Sciences • 2021</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Desarrollo de un software de control de electroválvulas</h2>
+						<div class="project-tech">Raspberry Pi, servidor Apache, HTML, CSS, PHP, JavaScript, comunicación Socket, Arduino, GitHub, gestión de proyectos</div>
+						<div class="project-meta">Ingeniero de investigación en el Laboratorio de Ciencias del Clima y del Medio Ambiente • 2021</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Entwicklung einer Steuerungssoftware für Magnetventile</h2>
+						<div class="project-tech">Raspberry Pi, Apache-Server, HTML, CSS, PHP, JavaScript, Socket-Kommunikation, Arduino, GitHub, Projektmanagement</div>
+						<div class="project-meta">Forschungsingenieur am Labor für Klima- und Umweltwissenschaften • 2021</div>
 					</div>
 				</div>
 				
@@ -478,18 +1053,34 @@
 						<img src="CV/LSCE-towers_valves/trainou_square.jpg">
 						<img src="CV/logo-lsce.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Automatisation et instrumentation de tours de prélèvement d'air</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - életrécité - informatique - instrumentation - tranfert de données - conception de pièce acier - fabrication - achats - documentation</br>
-						Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement</br>
-						2021
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Automatisation et instrumentation de tours de prélèvement d'air</h2>
+						<div class="project-tech">Électronique - électricité - informatique - instrumentation - transfert de données - conception de pièce acier - fabrication - achats - documentation</div>
+						<div class="project-meta">Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement • 2021</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Automation and Instrumentation of Air Sampling Towers</h2>
+						<div class="project-tech">Electronics - electricity - IT - instrumentation - data transfer - steel part design - manufacturing - procurement - documentation</div>
+						<div class="project-meta">Research Engineer at the Laboratory of Climate and Environmental Sciences • 2021</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Automatización e instrumentación de torres de muestreo de aire</h2>
+						<div class="project-tech">Electrónica - electricidad - informática - instrumentación - transferencia de datos - diseño de pieza de acero - fabricación - compras - documentación</div>
+						<div class="project-meta">Ingeniero de investigación en el Laboratorio de Ciencias del Clima y del Medio Ambiente • 2021</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Automatisierung und Instrumentierung von Luftprobentürmen</h2>
+						<div class="project-tech">Elektronik - Elektrizität - IT - Instrumentierung - Datenübertragung - Stahlteilentwurf - Fertigung - Beschaffung - Dokumentation</div>
+						<div class="project-meta">Forschungsingenieur am Labor für Klima- und Umweltwissenschaften • 2021</div>
 					</div>
 				</div>
-				
-				
-				<!-- YOUTUBE -->
-				
-
 				
 				
 				<!-- ALTRAN -->
@@ -499,20 +1090,55 @@
 						<img src="CV/ALTRAN-arianegroup/rocket_square.jpg">
 						<img src="CV/logo-arianegroup.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Logiciel embarqué dans une fusée pour le contrôle de systèmes mécatroniques</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Développeur informatique</br>
-						Ingénieur consultant chez Altran pour Arianegroup</br>
-						2019
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Logiciel embarqué dans une fusée pour le contrôle de systèmes mécatroniques</h2>
+						<div class="project-tech">Développement informatique Ada</div>
+						<div class="project-meta">Ingénieur consultant chez Altran pour Arianegroup • 2019</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Embedded Software in a Rocket for Mechatronic Systems Control</h2>
+						<div class="project-tech">Ada software development</div>
+						<div class="project-meta">Consulting Engineer at Altran for Arianegroup • 2019</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Software embebido en un cohete para el control de sistemas mecatrónicos</h2>
+						<div class="project-tech">Desarrollo de software Ada</div>
+						<div class="project-meta">Ingeniero consultor en Altran para Arianegroup • 2019</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Eingebettete Software in einer Rakete zur Steuerung mechatronischer Systeme</h2>
+						<div class="project-tech">Ada-Softwareentwicklung</div>
+						<div class="project-meta">Beratender Ingenieur bei Altran für Arianegroup • 2019</div>
 					</div>
 				</div>
-				
-
 
 			</div>
 			
-			<div id="bandeau_CV">
+			<!-- Version française -->
+			<div class="bandeau_CV lang-content" data-lang="fr">
 				<b>Projets personnels</b>
+			</div>
+
+			<!-- Version anglaise -->
+			<div class="bandeau_CV lang-content hidden" data-lang="en">
+				<b>Personal Projects</b>
+			</div>
+
+			<!-- Version espagnole -->
+			<div class="bandeau_CV lang-content hidden" data-lang="es">
+				<b>Proyectos personales</b>
+			</div>
+
+			<!-- Version allemande -->
+			<div class="bandeau_CV lang-content hidden" data-lang="de">
+				<b>Persönliche Projekte</b>
 			</div>
 			
 			<div id="BilletsWindows">
@@ -522,11 +1148,32 @@
 						<img src="CV/Hermione-menuiserie/romaillet_square.jpg">
 						<img src="CV/logo-hermione.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Menuiserie</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Menuiserie - ciseau à bois, défonceuse, rabot à main, collage, dégo-rabot, scie à ruban</br>
-						bénévole pour l'association Hermione Lafayette</br>
-						2025
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Menuiserie</h2>
+						<div class="project-tech">Menuiserie - ciseau à bois, défonceuse, rabot à main, collage, dégau-rabot, scie à ruban</div>
+						<div class="project-meta">Bénévole pour l'association Hermione Lafayette • 2025</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Carpentry</h2>
+						<div class="project-tech">Carpentry - wood chisel, router, hand plane, gluing, jointer-planer, band saw</div>
+						<div class="project-meta">Volunteer for Hermione Lafayette association • 2025</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Carpintería</h2>
+						<div class="project-tech">Carpintería - formón, fresadora, cepillo de mano, encolado, cepilladora-regruesadora, sierra de cinta</div>
+						<div class="project-meta">Voluntario para la asociación Hermione Lafayette • 2025</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Tischlerei</h2>
+						<div class="project-tech">Tischlerei - Stechbeitel, Oberfräse, Handhobel, Verleimung, Abricht-Dickenhobel, Bandsäge</div>
+						<div class="project-meta">Freiwilliger für den Verein Hermione Lafayette • 2025</div>
 					</div>
 				</div>
 				
@@ -535,11 +1182,32 @@
 						<img src="CV/YOUTUBE/youtube_square.jpg">
 						<img src="CV/logo-youtube.jpg">
 					</a>
-					<div class="titreDeLaPeinture02">Chaîne YouTube de vulgarisation technique</div></br>
-					<div class ="descriptifDeLaPeinture">
-						Electronique - impression 3D - multimedia</br>
-						Création en indépendant</br>
-						2019
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Chaîne YouTube de vulgarisation technique</h2>
+						<div class="project-tech">Électronique - impression 3D - multimédia</div>
+						<div class="project-meta">Création en indépendant • 2019</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Technical Education YouTube Channel</h2>
+						<div class="project-tech">Electronics - 3D printing - multimedia</div>
+						<div class="project-meta">Independent project • 2019</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Canal de YouTube de divulgación técnica</h2>
+						<div class="project-tech">Electrónica - impresión 3D - multimedia</div>
+						<div class="project-meta">Proyecto independiente • 2019</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">YouTube-Kanal für technische Wissensvermittlung</h2>
+						<div class="project-tech">Elektronik - 3D-Druck - Multimedia</div>
+						<div class="project-meta">Unabhängiges Projekt • 2019</div>
 					</div>
 				</div>
 				
@@ -547,26 +1215,54 @@
 					<a href= "CV/PERSO-scenic/PERSO-scenic.html">
 						<img src="CV/PERSO-scenic/scenic_square.jpg">
 					</a>
-				<div class="titreDeLaPeinture02">Aménagement d'une voiture en cellule habitable</div></br>
-				<div class ="descriptifDeLaPeinture">
-					Menuiserie - couture - impression 3D</br>
-					Projet personnel</br>
-					2025
+					<!-- Version française -->
+					<div class="lang-content" data-lang="fr">
+						<h2 class="project-title">Aménagement d'une voiture en cellule habitable</h2>
+						<div class="project-tech">Menuiserie - couture - impression 3D</div>
+						<div class="project-meta">Projet personnel • 2025</div>
+					</div>
+
+					<!-- Version anglaise -->
+					<div class="lang-content hidden" data-lang="en">
+						<h2 class="project-title">Car Conversion into Living Space</h2>
+						<div class="project-tech">Carpentry - sewing - 3D printing</div>
+						<div class="project-meta">Personal project • 2025</div>
+					</div>
+
+					<!-- Version espagnole -->
+					<div class="lang-content hidden" data-lang="es">
+						<h2 class="project-title">Conversión de un coche en espacio habitable</h2>
+						<div class="project-tech">Carpintería - costura - impresión 3D</div>
+						<div class="project-meta">Proyecto personal • 2025</div>
+					</div>
+
+					<!-- Version allemande -->
+					<div class="lang-content hidden" data-lang="de">
+						<h2 class="project-title">Umbau eines Autos in einen Wohnraum</h2>
+						<div class="project-tech">Tischlerei - Nähen - 3D-Druck</div>
+						<div class="project-meta">Persönliches Projekt • 2025</div>
+					</div>
 				</div>
 			</div>			
 		</main>
 		
 		<footer>
 			<hr size="1" color="grey">
-			<div id ="indicationsSousMonNom02">
+			<div id="indicationsSousMonNom02">
 				<br/>
 				© copyright Iban Fernandez<br/>
-				tous droits réservés
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
 				<br/>
 				<br/>
 				<br/>
 			</div>
 		</footer>
+		
+		
+		<script src="script.js"></script>
 		
 	</body>
 	

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=UTF-8 />
+		<link rel="stylesheet" href="../../style.css" />
+		<!-- pour un affichage correct sur les téléphonnes -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+		<title>fernandez artwork</title>
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		
+			<div id="TutoRobot">
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
+
+				<!-- Version française -->
+				<div class="lang-content" data-lang="fr">
+					<h2 class="project-title">Jeu vidéo de course de voile</h2>
+					<div class="project-tech">C#, C++, simulation de fluide, Godot, Unity 3D</div>
+					<div class="project-meta">Projet en indépendant • 2025</div>
+					<div class="project-description">
+						<p>Ce jeu propose une physique très réaliste du vent et de l'eau, afin de retranscrire avec exactitude les réglages des voiles et la position de l'équipage sur le comportement du bateau.</p>
+						<p>Pour ce faire j'ai codé une simulation de fluide dédiée à la voile, optimisée pour du temps réel sur smartphones. Cette simulation vient ensuite s'interfacer avec le moteur physique du jeu vidéo, qui lui ne gère que la physique du solide.</p>
+					</div>
+				</div>
+				
+				<!-- Version anglaise -->
+				<div class="lang-content hidden" data-lang="en">
+					<h2 class="project-title">Sailing Racing Video Game</h2>
+					<div class="project-tech">C#, C++, fluid simulation, Godot, Unity 3D</div>
+					<div class="project-meta">Independent project • 2025</div>
+					<div class="project-description">
+						<p>This game features highly realistic wind and water physics to accurately simulate the impact of sail adjustments and crew positioning on boat behavior.</p>
+						<p>To achieve this, I developed a custom fluid simulation specifically designed for sailing, optimized for real-time performance on smartphones. This simulation interfaces with the game engine's physics system, which handles rigid body dynamics.</p>
+					</div>
+				</div>
+				
+				<!-- Version espagnole -->
+				<div class="lang-content hidden" data-lang="es">
+					<h2 class="project-title">Videojuego de regatas de vela</h2>
+					<div class="project-tech">C#, C++, simulación de fluidos, Godot, Unity 3D</div>
+					<div class="project-meta">Proyecto independiente • 2025</div>
+					<div class="project-description">
+						<p>Este juego presenta una física muy realista del viento y el agua, con el fin de reproducir con exactitud el impacto de los ajustes de las velas y la posición de la tripulación en el comportamiento del barco.</p>
+						<p>Para lograrlo, he desarrollado una simulación de fluidos dedicada a la vela, optimizada para tiempo real en smartphones. Esta simulación se integra con el motor físico del videojuego, que solo gestiona la física de sólidos rígidos.</p>
+					</div>
+				</div>
+				
+				<!-- Version allemande -->
+				<div class="lang-content hidden" data-lang="de">
+					<h2 class="project-title">Segelrennen-Videospiel</h2>
+					<div class="project-tech">C#, C++, Fluidsimulation, Godot, Unity 3D</div>
+					<div class="project-meta">Unabhängiges Projekt • 2025</div>
+					<div class="project-description">
+						<p>Dieses Spiel bietet eine sehr realistische Wind- und Wasserphysik, um die Auswirkungen der Segeleinstellungen und der Crew-Positionierung auf das Bootsverhalten präzise wiederzugeben.</p>
+						<p>Dafür habe ich eine speziell auf das Segeln ausgerichtete Fluidsimulation entwickelt, die für Echtzeit-Performance auf Smartphones optimiert ist. Diese Simulation wird dann mit der Physik-Engine des Videospiels verknüpft, die nur die Starrkörperphysik verwaltet.</p>
+					</div>
+				</div>
+				
+				<br>
+				<a href= "https://www.youtube.com/watch?v=6gqnje4_TXE">
+					<img src="1 mini.jpg">
+				</a>
+
+
+			</div>
+		</main>
+		
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		
+		<script src="../../script.js"></script>
+
+	</body>
+</html>
