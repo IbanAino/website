@@ -234,6 +234,15 @@ li a:hover {
 	text-align: justify;
 }
 
+/* Appliquez flex UNIQUEMENT à la galerie */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px; /* Espacement après la galerie */
+}
+
 .project-description p {
 	margin-bottom: 10px;
 }
