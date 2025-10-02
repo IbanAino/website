@@ -10,60 +10,240 @@
 	
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="../../index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="../../paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="../../robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="../../CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 		
 			<div id="TutoRobot">
-				<button onclick="history.back()">Retour</button>
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
 
-				
-				<h3>Modernisation d'un noeud de communication du réseau d'instruments</h3>
-				Electronique, électrécité, instrumentation</br>
-				Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-				2024<br></br>
-				Le station de Morne Bigot est un noeud de communication stratégique du réseau de surveillance de la Martinique. Quatre station lui renvoie leurs donnée, auxquelles elle ajoute ses propres données pour les transmettre par satellite.</br>
-				De violents orages ont grillé un certains nombre d'appareils dans la station. J'ai réalisé le diagnostique des pannes et ai modernisé l'installation en y ajoutant des protections contre la foudre.</br>
-				</br>
-				</br>
-				<b>Mise à niveau de l'installation électrique</b></br>
-				</br>
-				À mon arrivée la station souffrait d'un manque de qualité dans son cablage électrique. J'ai donc fabriqué un panneau propre.</br>
-				</br>
-				Installation AVANT et APRES :</br>
-				<a href= "18 big.jpg">
-					<img src="18 mini.jpg">
-				</a>
-				<a href= "9 big.jpg">
-					<img src="9 mini.jpg">
-				</a>
-				</br>
-				</br>
-				</br>
-				<b>Ajout d'éléments dans le système</b></br>
-				</br>
-				Le nouveau panneau m'a permis d'intégrer des protections contre la foudre. Il m'a aussi permis d'ajouter un régulateur de tension pour alimenter les instruments avec la tension adaptée.</br>
-				<a href= "10 big.jpg">
-					<img src="10 mini.jpg">
-				</a>
-				</br>
-				</br>
-				Au niveau du numériseur situé près de l'istrument, la taille du boitier ne me permettait pas d'jouter proprement une protection contre la foudre. J'ai donc installé un nouveau boitier plus grand, fabriqué une platine de fixation du numériseur pour en faciliter la maintenance et ai ajouté une protection contre la foudre sur le cable RJ45 POE.</br>
-				</br>
-				Installation AVANT et APRES :</br>
-				<a href= "17 big.jpg">
-					<img src="17 mini.jpg">
-				</a>
-				<a href= "5 big.jpg">
-					<img src="5 mini.jpg">
-				</a>
+				<!-- Version française -->
+				<div class="lang-content" data-lang="fr">
+					<h2 class="project-title">Modernisation d'un nœud de communication du réseau d'instruments</h2>
+					<div class="project-tech">Électronique, électricité, instrumentation</div>
+					<div class="project-meta">Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique • 2024</div>
+					<div class="project-description">
+						<br/>
+						La station de Morne Bigot est un nœud de communication stratégique du réseau de surveillance de la Martinique. Quatre stations lui renvoient leurs données, auxquelles elle ajoute ses propres données pour les transmettre par satellite.<br/>
+						De violents orages ont grillé un certain nombre d'appareils dans la station. J'ai réalisé le diagnostic des pannes et ai modernisé l'installation en y ajoutant des protections contre la foudre.<br/>
+						<br/>
+						<br/>
+						<b>Mise à niveau de l'installation électrique</b><br/>
+						<br/>
+						À mon arrivée la station souffrait d'un manque de qualité dans son câblage électrique. J'ai donc fabriqué un panneau propre.<br/>
+						<br/>
+						Installation AVANT et APRÈS :<br/>
+						<a href="18 big.jpg">
+							<img src="18 mini.jpg" alt="Installation avant">
+						</a>
+						<a href="9 big.jpg">
+							<img src="9 mini.jpg" alt="Installation après">
+						</a>
+						<br/>
+						<br/>
+						<br/>
+						<b>Ajout d'éléments dans le système</b><br/>
+						<br/>
+						Le nouveau panneau m'a permis d'intégrer des protections contre la foudre. Il m'a aussi permis d'ajouter un régulateur de tension pour alimenter les instruments avec la tension adaptée.<br/>
+						<a href="10 big.jpg">
+							<img src="10 mini.jpg" alt="Nouveau panneau">
+						</a>
+						<br/>
+						<br/>
+						Au niveau du numériseur situé près de l'instrument, la taille du boîtier ne me permettait pas d'ajouter proprement une protection contre la foudre. J'ai donc installé un nouveau boîtier plus grand, fabriqué une platine de fixation du numériseur pour en faciliter la maintenance et ai ajouté une protection contre la foudre sur le câble RJ45 POE.<br/>
+						<br/>
+						Installation AVANT et APRÈS :<br/>
+						<a href="17 big.jpg">
+							<img src="17 mini.jpg" alt="Boîtier avant">
+						</a>
+						<a href="5 big.jpg">
+							<img src="5 mini.jpg" alt="Boîtier après">
+						</a>
+					</div>
+				</div>
 
+				<!-- Version anglaise -->
+				<div class="lang-content hidden" data-lang="en">
+					<h2 class="project-title">Modernization of a Communication Node in the Instrument Network</h2>
+					<div class="project-tech">Electronics, electricity, instrumentation</div>
+					<div class="project-meta">Technical Manager at the Volcanological and Seismological Observatory of Martinique • 2024</div>
+					<div class="project-description">
+						<br/>
+						The Morne Bigot station is a strategic communication node in Martinique's monitoring network. Four stations send their data to it, to which it adds its own data for satellite transmission.<br/>
+						Violent storms damaged several devices in the station. I performed failure diagnosis and modernized the installation by adding lightning protection.<br/>
+						<br/>
+						<br/>
+						<b>Electrical Installation Upgrade</b><br/>
+						<br/>
+						Upon my arrival, the station suffered from poor quality electrical wiring. I therefore built a clean panel.<br/>
+						<br/>
+						Installation BEFORE and AFTER:<br/>
+						<a href="18 big.jpg">
+							<img src="18 mini.jpg" alt="Installation before">
+						</a>
+						<a href="9 big.jpg">
+							<img src="9 mini.jpg" alt="Installation after">
+						</a>
+						<br/>
+						<br/>
+						<br/>
+						<b>Adding Elements to the System</b><br/>
+						<br/>
+						The new panel allowed me to integrate lightning protection. It also allowed me to add a voltage regulator to power the instruments with the appropriate voltage.<br/>
+						<a href="10 big.jpg">
+							<img src="10 mini.jpg" alt="New panel">
+						</a>
+						<br/>
+						<br/>
+						At the digitizer located near the instrument, the enclosure size did not allow me to properly add lightning protection. I therefore installed a larger new enclosure, manufactured a digitizer mounting plate to facilitate maintenance, and added lightning protection on the RJ45 POE cable.<br/>
+						<br/>
+						Installation BEFORE and AFTER:<br/>
+						<a href="17 big.jpg">
+							<img src="17 mini.jpg" alt="Enclosure before">
+						</a>
+						<a href="5 big.jpg">
+							<img src="5 mini.jpg" alt="Enclosure after">
+						</a>
+					</div>
+				</div>
+
+				<!-- Version espagnole -->
+				<div class="lang-content hidden" data-lang="es">
+					<h2 class="project-title">Modernización de un nodo de comunicación de la red de instrumentos</h2>
+					<div class="project-tech">Electrónica, electricidad, instrumentación</div>
+					<div class="project-meta">Responsable Técnico en el Observatorio Vulcanológico y Sismológico de Martinica • 2024</div>
+					<div class="project-description">
+						<br/>
+						La estación de Morne Bigot es un nodo de comunicación estratégico de la red de vigilancia de Martinica. Cuatro estaciones le envían sus datos, a los que añade sus propios datos para transmitirlos por satélite.<br/>
+						Violentas tormentas dañaron varios dispositivos en la estación. Realicé el diagnóstico de fallos y modernizé la instalación añadiendo protección contra rayos.<br/>
+						<br/>
+						<br/>
+						<b>Actualización de la instalación eléctrica</b><br/>
+						<br/>
+						A mi llegada, la estación sufría de un cableado eléctrico de mala calidad. Por lo tanto, fabriqué un panel limpio.<br/>
+						<br/>
+						Instalación ANTES y DESPUÉS:<br/>
+						<a href="18 big.jpg">
+							<img src="18 mini.jpg" alt="Instalación antes">
+						</a>
+						<a href="9 big.jpg">
+							<img src="9 mini.jpg" alt="Instalación después">
+						</a>
+						<br/>
+						<br/>
+						<br/>
+						<b>Adición de elementos al sistema</b><br/>
+						<br/>
+						El nuevo panel me permitió integrar protección contra rayos. También me permitió añadir un regulador de tensión para alimentar los instrumentos con el voltaje adecuado.<br/>
+						<a href="10 big.jpg">
+							<img src="10 mini.jpg" alt="Nuevo panel">
+						</a>
+						<br/>
+						<br/>
+						A nivel del digitalizador ubicado cerca del instrumento, el tamaño de la carcasa no me permitía añadir correctamente una protección contra rayos. Por lo tanto, instalé una nueva carcasa más grande, fabriqué una placa de montaje del digitalizador para facilitar el mantenimiento y añadí protección contra rayos en el cable RJ45 POE.<br/>
+						<br/>
+						Instalación ANTES y DESPUÉS:<br/>
+						<a href="17 big.jpg">
+							<img src="17 mini.jpg" alt="Carcasa antes">
+						</a>
+						<a href="5 big.jpg">
+							<img src="5 mini.jpg" alt="Carcasa después">
+						</a>
+					</div>
+				</div>
+
+				<!-- Version allemande -->
+				<div class="lang-content hidden" data-lang="de">
+					<h2 class="project-title">Modernisierung eines Kommunikationsknotens im Instrumentennetzwerk</h2>
+					<div class="project-tech">Elektronik, Elektrizität, Instrumentierung</div>
+					<div class="project-meta">Technischer Leiter am Vulkanologischen und Seismologischen Observatorium von Martinique • 2024</div>
+					<div class="project-description">
+						<br/>
+						Die Station Morne Bigot ist ein strategischer Kommunikationsknoten im Überwachungsnetzwerk von Martinique. Vier Stationen senden ihre Daten an sie, zu denen sie ihre eigenen Daten für die Satellitenübertragung hinzufügt.<br/>
+						Heftige Gewitter beschädigten mehrere Geräte in der Station. Ich führte eine Fehlerdiagnose durch und modernisierte die Installation durch Hinzufügen von Blitzschutz.<br/>
+						<br/>
+						<br/>
+						<b>Upgrade der elektrischen Installation</b><br/>
+						<br/>
+						Bei meiner Ankunft litt die Station unter schlechter Qualität der elektrischen Verkabelung. Ich fertigte daher eine saubere Schalttafel.<br/>
+						<br/>
+						Installation VORHER und NACHHER:<br/>
+						<a href="18 big.jpg">
+							<img src="18 mini.jpg" alt="Installation vorher">
+						</a>
+						<a href="9 big.jpg">
+							<img src="9 mini.jpg" alt="Installation nachher">
+						</a>
+						<br/>
+						<br/>
+						<br/>
+						<b>Hinzufügen von Elementen zum System</b><br/>
+						<br/>
+						Die neue Schalttafel ermöglichte es mir, Blitzschutz zu integrieren. Sie ermöglichte mir auch, einen Spannungsregler hinzuzufügen, um die Instrumente mit der angemessenen Spannung zu versorgen.<br/>
+						<a href="10 big.jpg">
+							<img src="10 mini.jpg" alt="Neue Schalttafel">
+						</a>
+						<br/>
+						<br/>
+						Beim Digitalisierer in der Nähe des Instruments erlaubte mir die Gehäusegröße nicht, ordnungsgemäß einen Blitzschutz hinzuzufügen. Ich installierte daher ein größeres neues Gehäuse, fertigte eine Montageplatte für den Digitalisierer zur Erleichterung der Wartung und fügte Blitzschutz am RJ45-POE-Kabel hinzu.<br/>
+						<br/>
+						Installation VORHER und NACHHER:<br/>
+						<a href="17 big.jpg">
+							<img src="17 mini.jpg" alt="Gehäuse vorher">
+						</a>
+						<a href="5 big.jpg">
+							<img src="5 mini.jpg" alt="Gehäuse nachher">
+						</a>
+					</div>
+				</div>
 			</div>
 		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
 	</body>
 </html>

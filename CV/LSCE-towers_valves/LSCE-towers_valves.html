@@ -9,83 +9,128 @@
 	</head>
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="../../index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="../../paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="../../robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="../../CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<div id="TutoRobot">
-				<button onclick="history.back()">Retour</button>
-				<h3>Automatisation et instrumentation de tours de prélèvement d'air</h3>
-				Electronique - életrécité - informatique - instrumentation - tranfert de données - conception de pièce acier - fabrication - achats - documentation</br>
-				Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement</br>
-				2021<br></br>
-				<a href= "1 big.jpg">
-					<img src="1 mini.jpg">
-				</a><br>
-				<br>
-				Les tours de prélèvement d'air sont parcourus de tuyaux montant jusqu'à une centaine de mètres de hauteur pour prélever de l'air. Une intervention humaine était jusqu'alors nécessaire pour réaliser des tests d'abscnce de fuite.</br>
-				J'ai conçu un système acceuillant des électrovannes pour automatiser ces tests en bas de tour sans avoir à monter.</br>
-				J'ai également adossé à ce système des capteurs météorologiques pour instrumenter la tour (capteurs de température, humidité, pression et de vent).</br>
-				J'ai écrit le code informatique pour interroger ces capteurs er récupérer les données. Ce code, basé sur le paradigme de l'orienté objet, est modulable pour s'adapter à d'autres configurations de stations (nombre de capteurs différents, nombre d'étages de la tour différent...)</br>
-				</br>
-				<ul>
-					<li>Prise en main du cahier des charges, avec modèle de vannes, capteurs et Raspberry Pi imposés</li>
-					<li>Choix du protocole de communication avec les capteurs (RS-485)</li>
-					<li>Choix de l'interface utilisateur pour actionner les vannes (boutons capuchonnés avec voyants lumineux)</li>
-					<li>Dimensionnement électrique</li>
-					<li>Achat des composants</li>
-					<li>Cablâge électrique</li>
-					<li>Conception en CAO et impression 3D des pièces de fixation des electrovannes</li>
-					<li>Ecriture du code en Python pour interoger les capteur</li>
-					<li>Tests du système avant déploiement sur le terrain</li>
-					<li>Documentation de l'ensemble du projet, afin de pouvoir reproduire le système à l'identique chez un sous-traitant</li>
-				</ul>
-				<br>
-				Interieur du boitier électrique de commande et de l'un des trois boitiers qui sur la tour intègrent les électrovannes et interfacent les capteurs :<br>
-				<a href= "10 big.jpg">
-					<img src="10 mini.jpg">
-				</a>
-				<a href= "17 big.jpg">
-					<img src="17 mini.jpg">
-				</a><br>
-				<br>
-				Interface physique pour le pilotage des électrovannes :<br>
-				<a href= "12 big.jpg">
-					<img src="12 mini.jpg">
-				</a><br>
-				<br>
-				Système câblé et prêt à être livré sur site. La palette contient les quatre boitiers électriques et les capteurs météorologiques dans leurs cartons :<br>
-				<a href= "14 big.jpg">
-					<img src="14 mini.jpg">
-				</a>
-				<a href= "16 big.jpg">
-					<img src="16 mini.jpg">
-				</a><br>
-				<br>
-				<br>
-				À partir de cette architecture matérielle et logicielle j'ai dérivé le système pour équiper d'autres stations plus petites. Ci-dessous l'instrumentation d'une station en Corse ne contenant qu'une seule ligne de prélèvement d'air (et donc qu'une seule électrovanne) :<br>
-				<a href= "2 big.jpg">
-					<img src="2 mini.jpg">
-				</a><br>
-				<br>
-				J'ai rédigé une documentation complète du système, qui a ensuite été reproduit à l'identique par un prestataire pour équiper d'autres stations.<br>
-				<br>
-				Ci-dessous la pièce de lisaison mécanique de l'électrovanne avec le boitier. J'ai imprimé ces pièces en 3D.<br>
-				<a href= "18 big.jpg">
-					<img src="18 mini.jpg">
-				</a><br>
-				Ci-dessous une partie des schémas électriques :<br>
-				<a href= "20 big.jpg">
-					<img src="20 mini.jpg">
-				</a>
-				<a href= "19 big.jpg">
-					<img src="19 mini.jpg">
-				</a><br>
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
+				
+				<h2 class="project-title">Automatisation et instrumentation de tours de prélèvement d'air</h2>
+				<div class="project-tech">Electronique - életrécité - informatique - instrumentation - tranfert de données - conception de pièce acier - fabrication - achats - documentation</div>
+				<div class="project-meta">Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement • 2021</div>
+				<div class="project-description">
+					</br>
+					<a href= "1 big.jpg">
+						<img src="1 mini.jpg">
+					</a><br>
+					<br>
+					Les tours de prélèvement d'air sont parcourus de tuyaux montant jusqu'à une centaine de mètres de hauteur pour prélever de l'air. Une intervention humaine était jusqu'alors nécessaire pour réaliser des tests d'abscnce de fuite.</br>
+					J'ai conçu un système acceuillant des électrovannes pour automatiser ces tests en bas de tour sans avoir à monter.</br>
+					J'ai également adossé à ce système des capteurs météorologiques pour instrumenter la tour (capteurs de température, humidité, pression et de vent).</br>
+					J'ai écrit le code informatique pour interroger ces capteurs er récupérer les données. Ce code, basé sur le paradigme de l'orienté objet, est modulable pour s'adapter à d'autres configurations de stations (nombre de capteurs différents, nombre d'étages de la tour différent...)</br>
+					</br>
+					<ul>
+						<li>Prise en main du cahier des charges, avec modèle de vannes, capteurs et Raspberry Pi imposés</li>
+						<li>Choix du protocole de communication avec les capteurs (RS-485)</li>
+						<li>Choix de l'interface utilisateur pour actionner les vannes (boutons capuchonnés avec voyants lumineux)</li>
+						<li>Dimensionnement électrique</li>
+						<li>Achat des composants</li>
+						<li>Cablâge électrique</li>
+						<li>Conception en CAO et impression 3D des pièces de fixation des electrovannes</li>
+						<li>Ecriture du code en Python pour interoger les capteur</li>
+						<li>Tests du système avant déploiement sur le terrain</li>
+						<li>Documentation de l'ensemble du projet, afin de pouvoir reproduire le système à l'identique chez un sous-traitant</li>
+					</ul>
+					<br>
+					Interieur du boitier électrique de commande et de l'un des trois boitiers qui sur la tour intègrent les électrovannes et interfacent les capteurs :<br>
+					<a href= "10 big.jpg">
+						<img src="10 mini.jpg">
+					</a>
+					<a href= "17 big.jpg">
+						<img src="17 mini.jpg">
+					</a><br>
+					<br>
+					Interface physique pour le pilotage des électrovannes :<br>
+					<a href= "12 big.jpg">
+						<img src="12 mini.jpg">
+					</a><br>
+					<br>
+					Système câblé et prêt à être livré sur site. La palette contient les quatre boitiers électriques et les capteurs météorologiques dans leurs cartons :<br>
+					<a href= "14 big.jpg">
+						<img src="14 mini.jpg">
+					</a>
+					<a href= "16 big.jpg">
+						<img src="16 mini.jpg">
+					</a><br>
+					<br>
+					<br>
+					À partir de cette architecture matérielle et logicielle j'ai dérivé le système pour équiper d'autres stations plus petites. Ci-dessous l'instrumentation d'une station en Corse ne contenant qu'une seule ligne de prélèvement d'air (et donc qu'une seule électrovanne) :<br>
+					<a href= "2 big.jpg">
+						<img src="2 mini.jpg">
+					</a><br>
+					<br>
+					J'ai rédigé une documentation complète du système, qui a ensuite été reproduit à l'identique par un prestataire pour équiper d'autres stations.<br>
+					<br>
+					Ci-dessous la pièce de lisaison mécanique de l'électrovanne avec le boitier. J'ai imprimé ces pièces en 3D.<br>
+					<a href= "18 big.jpg">
+						<img src="18 mini.jpg">
+					</a><br>
+					Ci-dessous une partie des schémas électriques :<br>
+					<a href= "20 big.jpg">
+						<img src="20 mini.jpg">
+					</a>
+					<a href= "19 big.jpg">
+						<img src="19 mini.jpg">
+					</a>
+				</div>
 			</div>
 		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
 	</body>
 </html>

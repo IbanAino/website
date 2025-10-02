@@ -9,105 +9,148 @@
 	</head>
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="../../index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="../../paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="../../robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="../../CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<div id="TutoRobot">
-				<button onclick="history.back()">Retour</button>
-				<h3>Interventions terrain pour des manips scientifiques et techniques</h3>
-				Electronique - terrain</br>
-				Electronicien Science à l'Institut Polaire Français</br>
-				2022<br></br>
-				Lors de mon hivernage sur la station antarctique de Dumont d'Urville, j'ai participé à de nombreuses interventions terrain pour mener à bien des manips scientifiques.</br>
-				<br>
-				<br>
-				<br>
-				<b>Récupération de données sismiques sur un glacier</b><br>
-				<br>
-				La station sismique située sur le glacier de l'Astrolabe nécessite une récupération anuelle de ses données sismiques.<br>
-				J'ai fabriqué un support en bois fixable sur les poteaux métalliques des panneaux solaires afin de poser l'ordinateurs.<br>
-				Un hélicoptère nous a déposé et récupéré sur site.<br>
-				<br>
-				<a href= "4 big.jpg">
-					<img src="4 mini.jpg">
-				</a>
-				<a href= "3 big.jpg">
-					<img src="3 mini.jpg">
-				</a><br>
-				<br>
-				<br>
-				<br>
-				<b>Installation de sismomètres industriels pour valider une application dans le domaine de la recherche</b><br>
-				<br>
-				Afin de suivre les craquement du glacier de l'Astrolabe nous avons déployé une antenne de sismomètre conçus initialement pour les industriels des énergies fossiles.<br>
-				Un hélicopètre nous a déposé sur le glacier et nous avons pu enterrer nos sismomètres en découpant la glace à la tronçonneuse.<br>
-				<a href= "2 big.jpg">
-					<img src="2 mini.jpg">
-				</a><br>
-				</br>
-				</br>
-				</br>
-				<b>Déploiement d'antennes pour la mesure du niveu de la mer</b></br>
-				</br>
-				Une méthode de mesure du niveau de la mer consiste à capter les signaux GPS qui rebondissent à la surface de l'eau. En comparant le temps d'arrivée de ces signaux avec ceux qui n'ont pas rebondi on peut en déduire une différence de temps de parcours, et donc une différenc de distance.<br>
-				J'ai repéré plusieurs site de mesures offrant une vision large du plan d'eau et ai installé les antennes temporaires pour procéder aux mesures.<br>
-				<a href= "7 big.jpg">
-					<img src="7 mini.jpg">
-				</a>
-				<a href= "10 big.jpg">
-					<img src="10 mini.jpg">
-				</a><br>
-				<br>
-				<br>
-				<br>
-				<b>Ravitaillement de la station d'été en fioul</b></br>
-				<br>
-				Chaque hiver, une fois la banquise formée, la station d'été est ravitaillées en fioul par la mer en tirant les cives de fioul avec des tracteurs.<br>
-				Cette opération nécessite un bon nombre de personnes. J'ai donc participé aux opérations.<br>
-				<a href= "8 big.jpg">
-					<img src="8 mini.jpg">
-				</a>
-				<a href= "1 big.jpg">
-					<img src="1 mini.jpg">
-				</a><br>
-				<br>
-				<br>
-				<br>
-				<b>Accompagnement pour les mission de suivi de la population de phoques</b><br>
-				<br>
-				La population de phoques à proximité de la station est suivie par les ethologues. De minuscules puces RFID implantées dans la graisse de la cuisse des phoques permettent d'assurer le suivi de chaque individu.<br>
-				<br>
-				Photo ci-dessous : à droite un ethologue se rapproche doucement des phoques avec une antenne, afin de lire leur puce RFID à distance sans les réveiller de leur sieste.<br>
-				<a href= "11 big.jpg">
-					<img src="11 mini.jpg">
-				</a><br>
-				<br>
-				Ci-dessous, une puce RFID :<br>
-				<a href= "9 big.jpg">
-					<img src="9 mini.jpg">
-				</a><br>
-				<br>
-				<br>
-				<br>
-				<b>Accompagnement pour les mission de suivi de la population de manchots empereurs</b><br>
-				<br>
-				La même technologie de puces RFID est utilisée pour le suivi des manchots empereurs.<br>
-				<br>
-				Ci-dessous : Installation de l'antenne (le long fil au sol). Une fois installée, des cordes définissent le chemin pour que les manchots marchent sur l'antenne.<br>
-				<a href= "13 big.jpg">
-					<img src="13 mini.jpg">
-				</a>
-				<a href= "14 big.jpg">
-					<img src="14 mini.jpg">
-				</a>
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
 				
-				
+				<h2 class="project-title">Interventions terrain pour des manips scientifiques et techniques</h2>
+				<div class="project-tech">Electronique - terrain</div>
+				<div class="project-meta">Electronicien Science à l'Institut Polaire Français • 2022</div>
+				<div class="project-description">
+					<br>
+					Lors de mon hivernage sur la station antarctique de Dumont d'Urville, j'ai participé à de nombreuses interventions terrain pour mener à bien des manips scientifiques.</br>
+					<br>
+					<br>
+					<br>
+					<b>Récupération de données sismiques sur un glacier</b><br>
+					<br>
+					La station sismique située sur le glacier de l'Astrolabe nécessite une récupération anuelle de ses données sismiques.<br>
+					J'ai fabriqué un support en bois fixable sur les poteaux métalliques des panneaux solaires afin de poser l'ordinateurs.<br>
+					Un hélicoptère nous a déposé et récupéré sur site.<br>
+					<br>
+					<a href= "4 big.jpg">
+						<img src="4 mini.jpg">
+					</a>
+					<a href= "3 big.jpg">
+						<img src="3 mini.jpg">
+					</a><br>
+					<br>
+					<br>
+					<br>
+					<b>Installation de sismomètres industriels pour valider une application dans le domaine de la recherche</b><br>
+					<br>
+					Afin de suivre les craquement du glacier de l'Astrolabe nous avons déployé une antenne de sismomètre conçus initialement pour les industriels des énergies fossiles.<br>
+					Un hélicopètre nous a déposé sur le glacier et nous avons pu enterrer nos sismomètres en découpant la glace à la tronçonneuse.<br>
+					<a href= "2 big.jpg">
+						<img src="2 mini.jpg">
+					</a><br>
+					</br>
+					</br>
+					</br>
+					<b>Déploiement d'antennes pour la mesure du niveu de la mer</b></br>
+					</br>
+					Une méthode de mesure du niveau de la mer consiste à capter les signaux GPS qui rebondissent à la surface de l'eau. En comparant le temps d'arrivée de ces signaux avec ceux qui n'ont pas rebondi on peut en déduire une différence de temps de parcours, et donc une différenc de distance.<br>
+					J'ai repéré plusieurs site de mesures offrant une vision large du plan d'eau et ai installé les antennes temporaires pour procéder aux mesures.<br>
+					<a href= "7 big.jpg">
+						<img src="7 mini.jpg">
+					</a>
+					<a href= "10 big.jpg">
+						<img src="10 mini.jpg">
+					</a><br>
+					<br>
+					<br>
+					<br>
+					<b>Ravitaillement de la station d'été en fioul</b></br>
+					<br>
+					Chaque hiver, une fois la banquise formée, la station d'été est ravitaillées en fioul par la mer en tirant les cives de fioul avec des tracteurs.<br>
+					Cette opération nécessite un bon nombre de personnes. J'ai donc participé aux opérations.<br>
+					<a href= "8 big.jpg">
+						<img src="8 mini.jpg">
+					</a>
+					<a href= "1 big.jpg">
+						<img src="1 mini.jpg">
+					</a><br>
+					<br>
+					<br>
+					<br>
+					<b>Accompagnement pour les mission de suivi de la population de phoques</b><br>
+					<br>
+					La population de phoques à proximité de la station est suivie par les ethologues. De minuscules puces RFID implantées dans la graisse de la cuisse des phoques permettent d'assurer le suivi de chaque individu.<br>
+					<br>
+					Photo ci-dessous : à droite un ethologue se rapproche doucement des phoques avec une antenne, afin de lire leur puce RFID à distance sans les réveiller de leur sieste.<br>
+					<a href= "11 big.jpg">
+						<img src="11 mini.jpg">
+					</a><br>
+					<br>
+					Ci-dessous, une puce RFID :<br>
+					<a href= "9 big.jpg">
+						<img src="9 mini.jpg">
+					</a><br>
+					<br>
+					<br>
+					<br>
+					<b>Accompagnement pour les mission de suivi de la population de manchots empereurs</b><br>
+					<br>
+					La même technologie de puces RFID est utilisée pour le suivi des manchots empereurs.<br>
+					<br>
+					Ci-dessous : Installation de l'antenne (le long fil au sol). Une fois installée, des cordes définissent le chemin pour que les manchots marchent sur l'antenne.<br>
+					<a href= "13 big.jpg">
+						<img src="13 mini.jpg">
+					</a>
+					<a href= "14 big.jpg">
+						<img src="14 mini.jpg">
+					</a>
+				</div>
 			</div>
 		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
 	</body>
 </html>

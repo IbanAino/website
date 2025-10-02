@@ -9,20 +9,49 @@
 	</head>
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="../../index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="../../paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="../../robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="../../CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<div id="TutoRobot">
-				<button onclick="history.back()">Retour</button>
-				<h3>Refonte ergonomique d'un acquisition d'antenne</h3>
-				Electronique - impression 3D - CAO - fabrication</br>
-				Electronicien Science à l'Institut Polaire Français</br>
-				2022<br></br>
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
+				
+				<h2 class="project-title">Refonte ergonomique d'un acquisition d'antenne</h2>
+				<div class="project-tech">Electronique - impression 3D - CAO - fabrication</div>
+				<div class="project-meta">Electronicien Science à l'Institut Polaire Français • 2022</div>
+				<div class="project-description">
+				</div>
 				Aujourd'hui les manchots empeureur ne sont plus bagués. Une toute petite puce RFID leur est implantée dans la graisse de la cuisse, ce qui est beaucoup moins invasif qu'une bague.</br>
 				Des antennes doivent être déployées sous la neigne pour détecter la puce est ainsi suivre les populations de manchots.</br>
 				J'ai revu la conception d'une valise d'acquisition de ces puces, afin de mieux répondre aux contraintes du terrain et de faciliter la maintenance électronique de la valise.</br>
@@ -56,5 +85,20 @@
 				</a><br>
 			</div>
 		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
 	</body>
 </html>

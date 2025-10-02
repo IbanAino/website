@@ -10,58 +10,228 @@
 	
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="../../index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="../../paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="../../robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="../../CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 		
 			<div id="TutoRobot">
-				<button onclick="history.back()">Retour</button>
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
 
-				
-				<h3>Responsable Technique d'un observatoire</h3>
-				Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique</br>
-				2024<br></br>
-				
-				L'observatoire Volcanologique et Sismologique de Martinique opère 42 stations sur tout le territoire martiniquais. J'ai assuré le suivi de cette grande quantité de matériel en documentant et en inventoriant les installations existantes. À mon arrivée un outil de suivi était déjà en place. J'ai pu m'appuyer sur cet outil pour standardiser la documentation entre toutes les stations afin d'avoir une lecture claire et sans omission d'information de tous les systèmes.
-				</br>
-				</br>
-				Cette documentation s'est accompagéne d'un travail de rangement, de calissification et d'étiquettage pour avoir une vision claire du matériel à disposition.
-				</br>
-				<a href= "1 big.jpg">
-					<img src="1 mini.jpg">
-				</a>
-				<a href= "4 big.jpg">
-					<img src="4 mini.jpg">
-				</a>
-				</br>
-				</br>
-				Ce travail préparatoire m'a permis de produire des documents de synthèse pour avoir une vision globale du réseau et assurer un suivi éclairé de sa maintenance.</br>
-				<a href= "excel.jpg">
-					<img src="excel mini.jpg">
-				</a>
-				</br>
-				</br>
-				J'ai pu ainsi réaliser une carte du réseau de surveillance, afin d'avoir une vision globale des instruments implantés sur le territoire, ainsi qu'une carte du réseau de communication.
-				</br>
-				<a href= "10 big.jpg">
-					<img src="10 mini.jpg">
-				</a>
-				<a href= "11 big.jpg">
-					<img src="11 mini.jpg">
-				</a>
-				</br>
-				</br>
-				En tant que responsable technique j'ai rédigé le volet technique du rapport annuel 2023 de l'Observatorie :</br>
-				<a href= "https://www.ipgp.fr/wp-content/uploads/2024/03/Rapport_activite_OVSM_2023_FINAL.pdf">
-					<img src="rapport annuel.jpg">
-				</a>
-				</br>
+				<!-- Version française -->
+				<div class="lang-content" data-lang="fr">
+					<h2 class="project-title">Responsable Technique d'un observatoire</h2>
+					<div class="project-meta">Responsable Technique à l'Observatoire Volcanologique et Sismologique de Martinique • 2024</div>
+					<div class="project-description">
+						L'Observatoire Volcanologique et Sismologique de Martinique opère 42 stations sur tout le territoire martiniquais. J'ai assuré le suivi de cette grande quantité de matériel en documentant et en inventoriant les installations existantes. À mon arrivée un outil de suivi était déjà en place. J'ai pu m'appuyer sur cet outil pour standardiser la documentation entre toutes les stations afin d'avoir une lecture claire et sans omission d'information de tous les systèmes.
+						<br/>
+						<br/>
+						Cette documentation s'est accompagnée d'un travail de rangement, de classification et d'étiquetage pour avoir une vision claire du matériel à disposition.
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Photo 1">
+						</a>
+						<a href="4 big.jpg">
+							<img src="4 mini.jpg" alt="Photo 4">
+						</a>
+						<br/>
+						<br/>
+						Ce travail préparatoire m'a permis de produire des documents de synthèse pour avoir une vision globale du réseau et assurer un suivi éclairé de sa maintenance.<br/>
+						<a href="excel.jpg">
+							<img src="excel mini.jpg" alt="Tableau Excel">
+						</a>
+						<br/>
+						<br/>
+						J'ai pu ainsi réaliser une carte du réseau de surveillance, afin d'avoir une vision globale des instruments implantés sur le territoire, ainsi qu'une carte du réseau de communication.
+						<br/>
+						<a href="10 big.jpg">
+							<img src="10 mini.jpg" alt="Carte réseau surveillance">
+						</a>
+						<a href="11 big.jpg">
+							<img src="11 mini.jpg" alt="Carte réseau communication">
+						</a>
+						<br/>
+						<br/>
+						En tant que responsable technique j'ai rédigé le volet technique du rapport annuel 2023 de l'Observatoire :<br/>
+						<a href="https://www.ipgp.fr/wp-content/uploads/2024/03/Rapport_activite_OVSM_2023_FINAL.pdf">
+							<img src="rapport annuel.jpg" alt="Rapport annuel">
+						</a>
+						<br/>
+					</div>
+				</div>
+
+				<!-- Version anglaise -->
+				<div class="lang-content hidden" data-lang="en">
+					<h2 class="project-title">Technical Manager of an Observatory</h2>
+					<div class="project-meta">Technical Manager at the Volcanological and Seismological Observatory of Martinique • 2024</div>
+					<div class="project-description">
+						The Volcanological and Seismological Observatory of Martinique operates 42 stations throughout the territory of Martinique. I ensured the monitoring of this large quantity of equipment by documenting and inventorying existing installations. Upon my arrival, a monitoring tool was already in place. I was able to build on this tool to standardize documentation across all stations in order to have a clear reading with no information omissions for all systems.
+						<br/>
+						<br/>
+						This documentation was accompanied by organizational work, classification, and labeling to have a clear view of the available equipment.
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Photo 1">
+						</a>
+						<a href="4 big.jpg">
+							<img src="4 mini.jpg" alt="Photo 4">
+						</a>
+						<br/>
+						<br/>
+						This preparatory work allowed me to produce summary documents to have a global view of the network and ensure informed maintenance tracking.<br/>
+						<a href="excel.jpg">
+							<img src="excel mini.jpg" alt="Excel spreadsheet">
+						</a>
+						<br/>
+						<br/>
+						I was thus able to create a map of the monitoring network, in order to have a global view of the instruments deployed on the territory, as well as a map of the communication network.
+						<br/>
+						<a href="10 big.jpg">
+							<img src="10 mini.jpg" alt="Monitoring network map">
+						</a>
+						<a href="11 big.jpg">
+							<img src="11 mini.jpg" alt="Communication network map">
+						</a>
+						<br/>
+						<br/>
+						As technical manager, I wrote the technical section of the Observatory's 2023 annual report:<br/>
+						<a href="https://www.ipgp.fr/wp-content/uploads/2024/03/Rapport_activite_OVSM_2023_FINAL.pdf">
+							<img src="rapport annuel.jpg" alt="Annual report">
+						</a>
+						<br/>
+					</div>
+				</div>
+
+				<!-- Version espagnole -->
+				<div class="lang-content hidden" data-lang="es">
+					<h2 class="project-title">Responsable Técnico de un observatorio</h2>
+					<div class="project-meta">Responsable Técnico en el Observatorio Vulcanológico y Sismológico de Martinica • 2024</div>
+					<div class="project-description">
+						El Observatorio Vulcanológico y Sismológico de Martinica opera 42 estaciones en todo el territorio de Martinica. Me encargué del seguimiento de esta gran cantidad de material documentando e inventariando las instalaciones existentes. A mi llegada, ya existía una herramienta de seguimiento. Pude apoyarme en esta herramienta para estandarizar la documentación entre todas las estaciones con el fin de tener una lectura clara y sin omisión de información de todos los sistemas.
+						<br/>
+						<br/>
+						Esta documentación estuvo acompañada de un trabajo de organización, clasificación y etiquetado para tener una visión clara del material disponible.
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Foto 1">
+						</a>
+						<a href="4 big.jpg">
+							<img src="4 mini.jpg" alt="Foto 4">
+						</a>
+						<br/>
+						<br/>
+						Este trabajo preparatorio me permitió producir documentos de síntesis para tener una visión global de la red y asegurar un seguimiento informado de su mantenimiento.<br/>
+						<a href="excel.jpg">
+							<img src="excel mini.jpg" alt="Hoja de cálculo Excel">
+						</a>
+						<br/>
+						<br/>
+						Así pude realizar un mapa de la red de vigilancia, con el fin de tener una visión global de los instrumentos implantados en el territorio, así como un mapa de la red de comunicación.
+						<br/>
+						<a href="10 big.jpg">
+							<img src="10 mini.jpg" alt="Mapa red de vigilancia">
+						</a>
+						<a href="11 big.jpg">
+							<img src="11 mini.jpg" alt="Mapa red de comunicación">
+						</a>
+						<br/>
+						<br/>
+						Como responsable técnico redacté la sección técnica del informe anual 2023 del Observatorio:<br/>
+						<a href="https://www.ipgp.fr/wp-content/uploads/2024/03/Rapport_activite_OVSM_2023_FINAL.pdf">
+							<img src="rapport annuel.jpg" alt="Informe anual">
+						</a>
+						<br/>
+					</div>
+				</div>
+
+				<!-- Version allemande -->
+				<div class="lang-content hidden" data-lang="de">
+					<h2 class="project-title">Technischer Leiter eines Observatoriums</h2>
+					<div class="project-meta">Technischer Leiter am Vulkanologischen und Seismologischen Observatorium von Martinique • 2024</div>
+					<div class="project-description">
+						Das Vulkanologische und Seismologische Observatorium von Martinique betreibt 42 Stationen auf dem gesamten Territorium von Martinique. Ich stellte die Überwachung dieser großen Menge an Ausrüstung sicher, indem ich bestehende Installationen dokumentierte und inventarisierte. Bei meiner Ankunft war bereits ein Überwachungswerkzeug vorhanden. Ich konnte mich auf dieses Werkzeug stützen, um die Dokumentation über alle Stationen hinweg zu standardisieren, um eine klare Übersicht ohne Informationslücken für alle Systeme zu haben.
+						<br/>
+						<br/>
+						Diese Dokumentation wurde von Aufräum-, Klassifizierungs- und Etikettierungsarbeiten begleitet, um einen klaren Überblick über das verfügbare Material zu haben.
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Foto 1">
+						</a>
+						<a href="4 big.jpg">
+							<img src="4 mini.jpg" alt="Foto 4">
+						</a>
+						<br/>
+						<br/>
+						Diese Vorbereitungsarbeit ermöglichte es mir, Zusammenfassungsdokumente zu erstellen, um eine Gesamtübersicht über das Netzwerk zu haben und eine fundierte Wartungsüberwachung sicherzustellen.<br/>
+						<a href="excel.jpg">
+							<img src="excel mini.jpg" alt="Excel-Tabelle">
+						</a>
+						<br/>
+						<br/>
+						Ich konnte so eine Karte des Überwachungsnetzwerks erstellen, um einen globalen Überblick über die auf dem Territorium installierten Instrumente sowie eine Karte des Kommunikationsnetzwerks zu haben.
+						<br/>
+						<a href="10 big.jpg">
+							<img src="10 mini.jpg" alt="Überwachungsnetzwerkkarte">
+						</a>
+						<a href="11 big.jpg">
+							<img src="11 mini.jpg" alt="Kommunikationsnetzwerkkarte">
+						</a>
+						<br/>
+						<br/>
+						Als technischer Leiter verfasste ich den technischen Teil des Jahresberichts 2023 des Observatoriums:<br/>
+						<a href="https://www.ipgp.fr/wp-content/uploads/2024/03/Rapport_activite_OVSM_2023_FINAL.pdf">
+							<img src="rapport annuel.jpg" alt="Jahresbericht">
+						</a>
+						<br/>
+					</div>
+				</div>
 			</div>
 		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
 	</body>
 </html>

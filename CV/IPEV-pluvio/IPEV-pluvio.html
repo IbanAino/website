@@ -9,45 +9,90 @@
 	</head>
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="../../index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="../../paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="../../robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="../../CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<div id="TutoRobot">
-				<button onclick="history.back()">Retour</button>
-				<h3>Analyse pannes pluviomètre</h3>
-				Electronique - analyse de pannes</br>
-				Electronicien Science à l'Institut Polaire Français</br>
-				2022<br></br>
-				J'ai diagnostiqué les pannes d'un pluviomètre dont l'alimentation avait endomagé plusieurs organes à différents niveaux.</br>
-				</br>
-				La communication USB ne renvoyait aucune donnée sur l'interface graphique propriétaire. J'ai donc interrogé l'instrument avec le protocole RS-485.</br>
-				<a href= "4 big.jpg">
-					<img src="4 mini.jpg">
-				</a>
-				<a href= "3 big.jpg">
-					<img src="3 mini.jpg">
-				</a>
-				</br>
-				</br>
-				Les données n'étant toujours pas monitorées j'ai interrogé l'instrument avec le protocole i2c. J'ai programmé un Arduino pour discuter avec l'instrument via ce protocole. Un oscilloscope m'a permis de m'assurer de la bonne transmission des trames.</br>
-				<a href= "5 big.jpg">
-					<img src="5 mini.jpg">
-				</a>
-				</br>
-				<br>
-				Afin de pousser les test le plus loin possible j'ai déplacé l'instrument dans le labo d'électronqiue.</br>
-				<a href= "7 big.jpg">
-					<img src="7 mini.jpg">
-				</a>
-				</br>
-				</br>
-				La carte électronique ne présentait aucun dommage visible à l'euil nu. J'ai donc essayé tous les protocoles de communiction possible avant de déclarer l'instrument définitivement en panne.
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
+				
+				<h2 class="project-title">Analyse pannes pluviomètre</h2>
+				<div class="project-tech">Electronique - analyse de pannes</div>
+				<div class="project-meta">Electronicien Science à l'Institut Polaire Français • 2022</div>
+				<div class="project-description">
+					<br>
+					J'ai diagnostiqué les pannes d'un pluviomètre dont l'alimentation avait endomagé plusieurs organes à différents niveaux.</br>
+					</br>
+					La communication USB ne renvoyait aucune donnée sur l'interface graphique propriétaire. J'ai donc interrogé l'instrument avec le protocole RS-485.</br>
+					<a href= "4 big.jpg">
+						<img src="4 mini.jpg">
+					</a>
+					<a href= "3 big.jpg">
+						<img src="3 mini.jpg">
+					</a>
+					</br>
+					</br>
+					Les données n'étant toujours pas monitorées j'ai interrogé l'instrument avec le protocole i2c. J'ai programmé un Arduino pour discuter avec l'instrument via ce protocole. Un oscilloscope m'a permis de m'assurer de la bonne transmission des trames.</br>
+					<a href= "5 big.jpg">
+						<img src="5 mini.jpg">
+					</a>
+					</br>
+					<br>
+					Afin de pousser les test le plus loin possible j'ai déplacé l'instrument dans le labo d'électronqiue.</br>
+					<a href= "7 big.jpg">
+						<img src="7 mini.jpg">
+					</a>
+					</br>
+					</br>
+					La carte électronique ne présentait aucun dommage visible à l'euil nu. J'ai donc essayé tous les protocoles de communiction possible avant de déclarer l'instrument définitivement en panne.
+				</div>
 			</div>
 		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
 	</body>
 </html>

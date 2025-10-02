@@ -9,42 +9,87 @@
 	</head>
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="../../index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="../../paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="../../robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="../../CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<div id="TutoRobot">
-				<button onclick="history.back()">Retour</button>
-				<h3>Automatisation du boîtier d'un instrument de mesure</h3>
-				Electronique - informatique - instrumentation - tranfert de données - conception de pièce acier - fabrication - achats - documentation</br>
-				Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement</br>
-				2021<br></br>
-				J'ai repris en main un projet d'automatisation de boitier à ouverture automatique accueillant un Lidar.
-				Ce boitier équipé de capteurs (pluie, pyranomètre, horloge...) assurait l'ouverture et la fermeture d'un haillon afin de protéger l'instrument de mesure Lidar.
-				J'ai redessiné le mécanisme d'ouverture et ai réalisé un nouveau cablâge électrique.</br>
-				J'ai également codé le boitier, avec une architecture de code Grafcer, implémentée en C++. J'ai écri mes propres classes temps réel pour le projet.</br>
-				</br>
-				<div>
-				<ul>
-					<li>Reprise en main du projet en cours</li>
-					<li>Discussion avec la chaudronnier pour terminer la fabrication des pièces en cours</li>
-					<li>Nouvelle conception 3D du boitier, avec simplification des formes pour réduire les coûts de fabrication</li>
-					<li>Nouveau cablâge électrique, en intégrant de nouvaux capteurs</li>
-					<li>Conception d'une petite carte élecronique pour interfacer des composants (résistance de pull-down pour communication RS-485, diviseur de tension sur des siganux on/off pour ajuster les tensions aux entrées du Raspberry Pi)</li>
-					<li>Programmmation en C++ du boitier, avec architecture Grafcet sur carte Arduino</li>
-					<li>Documentation et schémas électriques</li>
-				</ul>
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
+				
+				<h2 class="project-title">Automatisation du boîtier d'un instrument de mesure</h2>
+				<div class="project-tech">Electronique - informatique - instrumentation - tranfert de données - conception de pièce acier - fabrication - achats - documentation</div>
+				<div class="project-meta">Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement • 2021</div>
+				<div class="project-description">
 				</div>
-				</br>
-				</br>
-				<a href= "1 big.jpg">
-					<img src="1 mini.jpg">
-				</a>
+					J'ai repris en main un projet d'automatisation de boitier à ouverture automatique accueillant un Lidar.
+					Ce boitier équipé de capteurs (pluie, pyranomètre, horloge...) assurait l'ouverture et la fermeture d'un haillon afin de protéger l'instrument de mesure Lidar.
+					J'ai redessiné le mécanisme d'ouverture et ai réalisé un nouveau cablâge électrique.</br>
+					J'ai également codé le boitier, avec une architecture de code Grafcer, implémentée en C++. J'ai écri mes propres classes temps réel pour le projet.</br>
+					</br>
+					<div>
+					<ul>
+						<li>Reprise en main du projet en cours</li>
+						<li>Discussion avec la chaudronnier pour terminer la fabrication des pièces en cours</li>
+						<li>Nouvelle conception 3D du boitier, avec simplification des formes pour réduire les coûts de fabrication</li>
+						<li>Nouveau cablâge électrique, en intégrant de nouvaux capteurs</li>
+						<li>Conception d'une petite carte élecronique pour interfacer des composants (résistance de pull-down pour communication RS-485, diviseur de tension sur des siganux on/off pour ajuster les tensions aux entrées du Raspberry Pi)</li>
+						<li>Programmmation en C++ du boitier, avec architecture Grafcet sur carte Arduino</li>
+						<li>Documentation et schémas électriques</li>
+					</ul>
+					</div>
+					</br>
+					</br>
+					<a href= "1 big.jpg">
+						<img src="1 mini.jpg">
+					</a>
+				</div>
 			</div>
 		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
 	</body>
 </html>

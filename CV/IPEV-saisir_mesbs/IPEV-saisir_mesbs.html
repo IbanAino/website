@@ -9,31 +9,75 @@
 	</head>
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="../../index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="../../paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="../../robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="../../CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<div id="TutoRobot">
-				<button onclick="history.back()">Retour</button>
-				<h3>Développement d'un outil de saisie de données</h3>
-				Développement logiciel - Python</br>
-				Electronicien Science à l'Institut Polaire Français</br>
-				2022<br></br>
-				La mesure quotidienne du champ magnétique terrestre implique de saisir 45 valeurs à l'ordinateur.</br>
-				Après une analyse des bugs de l'outils déjà en place, j'ai codé en Python un nouvel outil qui teste les entrées de l'utilisateur et en précale certaines valeurs.</br>				</br>
-				<a href= "1 big.jpg">
-					<img src="1 mini.jpg">
-				</a>
-				</br>
-				</br>
-				L'outil est en open-source et est disponible sur ma page GitHub :</br>
-				<a href= "https://github.com/IbanAino/Saisir_Mesabs">https://github.com/IbanAino/Saisir_Mesabs</a>
-
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
+				
+				<h2 class="project-title">Développement d'un outil de saisie de données</h2>
+				<div class="project-tech">Développement logiciel - Python</div>
+				<div class="project-meta">Electronicien Science à l'Institut Polaire Français • 2022</div>
+				<div class="project-description">
+					</br>
+					La mesure quotidienne du champ magnétique terrestre implique de saisir 45 valeurs à l'ordinateur.</br>
+					Après une analyse des bugs de l'outils déjà en place, j'ai codé en Python un nouvel outil qui teste les entrées de l'utilisateur et en précale certaines valeurs.</br>				</br>
+					<a href= "1 big.jpg">
+						<img src="1 mini.jpg">
+					</a>
+					</br>
+					</br>
+					L'outil est en open-source et est disponible sur ma page GitHub :</br>
+					<a href= "https://github.com/IbanAino/Saisir_Mesabs">https://github.com/IbanAino/Saisir_Mesabs</a>
+				</div>
 			</div>
 		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
 	</body>
 </html>

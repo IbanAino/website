@@ -10,47 +10,89 @@
 	
 	<body>
 		<header>
-			<ul id="menu">
-				<li><a id="menu_a" href="../../index.html">Iban FERNANDEZ</a></li>
-				<li><a id="menu_a" href="../../paintings.html">Peintures</a></li>
-				<li><a id="menu_a" href="../../robotic.html">Tutoriels robotique</a></li>
-				<li><a id="menu_a" href="../../CV.html">CV</a></li>
-			</ul>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 		
 			<div id="TutoRobot">
-				<button onclick="history.back()">Retour</button>
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
 
-				
-				<h3>Aménagement d'une voiture en cellule habitable</h3>
-				Menuiserie - couture - impression 3D</br>
-				Projet personnel</br>
-				2024<br></br>
-				Aménagement d'une Renault Grand Scénic en voiture habitable.</br>
-				</br>
-				<a href= "1 big.jpg">
-					<img src="1 mini.jpg">
-				</a>
-				<a href= "2 big.jpg">
-					<img src="2 mini.jpg">
-				</a>
-				<a href= "3 big.jpg">
-					<img src="3 mini.jpg">
-				</a>
-				<a href= "4 big.jpg">
-					<img src="4 mini.jpg">
-				</a>
-				<a href= "5 big.jpg">
-					<img src="5 mini.jpg">
-				</a>
-				<a href= "6 big.jpg">
-					<img src="6 mini.jpg">
-				</a>
-				<a href= "7 big.jpg">
-					<img src="7 mini.jpg">
-				</a>
+				<h2 class="project-title">Aménagement d'une voiture en cellule habitable</h2>
+				<div class="project-tech">Menuiserie - couture - impression 3D</div>
+				<div class="project-meta">Projet personnel • 2025</div>
+				<div class="project-description">
+					<br>
+					</br>
+					<a href= "1 big.jpg">
+						<img src="1 mini.jpg">
+					</a>
+					<a href= "2 big.jpg">
+						<img src="2 mini.jpg">
+					</a>
+					<a href= "3 big.jpg">
+						<img src="3 mini.jpg">
+					</a>
+					<a href= "4 big.jpg">
+						<img src="4 mini.jpg">
+					</a>
+					<a href= "5 big.jpg">
+						<img src="5 mini.jpg">
+					</a>
+					<a href= "6 big.jpg">
+						<img src="6 mini.jpg">
+					</a>
+					<a href= "7 big.jpg">
+						<img src="7 mini.jpg">
+					</a>
+				</div>
 			</div>
 		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
 	</body>
 </html>
