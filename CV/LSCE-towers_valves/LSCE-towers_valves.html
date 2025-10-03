@@ -47,96 +47,387 @@
 					<span class="lang-content hidden" data-lang="de">Zurück</span>
 				</button>
 				
-				<h2 class="project-title">Automatisation et instrumentation de tours de prélèvement d'air</h2>
-				<div class="project-tech">Electronique - életrécité - informatique - instrumentation - tranfert de données - conception de pièce acier - fabrication - achats - documentation</div>
-				<div class="project-meta">Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement • 2021</div>
-				<div class="project-description">
-					</br>
-					<a href= "1 big.jpg">
-						<img src="1 mini.jpg">
-					</a><br>
-					<br>
-					Les tours de prélèvement d'air sont parcourus de tuyaux montant jusqu'à une centaine de mètres de hauteur pour prélever de l'air. Une intervention humaine était jusqu'alors nécessaire pour réaliser des tests d'abscnce de fuite.</br>
-					J'ai conçu un système acceuillant des électrovannes pour automatiser ces tests en bas de tour sans avoir à monter.</br>
-					J'ai également adossé à ce système des capteurs météorologiques pour instrumenter la tour (capteurs de température, humidité, pression et de vent).</br>
-					J'ai écrit le code informatique pour interroger ces capteurs er récupérer les données. Ce code, basé sur le paradigme de l'orienté objet, est modulable pour s'adapter à d'autres configurations de stations (nombre de capteurs différents, nombre d'étages de la tour différent...)</br>
-					</br>
-					<ul>
-						<li>Prise en main du cahier des charges, avec modèle de vannes, capteurs et Raspberry Pi imposés</li>
-						<li>Choix du protocole de communication avec les capteurs (RS-485)</li>
-						<li>Choix de l'interface utilisateur pour actionner les vannes (boutons capuchonnés avec voyants lumineux)</li>
-						<li>Dimensionnement électrique</li>
-						<li>Achat des composants</li>
-						<li>Cablâge électrique</li>
-						<li>Conception en CAO et impression 3D des pièces de fixation des electrovannes</li>
-						<li>Ecriture du code en Python pour interoger les capteur</li>
-						<li>Tests du système avant déploiement sur le terrain</li>
-						<li>Documentation de l'ensemble du projet, afin de pouvoir reproduire le système à l'identique chez un sous-traitant</li>
-					</ul>
-					<br>
-					Interieur du boitier électrique de commande et de l'un des trois boitiers qui sur la tour intègrent les électrovannes et interfacent les capteurs :<br>
-					<br>
-					<div class="gallery">					
-						<a href= "10 big.jpg">
-							<img src="10 mini.jpg">
-						</a>
-						<a href= "17 big.jpg">
-							<img src="17 mini.jpg">
-						</a>
+				<!-- Version française -->
+				<div class="lang-content" data-lang="fr">
+					<h2 class="project-title">Automatisation et instrumentation de tours de prélèvement d'air</h2>
+					<div class="project-tech">Électronique - électricité - informatique - instrumentation - transfert de données - conception de pièce acier - fabrication - achats - documentation</div>
+					<div class="project-meta">Ingénieur de recherche au Laboratoire des Sciences du Climat et de l'Environnement • 2021</div>
+					<div class="project-description">
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Tour de prélèvement d'air">
+						</a><br/>
+						<br/>
+						Les tours de prélèvement d'air sont parcourues de tuyaux montant jusqu'à une centaine de mètres de hauteur pour prélever de l'air. Une intervention humaine était jusqu'alors nécessaire pour réaliser des tests d'absence de fuite.<br/>
+						J'ai conçu un système accueillant des électrovannes pour automatiser ces tests en bas de tour sans avoir à monter.<br/>
+						J'ai également adossé à ce système des capteurs météorologiques pour instrumenter la tour (capteurs de température, humidité, pression et de vent).<br/>
+						J'ai écrit le code informatique pour interroger ces capteurs et récupérer les données. Ce code, basé sur le paradigme de l'orienté objet, est modulable pour s'adapter à d'autres configurations de stations (nombre de capteurs différents, nombre d'étages de la tour différent...).<br/>
+						<br/>
+						<ul>
+							<li>Prise en main du cahier des charges, avec modèle de vannes, capteurs et Raspberry Pi imposés</li>
+							<li>Choix du protocole de communication avec les capteurs (RS-485)</li>
+							<li>Choix de l'interface utilisateur pour actionner les vannes (boutons capuchonnés avec voyants lumineux)</li>
+							<li>Dimensionnement électrique</li>
+							<li>Achat des composants</li>
+							<li>Câblage électrique</li>
+							<li>Conception en CAO et impression 3D des pièces de fixation des électrovannes</li>
+							<li>Écriture du code en Python pour interroger les capteurs</li>
+							<li>Tests du système avant déploiement sur le terrain</li>
+							<li>Documentation de l'ensemble du projet, afin de pouvoir reproduire le système à l'identique chez un sous-traitant</li>
+						</ul>
+						<br/>
+						Intérieur du boîtier électrique de commande et de l'un des trois boîtiers qui sur la tour intègrent les électrovannes et interfacent les capteurs :<br/>
+						<br/>
+						<div class="gallery">
+							<a href="10 big.jpg">
+								<img src="10 mini.jpg" alt="Boîtier commande">
+							</a>
+							<a href="17 big.jpg">
+								<img src="17 mini.jpg" alt="Boîtier tour">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Interface physique pour le pilotage des électrovannes :<br/>
+						<br/>
+						<div class="gallery">
+							<a href="12 big.jpg">
+								<img src="12 mini.jpg" alt="Interface pilotage">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Système câblé et prêt à être livré sur site. La palette contient les quatre boîtiers électriques et les capteurs météorologiques dans leurs cartons :<br/>
+						<br/>
+						<div class="gallery">
+							<a href="14 big.jpg">
+								<img src="14 mini.jpg" alt="Système sur palette 1">
+							</a>
+							<a href="16 big.jpg">
+								<img src="16 mini.jpg" alt="Système sur palette 2">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						<br/>
+						À partir de cette architecture matérielle et logicielle j'ai dérivé le système pour équiper d'autres stations plus petites. Ci-dessous l'instrumentation d'une station en Corse ne contenant qu'une seule ligne de prélèvement d'air (et donc qu'une seule électrovanne) :<br/>
+						<br/>
+						<div class="gallery">
+							<a href="2 big.jpg">
+								<img src="2 mini.jpg" alt="Station Corse">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						J'ai rédigé une documentation complète du système, qui a ensuite été reproduit à l'identique par un prestataire pour équiper d'autres stations.<br/>
+						<br/>
+						Ci-dessous la pièce de liaison mécanique de l'électrovanne avec le boîtier. J'ai imprimé ces pièces en 3D.<br/>
+						<br/>
+						<div class="gallery">
+							<a href="18 big.jpg">
+								<img src="18 mini.jpg" alt="Pièce liaison mécanique">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Ci-dessous une partie des schémas électriques :<br/>
+						<br/>
+						<div>
+							<a href="20 big.jpg">
+								<img src="20 mini.jpg" alt="Schéma électrique 1">
+							</a>
+							<a href="19 big.jpg">
+								<img src="19 mini.jpg" alt="Schéma électrique 2">
+							</a>
+						</div>
 					</div>
-					<br>
-					<br>
-					Interface physique pour le pilotage des électrovannes :<br>
-					<br>
-					<div class="gallery">	
-						<a href= "12 big.jpg">
-							<img src="12 mini.jpg">
-						</a>
+				</div>
+
+				<!-- Version anglaise -->
+				<div class="lang-content hidden" data-lang="en">
+					<h2 class="project-title">Automation and Instrumentation of Air Sampling Towers</h2>
+					<div class="project-tech">Electronics - electricity - IT - instrumentation - data transfer - steel part design - manufacturing - procurement - documentation</div>
+					<div class="project-meta">Research Engineer at the Laboratory of Climate and Environmental Sciences • 2021</div>
+					<div class="project-description">
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Air sampling tower">
+						</a><br/>
+						<br/>
+						Air sampling towers are traversed by pipes rising up to one hundred meters high to collect air. Until then, human intervention was necessary to perform leak absence tests.<br/>
+						I designed a system housing solenoid valves to automate these tests at the bottom of the tower without having to climb.<br/>
+						I also backed this system with meteorological sensors to instrument the tower (temperature, humidity, pressure and wind sensors).<br/>
+						I wrote the computer code to query these sensors and retrieve data. This code, based on the object-oriented paradigm, is modular to adapt to other station configurations (different number of sensors, different number of tower floors...).<br/>
+						<br/>
+						<ul>
+							<li>Taking charge of specifications, with imposed valve model, sensors and Raspberry Pi</li>
+							<li>Choice of communication protocol with sensors (RS-485)</li>
+							<li>Choice of user interface to operate valves (capped buttons with indicator lights)</li>
+							<li>Electrical sizing</li>
+							<li>Component procurement</li>
+							<li>Electrical wiring</li>
+							<li>CAD design and 3D printing of solenoid valve mounting parts</li>
+							<li>Writing code in Python to query sensors</li>
+							<li>System testing before field deployment</li>
+							<li>Documentation of the entire project, to be able to reproduce the system identically with a subcontractor</li>
+						</ul>
+						<br/>
+						Interior of the electrical control box and one of the three boxes on the tower that integrate the solenoid valves and interface the sensors:<br/>
+						<br/>
+						<div class="gallery">
+							<a href="10 big.jpg">
+								<img src="10 mini.jpg" alt="Control box">
+							</a>
+							<a href="17 big.jpg">
+								<img src="17 mini.jpg" alt="Tower box">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Physical interface for controlling solenoid valves:<br/>
+						<br/>
+						<div class="gallery">
+							<a href="12 big.jpg">
+								<img src="12 mini.jpg" alt="Control interface">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Wired system ready to be delivered on site. The pallet contains the four electrical boxes and the meteorological sensors in their cartons:<br/>
+						<br/>
+						<div class="gallery">
+							<a href="14 big.jpg">
+								<img src="14 mini.jpg" alt="System on pallet 1">
+							</a>
+							<a href="16 big.jpg">
+								<img src="16 mini.jpg" alt="System on pallet 2">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						<br/>
+						From this hardware and software architecture, I derived the system to equip other smaller stations. Below is the instrumentation of a station in Corsica containing only one air sampling line (and therefore only one solenoid valve):<br/>
+						<br/>
+						<div class="gallery">
+							<a href="2 big.jpg">
+								<img src="2 mini.jpg" alt="Corsica station">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						I wrote complete documentation of the system, which was then reproduced identically by a contractor to equip other stations.<br/>
+						<br/>
+						Below is the mechanical connection part of the solenoid valve with the box. I printed these parts in 3D.<br/>
+						<br/>
+						<div class="gallery">
+							<a href="18 big.jpg">
+								<img src="18 mini.jpg" alt="Mechanical connection part">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Below is part of the electrical diagrams:<br/>
+						<br/>
+						<div>
+							<a href="20 big.jpg">
+								<img src="20 mini.jpg" alt="Electrical diagram 1">
+							</a>
+							<a href="19 big.jpg">
+								<img src="19 mini.jpg" alt="Electrical diagram 2">
+							</a>
+						</div>
 					</div>
-					<br>
-					<br>
-					Système câblé et prêt à être livré sur site. La palette contient les quatre boitiers électriques et les capteurs météorologiques dans leurs cartons :<br>
-					<br>
-					<div class="gallery">	
-						<a href= "14 big.jpg">
-							<img src="14 mini.jpg">
-						</a>
-						<a href= "16 big.jpg">
-							<img src="16 mini.jpg">
-						</a>
+				</div>
+
+				<!-- Version espagnole -->
+				<div class="lang-content hidden" data-lang="es">
+					<h2 class="project-title">Automatización e instrumentación de torres de muestreo de aire</h2>
+					<div class="project-tech">Electrónica - electricidad - informática - instrumentación - transferencia de datos - diseño de pieza de acero - fabricación - compras - documentación</div>
+					<div class="project-meta">Ingeniero de investigación en el Laboratorio de Ciencias del Clima y del Medio Ambiente • 2021</div>
+					<div class="project-description">
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Torre muestreo aire">
+						</a><br/>
+						<br/>
+						Las torres de muestreo de aire están atravesadas por tuberías que suben hasta cien metros de altura para recolectar aire. Hasta entonces, era necesaria la intervención humana para realizar pruebas de ausencia de fugas.<br/>
+						Diseñé un sistema que alberga electroválvulas para automatizar estas pruebas en la parte inferior de la torre sin tener que subir.<br/>
+						También respaldé este sistema con sensores meteorológicos para instrumentar la torre (sensores de temperatura, humedad, presión y viento).<br/>
+						Escribí el código informático para consultar estos sensores y recuperar datos. Este código, basado en el paradigma orientado a objetos, es modular para adaptarse a otras configuraciones de estaciones (diferente número de sensores, diferente número de pisos de la torre...).<br/>
+						<br/>
+						<ul>
+							<li>Hacerse cargo de las especificaciones, con modelo de válvula, sensores y Raspberry Pi impuestos</li>
+							<li>Elección del protocolo de comunicación con los sensores (RS-485)</li>
+							<li>Elección de la interfaz de usuario para operar las válvulas (botones con capucha con luces indicadoras)</li>
+							<li>Dimensionamiento eléctrico</li>
+							<li>Adquisición de componentes</li>
+							<li>Cableado eléctrico</li>
+							<li>Diseño CAD e impresión 3D de piezas de montaje de electroválvulas</li>
+							<li>Escritura de código en Python para consultar sensores</li>
+							<li>Pruebas del sistema antes del despliegue en campo</li>
+							<li>Documentación de todo el proyecto, para poder reproducir el sistema idénticamente con un subcontratista</li>
+						</ul>
+						<br/>
+						Interior de la caja de control eléctrico y una de las tres cajas en la torre que integran las electroválvulas e interfazan los sensores:<br/>
+						<br/>
+						<div class="gallery">
+							<a href="10 big.jpg">
+								<img src="10 mini.jpg" alt="Caja control">
+							</a>
+							<a href="17 big.jpg">
+								<img src="17 mini.jpg" alt="Caja torre">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Interfaz física para controlar las electroválvulas:<br/>
+						<br/>
+						<div class="gallery">
+							<a href="12 big.jpg">
+								<img src="12 mini.jpg" alt="Interfaz control">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Sistema cableado y listo para ser entregado en el sitio. La paleta contiene las cuatro cajas eléctricas y los sensores meteorológicos en sus cajas:<br/>
+						<br/>
+						<div class="gallery">
+							<a href="14 big.jpg">
+								<img src="14 mini.jpg" alt="Sistema en paleta 1">
+							</a>
+							<a href="16 big.jpg">
+								<img src="16 mini.jpg" alt="Sistema en paleta 2">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						<br/>
+						A partir de esta arquitectura de hardware y software, derivé el sistema para equipar otras estaciones más pequeñas. A continuación se muestra la instrumentación de una estación en Córcega que contiene solo una línea de muestreo de aire (y por lo tanto solo una electroválvula):<br/>
+						<br/>
+						<div class="gallery">
+							<a href="2 big.jpg">
+								<img src="2 mini.jpg" alt="Estación Córcega">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Escribí una documentación completa del sistema, que luego fue reproducido idénticamente por un contratista para equipar otras estaciones.<br/>
+						<br/>
+						A continuación se muestra la pieza de conexión mecánica de la electroválvula con la caja. Imprimí estas piezas en 3D.<br/>
+						<br/>
+						<div class="gallery">
+							<a href="18 big.jpg">
+								<img src="18 mini.jpg" alt="Pieza conexión mecánica">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						A continuación se muestra parte de los diagramas eléctricos:<br/>
+						<br/>
+						<div>
+							<a href="20 big.jpg">
+								<img src="20 mini.jpg" alt="Diagrama eléctrico 1">
+							</a>
+							<a href="19 big.jpg">
+								<img src="19 mini.jpg" alt="Diagrama eléctrico 2">
+							</a>
+						</div>
 					</div>
-					<br>
-					<br>
-					<br>
-					À partir de cette architecture matérielle et logicielle j'ai dérivé le système pour équiper d'autres stations plus petites. Ci-dessous l'instrumentation d'une station en Corse ne contenant qu'une seule ligne de prélèvement d'air (et donc qu'une seule électrovanne) :<br>
-					<br>
-					<div class="gallery">	
-						<a href= "2 big.jpg">
-							<img src="2 mini.jpg">
-						</a>
-					</div>
-					<br>
-					<br>
-					J'ai rédigé une documentation complète du système, qui a ensuite été reproduit à l'identique par un prestataire pour équiper d'autres stations.<br>
-					<br>
-					Ci-dessous la pièce de lisaison mécanique de l'électrovanne avec le boitier. J'ai imprimé ces pièces en 3D.<br>
-					<br>
-					<div class="gallery">	
-						<a href= "18 big.jpg">
-							<img src="18 mini.jpg">
-						</a>
-					</div>
-					<br>
-					<br>
-					Ci-dessous une partie des schémas électriques :<br>
-					<br>
-					<div>
-						<a href= "20 big.jpg">
-							<img src="20 mini.jpg">
-						</a>
-						<a href= "19 big.jpg">
-							<img src="19 mini.jpg">
-						</a>
+				</div>
+
+				<!-- Version allemande -->
+				<div class="lang-content hidden" data-lang="de">
+					<h2 class="project-title">Automatisierung und Instrumentierung von Luftprobentürmen</h2>
+					<div class="project-tech">Elektronik - Elektrizität - IT - Instrumentierung - Datenübertragung - Stahlteilentwurf - Fertigung - Beschaffung - Dokumentation</div>
+					<div class="project-meta">Forschungsingenieur am Labor für Klima- und Umweltwissenschaften • 2021</div>
+					<div class="project-description">
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Luftprobenturm">
+						</a><br/>
+						<br/>
+						Luftprobentürme werden von Rohren durchzogen, die bis zu hundert Meter hoch steigen, um Luft zu sammeln. Bis dahin war menschliches Eingreifen erforderlich, um Leckfreiheitstests durchzuführen.<br/>
+						Ich entwarf ein System mit Magnetventilen, um diese Tests am Fuß des Turms zu automatisieren, ohne klettern zu müssen.<br/>
+						Ich stützte dieses System auch mit meteorologischen Sensoren, um den Turm zu instrumentieren (Temperatur-, Feuchtigkeits-, Druck- und Windsensoren).<br/>
+						Ich schrieb den Computercode, um diese Sensoren abzufragen und Daten abzurufen. Dieser Code, basierend auf dem objektorientierten Paradigma, ist modular, um sich an andere Stationskonfigurationen anzupassen (unterschiedliche Anzahl von Sensoren, unterschiedliche Anzahl von Turmgeschossen...).<br/>
+						<br/>
+						<ul>
+							<li>Übernahme der Spezifikationen mit vorgegebenem Ventilmodell, Sensoren und Raspberry Pi</li>
+							<li>Wahl des Kommunikationsprotokolls mit den Sensoren (RS-485)</li>
+							<li>Wahl der Benutzerschnittstelle zur Bedienung der Ventile (abgedeckte Tasten mit Kontrollleuchten)</li>
+							<li>Elektrische Dimensionierung</li>
+							<li>Komponentenbeschaffung</li>
+							<li>Elektrische Verkabelung</li>
+							<li>CAD-Entwurf und 3D-Druck von Magnetventil-Montageteilen</li>
+							<li>Code-Schreiben in Python zur Abfrage von Sensoren</li>
+							<li>Systemtests vor Feldeinsatz</li>
+							<li>Dokumentation des gesamten Projekts, um das System identisch mit einem Subunternehmer reproduzieren zu können</li>
+						</ul>
+						<br/>
+						Inneres des elektrischen Steuerungskastens und eines der drei Kästen auf dem Turm, die die Magnetventile integrieren und die Sensoren verbinden:<br/>
+						<br/>
+						<div class="gallery">
+							<a href="10 big.jpg">
+								<img src="10 mini.jpg" alt="Steuerkasten">
+							</a>
+							<a href="17 big.jpg">
+								<img src="17 mini.jpg" alt="Turmkasten">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Physische Schnittstelle zur Steuerung der Magnetventile:<br/>
+						<br/>
+						<div class="gallery">
+							<a href="12 big.jpg">
+								<img src="12 mini.jpg" alt="Steuerschnittstelle">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Verkabeltes System bereit zur Auslieferung vor Ort. Die Palette enthält die vier Elektrokästen und die meteorologischen Sensoren in ihren Kartons:<br/>
+						<br/>
+						<div class="gallery">
+							<a href="14 big.jpg">
+								<img src="14 mini.jpg" alt="System auf Palette 1">
+							</a>
+							<a href="16 big.jpg">
+								<img src="16 mini.jpg" alt="System auf Palette 2">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						<br/>
+						Aus dieser Hardware- und Softwarearchitektur leitete ich das System ab, um andere kleinere Stationen auszustatten. Unten ist die Instrumentierung einer Station auf Korsika zu sehen, die nur eine Luftprobenleitung enthält (und daher nur ein Magnetventil):<br/>
+						<br/>
+						<div class="gallery">
+							<a href="2 big.jpg">
+								<img src="2 mini.jpg" alt="Korsika-Station">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Ich verfasste eine vollständige Dokumentation des Systems, das dann von einem Auftragnehmer identisch reproduziert wurde, um andere Stationen auszustatten.<br/>
+						<br/>
+						Unten ist das mechanische Verbindungsteil des Magnetventils mit dem Kasten zu sehen. Ich druckte diese Teile in 3D.<br/>
+						<br/>
+						<div class="gallery">
+							<a href="18 big.jpg">
+								<img src="18 mini.jpg" alt="Mechanisches Verbindungsteil">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Unten ist ein Teil der elektrischen Schaltpläne zu sehen:<br/>
+						<br/>
+						<div>
+							<a href="20 big.jpg">
+								<img src="20 mini.jpg" alt="Elektrischer Schaltplan 1">
+							</a>
+							<a href="19 big.jpg">
+								<img src="19 mini.jpg" alt="Elektrischer Schaltplan 2">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
