@@ -197,7 +197,8 @@ li a:hover {
 /* ---CV--- */
 
 .bandeau_CV{
-	background		: #F0E68C;
+	/*background		: #F0E68C;*/
+	background : #FDF5E6;
 	border-radius	: 10px;
 	box-shadow		: 6px 6px 20px grey;
 	padding			: 12px;
