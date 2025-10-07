@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=UTF-8 />
+		<link rel="stylesheet" href="../../style.css" />
+		<!-- pour un affichage correct sur les téléphonnes -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+		<title>fernandez artwork</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="TutoRobot">
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
+				
+				<h2 class="project-title">Mesures manuelles du champ magnétique terrestre</h2>
+				<div class="project-tech">Manip scientifique</div>
+				<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+				<div class="project-description">
+				
+				<!-- Version française -->
+				<div class="lang-content" data-lang="fr">
+					<h2 class="project-title">Mesures manuelles du champ magnétique terrestre</h2>
+					<div class="project-tech">Manip scientifique</div>
+					<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					<div class="project-description">
+						<br/>
+						L'observatoire magnétique de Dumont d'Urville, opéré par l'EOST, fait partie du réseau mondial de mesure magnétique de l'ISGI.<br/>
+						<br/>
+						Une partie du village magnétique de la station :<br/>
+						<div class="gallery">
+							<a href="6 big.jpg">
+								<img src="6 mini.jpg" alt="Village magnétique">
+							</a>
+						</div>
+						<br/>
+						Dans ce village magnétique, un variomètre et deux magnétomètres à protons mesurent en permanence les variations du champ magnétique terrestre. Afin de recaler ces variations par rapport à une valeur de référence, le champ magnétique terrestre est mesuré tous les jours manuellement.<br/>
+						<br/>
+						Variomètre et magnétomètre à protons :<br/>
+						<div class="gallery">
+							<a href="4 big.jpg">
+								<img src="4 mini.jpg" alt="Variomètre">
+							</a>
+							<a href="2 big.jpg">
+								<img src="2 mini.jpg" alt="Magnétomètre à protons">
+							</a>
+						</div>
+						<br/>
+						La mesure manuelle du champ magnétique terrestre se fait à l'aide d'un théodolite sur lequel est fixé un capteur d'intensité du champ magnétique. La manip consiste à réaliser plusieurs visées sous différents angles, en notant l'heure des mesures à la seconde près, afin de produire des valeurs de référence.<br/>
+						<br/>
+						Le théodolite avec son capteur d'intensité magnétique, et une paire de cibles de visée :<br/>
+						<div class="gallery">
+							<a href="3 big.jpg">
+								<img src="3 mini.jpg" alt="Théodolite avec capteur">
+							</a>
+							<a href="1 big.jpg">
+								<img src="1 mini.jpg" alt="Cibles de visée">
+							</a>
+						</div>
+						<br/>
+						Après la manip, les 54 valeurs ainsi obtenues sont saisies dans un ordinateur. Cette opération ne peut pas être réalisée sur place car un ordinateur perturberait trop le champ magnétique.<br/>
+						<br/>
+						Afin de gagner en performance dans cette opération de saisie, j'ai recodé l'outil informatique. Ce projet est détaillé ici : <a href="../IPEV-saisir_mesbs/IPEV-saisir_mesbs.html">Développement d'un outil de saisie de données</a><br/>
+						<a href="../IPEV-saisir_mesbs/IPEV-saisir_mesbs.html">
+							<img src="7 mini.jpg" alt="Interface utilisateur">
+						</a>
+						<br/>
+						<br/>
+						Cette mesure manuelle du champ magnétique doit être effectuée tous les jours. Nous nous sommes partagé cette tâche avec l'informaticien de la station pour l'effectuer chacun tous les deux jours tout au long de l'année sur place.<br/>
+					</div>
+				</div>
+
+				<!-- Version anglaise -->
+				<div class="lang-content hidden" data-lang="en">
+					<h2 class="project-title">Manual Measurements of Earth's Magnetic Field</h2>
+					<div class="project-tech">Scientific procedure</div>
+					<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					<div class="project-description">
+						<br/>
+						The Dumont d'Urville magnetic observatory, operated by EOST, is part of the ISGI global magnetic measurement network.<br/>
+						<br/>
+						Part of the station's magnetic village:<br/>
+						<div class="gallery">
+							<a href="6 big.jpg">
+								<img src="6 mini.jpg" alt="Magnetic village">
+							</a>
+						</div>
+						<br/>
+						In this magnetic village, a variometer and two proton magnetometers permanently measure variations in Earth's magnetic field. To recalibrate these variations against a reference value, Earth's magnetic field is measured manually every day.<br/>
+						<br/>
+						Variometer and proton magnetometer:<br/>
+						<div class="gallery">
+							<a href="4 big.jpg">
+								<img src="4 mini.jpg" alt="Variometer">
+							</a>
+							<a href="2 big.jpg">
+								<img src="2 mini.jpg" alt="Proton magnetometer">
+							</a>
+						</div>
+						<br/>
+						Manual measurement of Earth's magnetic field is done using a theodolite with an attached magnetic field intensity sensor. The procedure consists of making several sightings at different angles, noting the measurement time to the second, to produce reference values.<br/>
+						<br/>
+						The theodolite with its magnetic intensity sensor, and a pair of sighting targets:<br/>
+						<div class="gallery">
+							<a href="3 big.jpg">
+								<img src="3 mini.jpg" alt="Theodolite with sensor">
+							</a>
+							<a href="1 big.jpg">
+								<img src="1 mini.jpg" alt="Sighting targets">
+							</a>
+						</div>
+						<br/>
+						After the procedure, the 54 values thus obtained are entered into a computer. This operation cannot be performed on-site as a computer would disturb the magnetic field too much.<br/>
+						<br/>
+						To improve performance in this data entry operation, I recoded the software tool. This project is detailed here: <a href="../IPEV-saisir_mesbs/IPEV-saisir_mesbs.html">Development of a Data Entry Tool</a><br/>
+						<a href="../IPEV-saisir_mesbs/IPEV-saisir_mesbs.html">
+							<img src="7 mini.jpg" alt="User interface">
+						</a>
+						<br/>
+						<br/>
+						This manual measurement of the magnetic field must be performed every day. We shared this task with the station's IT technician to perform it every other day throughout the year on-site.<br/>
+					</div>
+				</div>
+
+				<!-- Version espagnole -->
+				<div class="lang-content hidden" data-lang="es">
+					<h2 class="project-title">Mediciones manuales del campo magnético terrestre</h2>
+					<div class="project-tech">Procedimiento científico</div>
+					<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					<div class="project-description">
+						<br/>
+						El observatorio magnético de Dumont d'Urville, operado por EOST, forma parte de la red mundial de medición magnética ISGI.<br/>
+						<br/>
+						Parte del pueblo magnético de la estación:<br/>
+						<div class="gallery">
+							<a href="6 big.jpg">
+								<img src="6 mini.jpg" alt="Pueblo magnético">
+							</a>
+						</div>
+						<br/>
+						En este pueblo magnético, un variómetro y dos magnetómetros de protones miden permanentemente las variaciones del campo magnético terrestre. Para recalibrar estas variaciones con respecto a un valor de referencia, el campo magnético terrestre se mide manualmente todos los días.<br/>
+						<br/>
+						Variómetro y magnetómetro de protones:<br/>
+						<div class="gallery">
+							<a href="4 big.jpg">
+								<img src="4 mini.jpg" alt="Variómetro">
+							</a>
+							<a href="2 big.jpg">
+								<img src="2 mini.jpg" alt="Magnetómetro de protones">
+							</a>
+						</div>
+						<br/>
+						La medición manual del campo magnético terrestre se realiza utilizando un teodolito con un sensor de intensidad de campo magnético adjunto. El procedimiento consiste en realizar varias observaciones en diferentes ángulos, anotando la hora de las mediciones con precisión de segundos, para producir valores de referencia.<br/>
+						<br/>
+						El teodolito con su sensor de intensidad magnética y un par de objetivos de observación:<br/>
+						<div class="gallery">
+							<a href="3 big.jpg">
+								<img src="3 mini.jpg" alt="Teodolito con sensor">
+							</a>
+							<a href="1 big.jpg">
+								<img src="1 mini.jpg" alt="Objetivos de observación">
+							</a>
+						</div>
+						<br/>
+						Después del procedimiento, los 54 valores así obtenidos se ingresan en una computadora. Esta operación no se puede realizar en el sitio ya que una computadora perturbaría demasiado el campo magnético.<br/>
+						<br/>
+						Para mejorar el rendimiento en esta operación de entrada de datos, recodifiqué la herramienta de software. Este proyecto se detalla aquí: <a href="../IPEV-saisir_mesbs/IPEV-saisir_mesbs.html">Desarrollo de una herramienta de entrada de datos</a><br/>
+						<a href="../IPEV-saisir_mesbs/IPEV-saisir_mesbs.html">
+							<img src="7 mini.jpg" alt="Interfaz de usuario">
+						</a>
+						<br/>
+						<br/>
+						Esta medición manual del campo magnético debe realizarse todos los días. Compartimos esta tarea con el técnico de TI de la estación para realizarla cada dos días durante todo el año en el sitio.<br/>
+					</div>
+				</div>
+
+				<!-- Version allemande -->
+				<div class="lang-content hidden" data-lang="de">
+					<h2 class="project-title">Manuelle Messungen des Erdmagnetfelds</h2>
+					<div class="project-tech">Wissenschaftliches Verfahren</div>
+					<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
+					<div class="project-description">
+						<br/>
+						Das magnetische Observatorium Dumont d'Urville, betrieben von EOST, ist Teil des weltweiten ISGI-Magnetmessnetzwerks.<br/>
+						<br/>
+						Ein Teil des magnetischen Dorfes der Station:<br/>
+						<div class="gallery">
+							<a href="6 big.jpg">
+								<img src="6 mini.jpg" alt="Magnetisches Dorf">
+							</a>
+						</div>
+						<br/>
+						In diesem magnetischen Dorf messen ein Variometer und zwei Protonenmagnetometer permanent die Variationen des Erdmagnetfelds. Um diese Variationen gegen einen Referenzwert zu kalibrieren, wird das Erdmagnetfeld täglich manuell gemessen.<br/>
+						<br/>
+						Variometer und Protonenmagnetometer:<br/>
+						<div class="gallery">
+							<a href="4 big.jpg">
+								<img src="4 mini.jpg" alt="Variometer">
+							</a>
+							<a href="2 big.jpg">
+								<img src="2 mini.jpg" alt="Protonenmagnetometer">
+							</a>
+						</div>
+						<br/>
+						Die manuelle Messung des Erdmagnetfelds erfolgt mit einem Theodolit mit angebrachtem Magnetfeldintensitätssensor. Das Verfahren besteht darin, mehrere Visuren unter verschiedenen Winkeln durchzuführen und die Messzeit auf die Sekunde genau zu notieren, um Referenzwerte zu erzeugen.<br/>
+						<br/>
+						Der Theodolit mit seinem magnetischen Intensitätssensor und ein Paar Visiertafeln:<br/>
+						<div class="gallery">
+							<a href="3 big.jpg">
+								<img src="3 mini.jpg" alt="Theodolit mit Sensor">
+							</a>
+							<a href="1 big.jpg">
+								<img src="1 mini.jpg" alt="Visiertafeln">
+							</a>
+						</div>
+						<br/>
+						Nach dem Verfahren werden die so erhaltenen 54 Werte in einen Computer eingegeben. Diese Operation kann nicht vor Ort durchgeführt werden, da ein Computer das Magnetfeld zu sehr stören würde.<br/>
+						<br/>
+						Um die Leistung bei dieser Dateneingabeoperation zu verbessern, habe ich das Softwaretool neu codiert. Dieses Projekt wird hier ausführlich beschrieben: <a href="../IPEV-saisir_mesbs/IPEV-saisir_mesbs.html">Entwicklung eines Dateneingabewerkzeugs</a><br/>
+						<a href="../IPEV-saisir_mesbs/IPEV-saisir_mesbs.html">
+							<img src="7 mini.jpg" alt="Benutzeroberfläche">
+						</a>
+						<br/>
+						<br/>
+						Diese manuelle Messung des Magnetfelds muss täglich durchgeführt werden. Wir teilten uns diese Aufgabe mit dem IT-Techniker der Station, um sie jeden zweiten Tag das ganze Jahr über vor Ort durchzuführen.<br/>
+					</div>
+				</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
+	</body>
+</html>

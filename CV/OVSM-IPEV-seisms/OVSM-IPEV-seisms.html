@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=UTF-8 />
+		<link rel="stylesheet" href="../../style.css" />
+		<!-- pour un affichage correct sur les téléphonnes -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+		<title>fernandez artwork</title>
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<ul id="menu">
+					<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+					<li>
+						<a href="../../paintings.html">
+							<span class="lang-content" data-lang="fr">Peintures</span>
+							<span class="lang-content hidden" data-lang="en">Paintings</span>
+							<span class="lang-content hidden" data-lang="es">Pinturas</span>
+							<span class="lang-content hidden" data-lang="de">Gemälde</span>
+						</a>
+					</li>
+					<li>
+						<a href="../../robotic.html">
+							<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+							<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+							<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+							<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+						</a>
+					</li>
+					<li><a href="../../CV.html">CV</a></li>
+					<li class="language-switcher">
+						<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+						<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+						<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+						<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		
+			<div id="TutoRobot">
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
+				
+				<!-- Version française -->
+				<div class="lang-content" data-lang="fr">
+					<h2 class="project-title">Analyses manuelles d'ondes sismiques</h2>
+					<div class="project-tech">Manip scientifique</div>
+					<div class="project-meta">Responsable Technique à l'OVSM et Électronicien Science à l'IPEV • 2024</div>
+					<div class="project-description">
+						<br/>
+						Durant mon hivernage sur la station de Dumont d'Urville et en tant que Responsable Technique en Martinique, j'ai réalisé des analyses régulières des ondes sismiques détectées par les instruments.<br/>
+						<br/>
+						La manip consistait à définir visuellement les différents types d'ondes sur un signal sismique, afin de déduire la distance du séisme par rapport à la station de détection.<br/>
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Onde sismique">
+						</a><br/>
+						<br/>
+						Sur la station de Dumont d'Urville, afin de valider mes estimations de distances avec les autres analyses mondiales, j'ai codé un outil qui récupère les données sismiques internationales sur une base de données et précalcule leur distance par rapport à la station. Ce projet est détaillé ici : <a href="../IPEV-get_sismic_data/IPEV-get_sismic_data.html">Développement d'un outil de récupération de données sismiques</a><br/>
+						<a href="../IPEV-get_sismic_data/IPEV-get_sismic_data.html">
+							<img src="2 mini.jpg" alt="Interface utilisateur">
+						</a>
+						<br/>
+						<br/>
+						<br/>
+						En Martinique, le fait d'avoir un réseau de stations de mesures nous permettait d'aller plus loin que la simple définition de la distance au séisme en définissant la position du séisme.<br/>
+						<br/>
+						Interface de visualisation des signaux sismiques du réseau de stations :<br/>
+						<a href="3 big.jpg">
+							<img src="3 mini.jpg" alt="Interface visualisation signaux sismiques">
+						</a>
+					</div>
+				</div>
+
+				<!-- Version anglaise -->
+				<div class="lang-content hidden" data-lang="en">
+					<h2 class="project-title">Manual Seismic Wave Analysis</h2>
+					<div class="project-tech">Scientific procedure</div>
+					<div class="project-meta">Technical Manager at OVSM and Science Electronics Technician at IPEV • 2024</div>
+					<div class="project-description">
+						<br/>
+						During my wintering at Dumont d'Urville station and as Technical Manager in Martinique, I performed regular analyses of seismic waves detected by instruments.<br/>
+						<br/>
+						The procedure consisted of visually defining different types of waves on a seismic signal to deduce the earthquake distance from the detection station.<br/>
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Seismic wave">
+						</a><br/>
+						<br/>
+						At Dumont d'Urville station, to validate my distance estimates with other global analyses, I coded a tool that retrieves international seismic data from a database and precalculates their distance from the station. This project is detailed here: <a href="../IPEV-get_sismic_data/IPEV-get_sismic_data.html">Development of a Seismic Data Recovery Tool</a><br/>
+						<a href="../IPEV-get_sismic_data/IPEV-get_sismic_data.html">
+							<img src="2 mini.jpg" alt="User interface">
+						</a>
+						<br/>
+						<br/>
+						<br/>
+						In Martinique, having a network of measurement stations allowed us to go beyond simply defining the distance to the earthquake by determining the earthquake's position.<br/>
+						<br/>
+						Visualization interface for seismic signals from the station network:<br/>
+						<a href="3 big.jpg">
+							<img src="3 mini.jpg" alt="Seismic signals visualization interface">
+						</a>
+					</div>
+				</div>
+
+				<!-- Version espagnole -->
+				<div class="lang-content hidden" data-lang="es">
+					<h2 class="project-title">Análisis manual de ondas sísmicas</h2>
+					<div class="project-tech">Procedimiento científico</div>
+					<div class="project-meta">Responsable Técnico en OVSM y Técnico Electrónico Científico en IPEV • 2024</div>
+					<div class="project-description">
+						<br/>
+						Durante mi invernada en la estación Dumont d'Urville y como Responsable Técnico en Martinica, realicé análisis regulares de ondas sísmicas detectadas por los instrumentos.<br/>
+						<br/>
+						El procedimiento consistía en definir visualmente diferentes tipos de ondas en una señal sísmica para deducir la distancia del terremoto desde la estación de detección.<br/>
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Onda sísmica">
+						</a><br/>
+						<br/>
+						En la estación Dumont d'Urville, para validar mis estimaciones de distancia con otros análisis globales, codifiqué una herramienta que recupera datos sísmicos internacionales de una base de datos y precalcula su distancia desde la estación. Este proyecto se detalla aquí: <a href="../IPEV-get_sismic_data/IPEV-get_sismic_data.html">Desarrollo de una herramienta de recuperación de datos sísmicos</a><br/>
+						<a href="../IPEV-get_sismic_data/IPEV-get_sismic_data.html">
+							<img src="2 mini.jpg" alt="Interfaz de usuario">
+						</a>
+						<br/>
+						<br/>
+						<br/>
+						En Martinica, tener una red de estaciones de medición nos permitió ir más allá de simplemente definir la distancia al terremoto determinando la posición del terremoto.<br/>
+						<br/>
+						Interfaz de visualización de señales sísmicas de la red de estaciones:<br/>
+						<a href="3 big.jpg">
+							<img src="3 mini.jpg" alt="Interfaz visualización señales sísmicas">
+						</a>
+					</div>
+				</div>
+
+				<!-- Version allemande -->
+				<div class="lang-content hidden" data-lang="de">
+					<h2 class="project-title">Manuelle seismische Wellenanalyse</h2>
+					<div class="project-tech">Wissenschaftliches Verfahren</div>
+					<div class="project-meta">Technischer Leiter bei OVSM und Wissenschaftlicher Elektroniktechniker bei IPEV • 2024</div>
+					<div class="project-description">
+						<br/>
+						Während meiner Überwinterung an der Station Dumont d'Urville und als Technischer Leiter auf Martinique führte ich regelmäßige Analysen seismischer Wellen durch, die von Instrumenten erfasst wurden.<br/>
+						<br/>
+						Das Verfahren bestand darin, verschiedene Wellentypen auf einem seismischen Signal visuell zu definieren, um die Entfernung des Erdbebens von der Erfassungsstation abzuleiten.<br/>
+						<br/>
+						<a href="1 big.jpg">
+							<img src="1 mini.jpg" alt="Seismische Welle">
+						</a><br/>
+						<br/>
+						An der Station Dumont d'Urville codierte ich ein Werkzeug, das internationale seismische Daten aus einer Datenbank abruft und ihre Entfernung von der Station vorberechnet, um meine Entfernungsschätzungen mit anderen globalen Analysen zu validieren. Dieses Projekt wird hier ausführlich beschrieben: <a href="../IPEV-get_sismic_data/IPEV-get_sismic_data.html">Entwicklung eines Werkzeugs zur Wiederherstellung seismischer Daten</a><br/>
+						<a href="../IPEV-get_sismic_data/IPEV-get_sismic_data.html">
+							<img src="2 mini.jpg" alt="Benutzeroberfläche">
+						</a>
+						<br/>
+						<br/>
+						<br/>
+						Auf Martinique ermöglichte uns ein Netzwerk von Messstationen, über die einfache Definition der Entfernung zum Erdbeben hinauszugehen, indem wir die Position des Erdbebens bestimmten.<br/>
+						<br/>
+						Visualisierungsschnittstelle für seismische Signale aus dem Stationsnetzwerk:<br/>
+						<a href="3 big.jpg">
+							<img src="3 mini.jpg" alt="Visualisierungsschnittstelle seismischer Signale">
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
+	</body>
+</html>
