@@ -47,41 +47,316 @@
 					<span class="lang-content hidden" data-lang="de">Zurück</span>
 				</button>
 				
-				<h2 class="project-title">Analyse pannes pluviomètre</h2>
-				<div class="project-tech">Electronique - analyse de pannes</div>
-				<div class="project-meta">Electronicien Science à l'Institut Polaire Français • 2022</div>
-				<div class="project-description">
-					<br>
-					J'ai diagnostiqué les pannes d'un pluviomètre dont l'alimentation avait endomagé plusieurs organes à différents niveaux.</br>
-					</br>
-					La communication USB ne renvoyait aucune donnée sur l'interface graphique propriétaire. J'ai donc interrogé l'instrument avec le protocole RS-485.</br>
-					<div class="gallery">
-						<a href= "4 big.jpg">
-							<img src="4 mini.jpg">
-						</a>
-						<a href= "3 big.jpg">
-							<img src="3 mini.jpg">
-						</a>
+				<!-- Version française -->
+				<div class="lang-content" data-lang="fr">
+					<h2 class="project-title">Diagnostic des pannes d'un pluviomètre</h2>
+					<div class="project-tech">Électronique - analyse de pannes</div>
+					<div class="project-meta">Électronicien Science à l'Institut Polaire Français • 2022</div>
+					<div class="project-description">
+						<br/>
+						J'ai diagnostiqué les pannes d'un pluviomètre, dont l'alimentation électrique avait endommagé plusieurs organes à différents niveaux.<br/>
+						<br/>
+						<br/>
+						<br/>
+						<b>Alimentation électrique</b><br/>
+						<br/>
+						Le bloc d'alimentation du système avait grillé. Je l'ai remplacé par une alimentation stabilisée de laboratoire pour poursuivre mes tests.<br/>
+						<br/>
+						<br/>
+						<b>Centrale d'acquisition CR1000</b><br/>
+						<br/>
+						La centrale d'acquisition CR1000 de la marque Campbell est un petit système robuste et fiable, basé sur un microcontrôleur, largement utilisé dans la recherche et l'industrie.<br/>
+						Après diagnostic il s'est avéré que son port série ne fonctionnait plus et que la carte SD de la centrale renvoyait des erreurs, rendant son utilisation impossible.<br/>
+						<br/>
+						<br/>
+						<b>Carte d'adaptation des niveaux logiques du protocole de communication</b><br/>
+						<br/>
+						La centrale d'acquisition utilise le protocole de communication UART, en niveau RS485 compris entre +5V et -5V.<br/>
+						L'instrument utilise le protocole de communication UART, en niveaux TTL compris entre 0V et 5V.<br/>
+						Bien que le protocole de communication soit le même, une conversion des signaux logiques est nécessaire. Une carte électronique a donc été conçue pour convertir les signaux. Le composant principal de cette carte est une puce SN75176A qui se charge de l'adaptation physique des niveaux logiques.<br/>
+						<br/>
+						Un diagnostic visuel a mis en évidence l'éclatement de ce composant électronique. Fort heureusement nous avions une puce de rechange pour poursuivre les tests.<br/>
+						<br/>
+						<br/>
+						<b>Carte d'acquisition de l'instrument</b><br/>
+						<br/>
+						L'instrument en lui-même, que j'ai interrogé directement en me branchant dessus, ne renvoyait plus de données. Sa communication USB fonctionnait bien et affichait une interface graphique, mais il m'était impossible de communiquer avec les protocoles plus bas niveaux SDI-12 et UART/RS485.<br/>
+						<br/>
+						<br/>
+						<b>Conclusions</b><br/>
+						<br/>
+						Tous ces éléments amènent à supposer une surtension au niveau de l'alimentation, qui s'est propagée à travers la ligne physique du protocole de communication en grillant tous les composants au passage.<br/>
+						Les responsables du programme scientifique distants, avec qui j'ai été en contact durant tous les tests, ont eu toutes les informations en main pour déclarer le système en panne et lancer un projet de remise à neuf.
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						Communication avec l'instrument en UART/RS485<br/>
+						<div class="gallery">
+							<a href="4 big.jpg">
+								<img src="4 mini.jpg" alt="Communication UART 1">
+							</a>
+							<a href="3 big.jpg">
+								<img src="3 mini.jpg" alt="Communication UART 2">
+							</a>
+						</div>
+						<br/>
+						Communication avec l'instrument en SDI-12. J'ai programmé un Arduino pour discuter avec l'instrument via ce protocole. Un oscilloscope m'a permis de m'assurer de la bonne transmission des trames. Afin de pousser les tests le plus loin possible j'ai déplacé l'instrument dans le labo d'électronique.<br/>
+						<div class="gallery">
+							<a href="5 big.jpg">
+								<img src="5 mini.jpg" alt="Communication SDI-12 1">
+							</a>
+							<a href="7 big.jpg">
+								<img src="7 mini.jpg" alt="Communication SDI-12 2">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Puce SN75176A grillée.<br/>
+						<div class="gallery">
+							<a href="8 big.jpg">
+								<img src="8 mini.jpg" alt="Puce grillée 1">
+							</a>
+							<a href="9 big.jpg">
+								<img src="9 mini.jpg" alt="Puce grillée 2">
+							</a>
+						</div>
 					</div>
-					</br>
-					</br>
-					Les données n'étant toujours pas monitorées j'ai interrogé l'instrument avec le protocole i2c. J'ai programmé un Arduino pour discuter avec l'instrument via ce protocole. Un oscilloscope m'a permis de m'assurer de la bonne transmission des trames.</br>
-					<div class="gallery">
-						<a href= "5 big.jpg">
-							<img src="5 mini.jpg">
-						</a>
+				</div>
+
+				<!-- Version anglaise -->
+				<div class="lang-content hidden" data-lang="en">
+					<h2 class="project-title">Rain Gauge Failure Diagnosis</h2>
+					<div class="project-tech">Electronics - failure analysis</div>
+					<div class="project-meta">Science Electronics Technician at the French Polar Institute • 2022</div>
+					<div class="project-description">
+						<br/>
+						I diagnosed failures in a rain gauge whose power supply had damaged several components at different levels.<br/>
+						<br/>
+						<br/>
+						<br/>
+						<b>Power Supply</b><br/>
+						<br/>
+						The system's power supply unit had failed. I replaced it with a stabilized laboratory power supply to continue my tests.<br/>
+						<br/>
+						<br/>
+						<b>CR1000 Data Acquisition System</b><br/>
+						<br/>
+						The Campbell CR1000 data acquisition system is a small, robust and reliable microcontroller-based system widely used in research and industry.<br/>
+						After diagnosis, it turned out that its serial port no longer worked and the system's SD card was returning errors, making it unusable.<br/>
+						<br/>
+						<br/>
+						<b>Communication Protocol Logic Level Adaptation Board</b><br/>
+						<br/>
+						The data acquisition system uses the UART communication protocol at RS485 level between +5V and -5V.<br/>
+						The instrument uses the UART communication protocol at TTL levels between 0V and 5V.<br/>
+						Although the communication protocol is the same, logic signal conversion is necessary. An electronic board was therefore designed to convert the signals. The main component of this board is an SN75176A chip that handles the physical adaptation of logic levels.<br/>
+						<br/>
+						A visual diagnosis revealed the bursting of this electronic component. Fortunately, we had a spare chip to continue testing.<br/>
+						<br/>
+						<br/>
+						<b>Instrument Acquisition Board</b><br/>
+						<br/>
+						The instrument itself, which I queried directly by connecting to it, no longer returned data. Its USB communication worked fine and displayed a graphical interface, but I was unable to communicate with the lower-level SDI-12 and UART/RS485 protocols.<br/>
+						<br/>
+						<br/>
+						<b>Conclusions</b><br/>
+						<br/>
+						All these elements suggest an overvoltage at the power supply level, which propagated through the physical line of the communication protocol, burning all components in its path.<br/>
+						The remote scientific program managers, with whom I was in contact throughout all tests, had all the information needed to declare the system failed and launch a refurbishment project.
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						Communication with the instrument in UART/RS485<br/>
+						<div class="gallery">
+							<a href="4 big.jpg">
+								<img src="4 mini.jpg" alt="UART communication 1">
+							</a>
+							<a href="3 big.jpg">
+								<img src="3 mini.jpg" alt="UART communication 2">
+							</a>
+						</div>
+						<br/>
+						Communication with the instrument in SDI-12. I programmed an Arduino to communicate with the instrument via this protocol. An oscilloscope allowed me to ensure proper frame transmission. To push the tests as far as possible, I moved the instrument to the electronics lab.<br/>
+						<div class="gallery">
+							<a href="5 big.jpg">
+								<img src="5 mini.jpg" alt="SDI-12 communication 1">
+							</a>
+							<a href="7 big.jpg">
+								<img src="7 mini.jpg" alt="SDI-12 communication 2">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Burned SN75176A chip.<br/>
+						<div class="gallery">
+							<a href="8 big.jpg">
+								<img src="8 mini.jpg" alt="Burned chip 1">
+							</a>
+							<a href="9 big.jpg">
+								<img src="9 mini.jpg" alt="Burned chip 2">
+							</a>
+						</div>
 					</div>
-					</br>
-					<br>
-					Afin de pousser les test le plus loin possible j'ai déplacé l'instrument dans le labo d'électronqiue.</br>
-					<div class="gallery">
-						<a href= "7 big.jpg">
-							<img src="7 mini.jpg">
-						</a>
+				</div>
+
+				<!-- Version espagnole -->
+				<div class="lang-content hidden" data-lang="es">
+					<h2 class="project-title">Diagnóstico de fallos de pluviómetro</h2>
+					<div class="project-tech">Electrónica - análisis de fallos</div>
+					<div class="project-meta">Técnico Electrónico Científico en el Instituto Polar Francés • 2022</div>
+					<div class="project-description">
+						<br/>
+						Diagnostiqué fallos en un pluviómetro cuya fuente de alimentación había dañado varios componentes a diferentes niveles.<br/>
+						<br/>
+						<br/>
+						<br/>
+						<b>Fuente de alimentación</b><br/>
+						<br/>
+						La unidad de fuente de alimentación del sistema había fallado. La reemplacé con una fuente de alimentación estabilizada de laboratorio para continuar mis pruebas.<br/>
+						<br/>
+						<br/>
+						<b>Sistema de adquisición de datos CR1000</b><br/>
+						<br/>
+						El sistema de adquisición de datos CR1000 de Campbell es un pequeño sistema robusto y confiable basado en microcontrolador, ampliamente utilizado en investigación e industria.<br/>
+						Después del diagnóstico, resultó que su puerto serie ya no funcionaba y la tarjeta SD del sistema devolvía errores, haciéndolo inutilizable.<br/>
+						<br/>
+						<br/>
+						<b>Tarjeta de adaptación de niveles lógicos del protocolo de comunicación</b><br/>
+						<br/>
+						El sistema de adquisición de datos utiliza el protocolo de comunicación UART a nivel RS485 entre +5V y -5V.<br/>
+						El instrumento utiliza el protocolo de comunicación UART a niveles TTL entre 0V y 5V.<br/>
+						Aunque el protocolo de comunicación es el mismo, es necesaria la conversión de señales lógicas. Por lo tanto, se diseñó una placa electrónica para convertir las señales. El componente principal de esta placa es un chip SN75176A que maneja la adaptación física de los niveles lógicos.<br/>
+						<br/>
+						Un diagnóstico visual reveló el estallido de este componente electrónico. Afortunadamente, teníamos un chip de repuesto para continuar las pruebas.<br/>
+						<br/>
+						<br/>
+						<b>Tarjeta de adquisición del instrumento</b><br/>
+						<br/>
+						El instrumento en sí, que consulté directamente conectándome a él, ya no devolvía datos. Su comunicación USB funcionaba bien y mostraba una interfaz gráfica, pero me era imposible comunicarme con los protocolos de nivel inferior SDI-12 y UART/RS485.<br/>
+						<br/>
+						<br/>
+						<b>Conclusiones</b><br/>
+						<br/>
+						Todos estos elementos sugieren una sobretensión a nivel de la fuente de alimentación, que se propagó a través de la línea física del protocolo de comunicación, quemando todos los componentes a su paso.<br/>
+						Los responsables del programa científico a distancia, con quienes estuve en contacto durante todas las pruebas, tuvieron toda la información necesaria para declarar el sistema averiado y lanzar un proyecto de renovación.
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						Comunicación con el instrumento en UART/RS485<br/>
+						<div class="gallery">
+							<a href="4 big.jpg">
+								<img src="4 mini.jpg" alt="Comunicación UART 1">
+							</a>
+							<a href="3 big.jpg">
+								<img src="3 mini.jpg" alt="Comunicación UART 2">
+							</a>
+						</div>
+						<br/>
+						Comunicación con el instrumento en SDI-12. Programé un Arduino para comunicarse con el instrumento mediante este protocolo. Un osciloscopio me permitió asegurar la transmisión correcta de tramas. Para llevar las pruebas lo más lejos posible, moví el instrumento al laboratorio de electrónica.<br/>
+						<div class="gallery">
+							<a href="5 big.jpg">
+								<img src="5 mini.jpg" alt="Comunicación SDI-12 1">
+							</a>
+							<a href="7 big.jpg">
+								<img src="7 mini.jpg" alt="Comunicación SDI-12 2">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Chip SN75176A quemado.<br/>
+						<div class="gallery">
+							<a href="8 big.jpg">
+								<img src="8 mini.jpg" alt="Chip quemado 1">
+							</a>
+							<a href="9 big.jpg">
+								<img src="9 mini.jpg" alt="Chip quemado 2">
+							</a>
+						</div>
 					</div>
-					</br>
-					</br>
-					La carte électronique ne présentait aucun dommage visible à l'euil nu. J'ai donc essayé tous les protocoles de communiction possible avant de déclarer l'instrument définitivement en panne.
+				</div>
+
+				<!-- Version allemande -->
+				<div class="lang-content hidden" data-lang="de">
+					<h2 class="project-title">Fehlerdiagnose Regenmesser</h2>
+					<div class="project-tech">Elektronik - Fehleranalyse</div>
+					<div class="project-meta">Wissenschaftlicher Elektroniktechniker am Französischen Polarinstitut • 2022</div>
+					<div class="project-description">
+						<br/>
+						Ich diagnostizierte Ausfälle bei einem Regenmesser, dessen Stromversorgung mehrere Komponenten auf verschiedenen Ebenen beschädigt hatte.<br/>
+						<br/>
+						<br/>
+						<br/>
+						<b>Stromversorgung</b><br/>
+						<br/>
+						Das Netzteil des Systems war ausgefallen. Ich ersetzte es durch ein stabilisiertes Labornetzteil, um meine Tests fortzusetzen.<br/>
+						<br/>
+						<br/>
+						<b>CR1000 Datenerfassungssystem</b><br/>
+						<br/>
+						Das Campbell CR1000 Datenerfassungssystem ist ein kleines, robustes und zuverlässiges mikrocontrollerbasiertes System, das in Forschung und Industrie weit verbreitet ist.<br/>
+						Nach der Diagnose stellte sich heraus, dass sein serieller Port nicht mehr funktionierte und die SD-Karte des Systems Fehler zurückgab, wodurch es unbrauchbar wurde.<br/>
+						<br/>
+						<br/>
+						<b>Logikpegel-Anpassungsplatine für Kommunikationsprotokoll</b><br/>
+						<br/>
+						Das Datenerfassungssystem verwendet das UART-Kommunikationsprotokoll auf RS485-Niveau zwischen +5V und -5V.<br/>
+						Das Instrument verwendet das UART-Kommunikationsprotokoll auf TTL-Pegeln zwischen 0V und 5V.<br/>
+						Obwohl das Kommunikationsprotokoll dasselbe ist, ist eine Umwandlung der Logiksignale erforderlich. Es wurde daher eine elektronische Platine zur Signalumwandlung entwickelt. Die Hauptkomponente dieser Platine ist ein SN75176A-Chip, der die physikalische Anpassung der Logikpegel übernimmt.<br/>
+						<br/>
+						Eine visuelle Diagnose ergab das Platzen dieser elektronischen Komponente. Glücklicherweise hatten wir einen Ersatzchip, um die Tests fortzusetzen.<br/>
+						<br/>
+						<br/>
+						<b>Instrumentenerfassungsplatine</b><br/>
+						<br/>
+						Das Instrument selbst, das ich direkt durch Anschluss abfragte, gab keine Daten mehr zurück. Seine USB-Kommunikation funktionierte gut und zeigte eine grafische Oberfläche an, aber ich konnte nicht mit den niedrigeren Protokollen SDI-12 und UART/RS485 kommunizieren.<br/>
+						<br/>
+						<br/>
+						<b>Schlussfolgerungen</b><br/>
+						<br/>
+						All diese Elemente deuten auf eine Überspannung auf der Ebene der Stromversorgung hin, die sich durch die physikalische Leitung des Kommunikationsprotokolls ausbreitete und alle Komponenten auf ihrem Weg verbrannte.<br/>
+						Die entfernten wissenschaftlichen Programmverantwortlichen, mit denen ich während aller Tests in Kontakt stand, hatten alle Informationen zur Hand, um das System als ausgefallen zu erklären und ein Sanierungsprojekt zu starten.
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						Kommunikation mit dem Instrument in UART/RS485<br/>
+						<div class="gallery">
+							<a href="4 big.jpg">
+								<img src="4 mini.jpg" alt="UART-Kommunikation 1">
+							</a>
+							<a href="3 big.jpg">
+								<img src="3 mini.jpg" alt="UART-Kommunikation 2">
+							</a>
+						</div>
+						<br/>
+						Kommunikation mit dem Instrument in SDI-12. Ich programmierte einen Arduino, um über dieses Protokoll mit dem Instrument zu kommunizieren. Ein Oszilloskop ermöglichte es mir, die ordnungsgemäße Rahmenübertragung sicherzustellen. Um die Tests so weit wie möglich zu treiben, verlegte ich das Instrument ins Elektroniklabor.<br/>
+						<div class="gallery">
+							<a href="5 big.jpg">
+								<img src="5 mini.jpg" alt="SDI-12-Kommunikation 1">
+							</a>
+							<a href="7 big.jpg">
+								<img src="7 mini.jpg" alt="SDI-12-Kommunikation 2">
+							</a>
+						</div>
+						<br/>
+						<br/>
+						Verbrannter SN75176A-Chip.<br/>
+						<div class="gallery">
+							<a href="8 big.jpg">
+								<img src="8 mini.jpg" alt="Verbrannter Chip 1">
+							</a>
+							<a href="9 big.jpg">
+								<img src="9 mini.jpg" alt="Verbrannter Chip 2">
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
