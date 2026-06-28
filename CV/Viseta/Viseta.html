@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=UTF-8 />
+		<link rel="stylesheet" href="../../style.css" />
+		<!-- pour un affichage correct sur les téléphonnes -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+		<title>fernandez artwork</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+	<ul id="menu">
+		<li><a href="../../index.html">Iban FERNANDEZ</a></li>
+		<li>
+			<a href="../../paintings.html">
+				<span class="lang-content" data-lang="fr">Peintures</span>
+				<span class="lang-content hidden" data-lang="en">Paintings</span>
+				<span class="lang-content hidden" data-lang="es">Pinturas</span>
+				<span class="lang-content hidden" data-lang="de">Gemälde</span>
+			</a>
+		</li>
+		<li>
+			<a href="../../robotic.html">
+				<span class="lang-content" data-lang="fr">Tutoriels robotique</span>
+				<span class="lang-content hidden" data-lang="en">Robotics tutorials</span>
+				<span class="lang-content hidden" data-lang="es">Tutoriales de robótica</span>
+				<span class="lang-content hidden" data-lang="de">Robotik-Tutorials</span>
+			</a>
+		</li>
+		<li>
+			<a href="../../VideoGameSailingSimulator.html">
+				<span class="lang-content" data-lang="fr">Jeu Vidéo 🎮</span>
+				<span class="lang-content hidden" data-lang="en">Video game 🎮</span>
+				<span class="lang-content hidden" data-lang="es">Videojuego 🎮</span>
+				<span class="lang-content hidden" data-lang="de">Videospiel 🎮</span>
+			</a>
+		</li>
+		<li><a href="../../CV.html">CV</a></li>
+		<li class="language-switcher">
+			<button class="lang-btn active" onclick="switchLanguage('fr')" id="btn-fr" aria-label="Français">FR</button>
+			<button class="lang-btn" onclick="switchLanguage('en')" id="btn-en" aria-label="English">EN</button>
+			<button class="lang-btn" onclick="switchLanguage('es')" id="btn-es" aria-label="Espanol">ES</button>
+			<button class="lang-btn" onclick="switchLanguage('de')" id="btn-de" aria-label="Espanol">DE</button>
+		</li>
+	</ul>
+</nav>
+		</header>
+		<main>
+			<div id="TutoRobot">
+				<button onclick="history.back()">
+					<span class="lang-content" data-lang="fr">Retour</span>
+					<span class="lang-content hidden" data-lang="en">Back</span>
+					<span class="lang-content hidden" data-lang="es">Volver</span>
+					<span class="lang-content hidden" data-lang="de">Zurück</span>
+				</button>
+				
+				<!-- Version française -->
+				<div class="lang-content" data-lang="fr">
+					<h2 class="project-title">Conception d'un capteur de niveau de rivière</h2>
+					<div class="project-tech">Électronique - informatique - mécanique</div>
+					<div class="project-meta">Bénévole • 2026</div>
+					<div class="project-description">
+						<br/>
+						L'association Viseta est un collectif qui conçoit et teste des solutions pour favoriser la préservation des rivières, tout en revalorisant les moulins avec une solution de turbine hydroélectrique en bois : <a href="https://viseta.fr/fr" target="_blank">viseta.fr/fr</a><br/>
+						<br/>
+						Afin d'exploiter la ressource en eau de façon durable, les moulins doivent toujours laisser à la rivière un certain débit. Le prélèvement d'eau doit cesser en cas de niveau d'eau faible. J'ai donc conçu un capteur de niveau d'eau autonome et connecté, afin que le moulin puisse savoir quand ouvrir et fermer ses vannes.<br/>
+						<br/>
+						Ce système basse consommation fonctionne sur panneau solaire et se connecte au réseau local du moulin en WiFi. Il utilise un capteur de distance ultrason et ses données sont traitées par une puce ESP-32. Le code informatique est écrit en MicroPython.<br/>
+						<br/>
+						Afin d'intégrer au mieux cette brique technologique au sein de l'environnement champêtre du moulin, j'ai fabriqué le support du boîtier en bois avec des assemblages typiques de la charpente traditionnelle.<br/>
+						<br/>
+						<br/>
+						<div class="gallery">
+							<a href="photo 1 gros.jpg">
+								<img src="photo 1 petit.jpg" alt="Station de mesure du niveau d'eau 1">
+							</a>
+							<a href="photo 2 gros.jpg">
+								<img src="photo 2 petit.jpg" alt="Station de mesure du niveau d'eau 2">
+							</a>
+							<a href="photo 3 gros.jpg">
+								<img src="photo 3 petit.jpg" alt="Station de mesure du niveau d'eau 3">
+							</a>
+						</div>
+						Fabrication de la structure en bois :<br/>
+						<a href="photo 4 gros.jpg">
+							<img src="photo 4 petit.jpg" alt="Structure en bois">
+						</a>
+					</div>
+				</div>
+
+				<!-- Version anglaise -->
+				<div class="lang-content hidden" data-lang="en">
+					<h2 class="project-title">Design of a River Level Sensor</h2>
+					<div class="project-tech">Electronics - IT - mechanics</div>
+					<div class="project-meta">Volunteer • 2026</div>
+					<div class="project-description">
+						<br/>
+						The Viseta association is a collective that designs and tests solutions to promote river preservation, while restoring mills with a wooden hydroelectric turbine solution: <a href="https://viseta.fr/fr" target="_blank">viseta.fr/fr</a><br/>
+						<br/>
+						To sustainably exploit water resources, mills must always leave a certain flow rate to the river. Water withdrawal must stop when the water level is low. I therefore designed an autonomous, connected water level sensor so the mill can know when to open and close its gates.<br/>
+						<br/>
+						This low-power system runs on a solar panel and connects to the mill's local network via WiFi. It uses an ultrasonic distance sensor and its data is processed by an ESP-32 chip. The software is written in MicroPython.<br/>
+						<br/>
+						To best integrate this technological component into the mill's rural environment, I built the wooden enclosure support using assembly techniques typical of traditional timber framing.<br/>
+						<br/>
+						<br/>
+						<div class="gallery">
+							<a href="photo 1 gros.jpg">
+								<img src="photo 1 petit.jpg" alt="Water level measurement station 1">
+							</a>
+							<a href="photo 2 gros.jpg">
+								<img src="photo 2 petit.jpg" alt="Water level measurement station 2">
+							</a>
+							<a href="photo 3 gros.jpg">
+								<img src="photo 3 petit.jpg" alt="Water level measurement station 3">
+							</a>
+						</div>
+						Manufacturing the wooden structure:<br/>
+						<a href="photo 4 gros.jpg">
+							<img src="photo 4 petit.jpg" alt="Wooden structure">
+						</a>
+					</div>
+				</div>
+
+				<!-- Version espagnole -->
+				<div class="lang-content hidden" data-lang="es">
+					<h2 class="project-title">Diseño de un sensor de nivel de río</h2>
+					<div class="project-tech">Electrónica - informática - mecánica</div>
+					<div class="project-meta">Voluntario • 2026</div>
+					<div class="project-description">
+						<br/>
+						La asociación Viseta es un colectivo que diseña y prueba soluciones para favorecer la preservación de los ríos, revalorizando al mismo tiempo los molinos con una solución de turbina hidroeléctrica de madera: <a href="https://viseta.fr/fr" target="_blank">viseta.fr/fr</a><br/>
+						<br/>
+						Para explotar el recurso hídrico de forma sostenible, los molinos deben dejar siempre un cierto caudal al río. La extracción de agua debe cesar en caso de nivel de agua bajo. Por lo tanto, diseñé un sensor de nivel de agua autónomo y conectado, para que el molino pueda saber cuándo abrir y cerrar sus compuertas.<br/>
+						<br/>
+						Este sistema de bajo consumo funciona con panel solar y se conecta a la red local del molino mediante WiFi. Utiliza un sensor de distancia por ultrasonido y sus datos son procesados por un chip ESP-32. El código informático está escrito en MicroPython.<br/>
+						<br/>
+						Para integrar mejor este componente tecnológico en el entorno rural del molino, fabriqué el soporte de la carcasa en madera con ensamblajes típicos de la carpintería tradicional.<br/>
+						<br/>
+						<br/>
+						<div class="gallery">
+							<a href="photo 1 gros.jpg">
+								<img src="photo 1 petit.jpg" alt="Estación de medición de nivel de agua 1">
+							</a>
+							<a href="photo 2 gros.jpg">
+								<img src="photo 2 petit.jpg" alt="Estación de medición de nivel de agua 2">
+							</a>
+							<a href="photo 3 gros.jpg">
+								<img src="photo 3 petit.jpg" alt="Estación de medición de nivel de agua 3">
+							</a>
+						</div>
+						Fabricación de la estructura de madera:<br/>
+						<a href="photo 4 gros.jpg">
+							<img src="photo 4 petit.jpg" alt="Estructura de madera">
+						</a>
+					</div>
+				</div>
+
+				<!-- Version allemande -->
+				<div class="lang-content hidden" data-lang="de">
+					<h2 class="project-title">Entwurf eines Flusspegelsensors</h2>
+					<div class="project-tech">Elektronik - IT - Mechanik</div>
+					<div class="project-meta">Freiwilliger • 2026</div>
+					<div class="project-description">
+						<br/>
+						Der Verein Viseta ist ein Kollektiv, das Lösungen zur Förderung der Erhaltung von Flüssen entwirft und testet, während Mühlen mit einer hölzernen Wasserkraftturbinenlösung aufgewertet werden: <a href="https://viseta.fr/fr" target="_blank">viseta.fr/fr</a><br/>
+						<br/>
+						Um die Wasserressource nachhaltig zu nutzen, müssen Mühlen dem Fluss immer einen bestimmten Durchfluss überlassen. Die Wasserentnahme muss bei niedrigem Wasserstand gestoppt werden. Ich entwarf daher einen autonomen, vernetzten Wasserstandssensor, damit die Mühle weiß, wann sie ihre Schleusen öffnen und schließen muss.<br/>
+						<br/>
+						Dieses stromsparende System läuft mit Solarpanel und verbindet sich über WiFi mit dem lokalen Netzwerk der Mühle. Es verwendet einen Ultraschall-Distanzsensor, dessen Daten von einem ESP-32-Chip verarbeitet werden. Der Software-Code ist in MicroPython geschrieben.<br/>
+						<br/>
+						Um diesen technologischen Baustein bestmöglich in die ländliche Umgebung der Mühle zu integrieren, fertigte ich die Halterung des Gehäuses aus Holz mit typischen Verbindungen des traditionellen Zimmermannshandwerks.<br/>
+						<br/>
+						<br/>
+						<div class="gallery">
+							<a href="photo 1 gros.jpg">
+								<img src="photo 1 petit.jpg" alt="Wasserstandsmessstation 1">
+							</a>
+							<a href="photo 2 gros.jpg">
+								<img src="photo 2 petit.jpg" alt="Wasserstandsmessstation 2">
+							</a>
+							<a href="photo 3 gros.jpg">
+								<img src="photo 3 petit.jpg" alt="Wasserstandsmessstation 3">
+							</a>
+						</div>
+						Herstellung der Holzstruktur:<br/>
+						<a href="photo 4 gros.jpg">
+							<img src="photo 4 petit.jpg" alt="Holzstruktur">
+						</a>
+					</div>
+				</div>
+
+				<!-- Version anglaise -->
+				<div class="lang-content hidden" data-lang="en">
+					<h2 class="project-title">Industrialization Methods Engineer</h2>
+					<div class="project-tech">industrial methods</div>
+					<div class="project-meta">Engineer • 2026</div>
+					<div class="project-description">
+						<br/>
+						Methods Engineer for an assembly line of flight computers for civil aircraft:<br/>
+						<ul>
+						   <li>Writing instruction sheets for operators.</li>
+						   <li>Design of tooling for the assembly line.</li>
+						</ul>
+						Monitoring the development of flight computer prototypes:<br/>
+						<ul>
+						   <li>Interface between the development office and the electronics technicians carrying out modification operations on electronic boards.</li>
+						   <li>Software uploading to the boards with bug identification.</li>
+						</ul>
+						<br/>
+						<br/>
+						<img src="Flight_computer.jpg">
+					</div>
+				</div>
+
+				<!-- Version espagnole -->
+				<div class="lang-content hidden" data-lang="es">
+					<h2 class="project-title">Ingeniero de Métodos de Industrializacións</h2>
+					<div class="project-tech">métodos industriales</div>
+					<div class="project-meta">Ingeniero • 2026</div>
+					<div class="project-description">
+						<br/>
+						Ingeniero de Métodos para una línea de ensamblaje de computadoras de vuelo para aviones civiles:<br/>
+						<ul>
+						   <li>Redacción de instrucciones de trabajo para los operadores.</li>
+						   <li>Diseño de utillajes para la línea de ensamblaje.</li>
+						</ul>
+						Seguimiento del desarrollo de prototipos de computadoras de vuelo:<br/>
+						<ul>
+						   <li>Enlace entre la oficina de desarrollo y los técnicos electrónicos encargados de las operaciones de modificación de las tarjetas electrónicas.</li>
+						   <li>Carga del software en las tarjetas con identificación de errores.</li>
+						</ul>
+						<br/>
+						<br/>
+						<img src="Flight_computer.jpg">
+					</div>
+				</div>
+
+				<!-- Version allemande -->
+				<div class="lang-content hidden" data-lang="de">
+					<h2 class="project-title">Industrialisierungs-Methodeningenieur</h2>
+					<div class="project-tech">industrielle Methoden</div>
+					<div class="project-meta">Ingenieur • 2026</div>
+					<div class="project-description">
+						<br/>
+						Methodeningenieur für eine Montagelinie von Flugcomputern für zivile Flugzeuge:<br/>
+						<ul>
+						   <li>Erstellung von Arbeitsanweisungen für die Bediener.</li>
+						   <li>Konstruktion von Vorrichtungen für die Montagelinie.</li>
+						</ul>
+						Betreuung der Entwicklung von Prototypen für Flugcomputer:<br/>
+						<ul>
+						   <li>Schnittstelle zwischen der Entwicklungsabteilung und den Elektroniktechnikern, die Änderungen an elektronischen Leiterplatten durchführen.</li>
+						   <li>Aufspielen der Software auf die Leiterplatten mit Identifizierung von Fehlern.</li>
+						</ul>
+						<br/>
+						<br/>
+						<img src="Flight_computer.jpg">
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<hr size="1" color="grey">
+			<div id="indicationsSousMonNom02">
+				<br/>
+				© copyright Iban Fernandez<br/>
+				<span class="lang-content" data-lang="fr">tous droits réservés</span>
+				<span class="lang-content hidden" data-lang="en">all rights reserved</span>
+				<span class="lang-content hidden" data-lang="es">todos los derechos reservados</span>
+				<span class="lang-content hidden" data-lang="de">alle Rechte vorbehalten</span>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</footer>
+		<script src="../../script.js"></script>
+	</body>
+</html>
